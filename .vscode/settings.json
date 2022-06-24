@@ -2,7 +2,9 @@
     "cSpell.words": [
         "categorymodel",
         "getbyname",
+        "mailtrap",
         "productdetails",
         "verifytoken"
-    ]
+    ],
+    "git.ignoreLimitWarning": true
 }

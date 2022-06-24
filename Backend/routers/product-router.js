@@ -13,7 +13,7 @@ route.get("/getByName",product_controller.getByName)
 route.put("/update/:id",product_controller.update)
 route.delete("/delete/:id",product_controller.delete)
 
-
+  
 
 module.exports = route
 

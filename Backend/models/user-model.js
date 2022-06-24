@@ -30,17 +30,13 @@ const userSchema = new mongoose.Schema({
         required:true
     },
     tel:{
-        type:String,
-        required:true
+          type:String,
+          required:true
     },
     image:{
-        type:String,
-        required:true
-    },
-    isAdmin : {
-         type:Boolean ,
-         default :false
-    }
+          type:String,
+          required:true
+    } 
 },baseOptions,
 {timestamps:true})
 
@@ -52,9 +48,9 @@ userSchema.pre("save",function(next){
     next()
 })
 
+         
 
-
-
+          
 
 
 
