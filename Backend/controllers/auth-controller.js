@@ -7,10 +7,6 @@ const jwt = require("jsonwebtoken")
 const  JWT_SECRET = process.env.JWT_SECRET
 const RT_SECRET = process.env.RT_SECRET
 
-
-
-
-
 const generateAccessToken =(user)=> {
 return jwt.sign({id:user._id,email:user.email},JWT_SECRET, {expiresIn :"1m"})
 }
@@ -22,21 +18,17 @@ const generateRefreshToken = (user) => {
 
 
 let RefreshTokens = []
-
 module.exports = {
     login :async(req,res) =>{
        const user = await user_model.findOne({email:req.body.email})
        if (!user) {
         res.status(406).json ({message : "email does not exit"})
        }else {
-   
         const validPassword = await bcrypt.compareSync(req.body.password, user.password)
            
         if (!validPassword){
             res.status(406).json ({message : "password incorrect"})
         }else {
-
-
             const Token = generateAccessToken(user)
             const RefreshToken = generateRefreshToken(user)
             RefreshTokens.push(RefreshToken)

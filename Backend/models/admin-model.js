@@ -4,27 +4,14 @@ const mongoose = require('mongoose')
 
 
 
-const adminSchema = new mongoose.Schema ({
+const AdminSchema = new mongoose.Schema({
      
 
-    login : {
-        type: String , 
-        required : true 
-    },
-
-    password : {
-        type : String , 
-        required : true 
-    }
-
 })
+    
+    
 
+const admins  = user_model.discriminator("admins",AdminSchema)      
+  
 
-
-const admin  = user_model.discriminator("admin",adminSchema)      
-
-
-module.exports = mongoose.model("admin")
-
-
-
+module.exports = mongoose.model("admins") 

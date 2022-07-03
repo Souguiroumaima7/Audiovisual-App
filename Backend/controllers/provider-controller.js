@@ -4,10 +4,8 @@ const provider_model = require ("../models/provider-model")
 module.exports={
 
     register:(req,res)=>{
-
-        req.body["image"] = req.file.filename
-        
-           const provider = new provider_model(req.body)
+         req.body["image"] = req.file.filename
+         const provider = new provider_model(req.body)
            provider.save(req.body,(err,item)=>{
             if(err){
                 res.status(406).json({message:"failed to save provider "+err})
@@ -16,11 +14,10 @@ module.exports={
             }
            })
          }, 
-    
-       getall:(req,res)=>{
+       getAll:(req,res)=>{
            provider_model.find({},(err,items)=>{
                if(err){
-                   res.status(406).json({message:"failed to get all registred provider"+err})
+                   res.status(406).json({message:"failed to get all registred provider"}+err)
                }else{
                    res.status(201).json({message:"list of registred provider",data:items }) 
                }
@@ -54,13 +51,14 @@ module.exports={
            })
        },
        delete:(req,res)=>{
-           provider_model.findByIdAndRemove(req.params.body, (err)=>{
+           provider_model.findByIdAndRemove(req.params.body,(err)=>{
                if(err){
-                   res.status(406).json({message:"failed to deleted client"+err})
+                   res.status(406).json({message:"failed to deleted client"}+err)
                }else{
-                   res.status(201).json({message:"client deleted successuffly"})
+                   res.status(201).json({message:"client deleted successufly"})
                }
            })
-       }
-       
+       }   
 }
+
+

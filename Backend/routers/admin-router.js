@@ -1,4 +1,3 @@
-
 const route = require("express").Router()
 
 
@@ -7,9 +6,13 @@ const admin_Controller = require("../controllers/admin-controller")
 const upload = require("../middlewares/uploadFiles")
 
 
-route.post("/register",upload.single("photo"),admin_Controller.register)
+route.post("/register", upload.single("photo"),admin_Controller.register)
+route.get("/getall",admin_Controller.getAll)
+route.get("/getById/:id",admin_Controller.getById)
+route.get("/getByName",admin_Controller.getByName)
+route.put("/update/:id", admin_Controller.update)
+route.delete("/delete/:id",admin_Controller.delete)
 
+  
 
-
-
-module.exports = route
+module.exports = route 

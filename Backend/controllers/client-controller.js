@@ -17,7 +17,7 @@ var transport = nodemailer.createTransport({
 module.exports={
  register:(req,res)=>{
 
-req.body["image"]=req.file.filename
+  req.body["image"]=req.file.filename
 
    const client = new client_model(req.body)
    client.save(req.body,(err,item)=>{
@@ -39,7 +39,7 @@ req.body["image"]=req.file.filename
               <title>Welcome Email</title>
             </head>
             <body>
-              <h2>Hello ${item.firstname +" "+ item.lastname}! </h2>
+              <h2>Hello ${item.firstName +" "+ item.lastName}! </h2>
               <p>We're glad to have you on board at ${item.email}. </p>
               <p>We're glad to have you on board at it gate</p>
             </body>
@@ -58,7 +58,7 @@ req.body["image"]=req.file.filename
    })
  }, 
  
-    getall:(req,res)=>{
+    getAll:(req,res)=>{
         client_model.find({},(err,items)=>{
             if(err){
                 res.status(406).json({message:"failed to get all registred clients"})
@@ -67,12 +67,13 @@ req.body["image"]=req.file.filename
             }
         })
     },
+   
     getById:(req,res)=>{
         client_model.findById(req.params.id,(err,item)=>{
             if(err){
-                res.status(406).json({message:"cannot get client by this id"})
+                res.status(406).json({message:"cannot get Client by this id"})
             }else{
-                res.status(201).json({message:"clients",data:item})
+                res.status(201).json({message:"Client",data:item})
             }
         }) 
     },

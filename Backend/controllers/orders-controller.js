@@ -4,7 +4,7 @@ module.exports = {
         const order = new order_model(req.body)
         order.save(req.body, function(err, item) {
               if (err) {
-                res.status(406).json({ message: "fail to create order " })
+                res.status(406).json({ message: "failed to create order " })
                } else {   
                 res.status(201).json({ message: "order created  successfully ", data: item })
               }
@@ -13,19 +13,19 @@ module.exports = {
     getAll: function(req, res) {
         order_model.find({}, function(err, items) {
             if (err) {
-                res.status(406).json({ message: "fail get orders " })
+                res.status(406).json({ message: "fail get orders "}+err)
             } else {
                 res.status(201).json({ message: "get order successfully ", data: items })
             }
         })
 
-    },
+    },     
     getById: function(req, res) {
         order_model.findById(req.params.id, function(err,items) {
             if (err) {
                 res.status(406).json({ message: "fail to create order " })
             } else {
-                res.status(201).json({ message: "order created  successfully ", data:items })
+                res.status(201).json({ message: "order created  successfully ", data:item })
             }
         })
 
@@ -33,7 +33,7 @@ module.exports = {
     getByName: function(req, res) {
         order_model.find({ Name: req.query.ref }, function(err,items) {
             if (err) {
-                res.status(406).json({ message: "fail to get order order " })
+                res.status(406).json({ message: "fail to get order  " })
             } else {
                 res.status(201).json({ message: "get order by name successfully ", data: items})
             }

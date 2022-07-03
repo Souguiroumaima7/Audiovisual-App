@@ -9,8 +9,7 @@ const baseOptions = {
     discriminatorKey: 'itemtype', 
     collection: 'users',
   };
-
-
+  
 const userSchema = new mongoose.Schema({
     firstName:{
         type:String,
@@ -33,7 +32,7 @@ const userSchema = new mongoose.Schema({
           type:String,
           required:true
     },
-    image:{
+      image:{
           type:String,
           required:true
     } 
