@@ -1,0 +1,19 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">name</th>
+      <th scope="col">description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor = "let s of listesubcategories |paginate: { itemsPerPage: 3, currentPage: p};let index=index">
+      <th scope = "row">{{index+1}}</th>
+      <td>{{s.name}}</td>
+      <td>{{s.description}}</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<pagination-controls (pageChange)="p = $event"></pagination-controls>

@@ -1,4 +1,7 @@
+import { ProductService } from './../../services/product.service';
+import { CartService } from './../../services/cart.service';
 import { Component, OnInit } from '@angular/core';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-cart',
@@ -7,9 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CartComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private CartService: CartService, private ProductService:ProductService) {
+  }
   ngOnInit(): void {
+
+
+
   }
 
-}
+  }
+
+
+
+

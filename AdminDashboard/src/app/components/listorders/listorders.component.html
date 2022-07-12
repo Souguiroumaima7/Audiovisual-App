@@ -1,0 +1,28 @@
+<div class="form-group">
+  <input  class="form-control" />
+  <label>Search</label>
+</div>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">name</th>
+        <th scope="col">description</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let o of listorders|paginate: { itemsPerPage: 2, currentPage: p} ;let index=index">
+        <th scope = "row">{{index+1}}</th>
+        <td>{{o.ref}}</td>
+        <td>{{o.priceTotal}}</td>
+        <td>{{o.date}}</td>
+        <td>{{o.status}}</td>
+       <button type="button" class="btn btn-info" [routerLink]="['/detailorders',o._id]">detail</button>
+       &nbsp;
+       <button type="button" class="btn btn-info" [routerLink]="['/updateorders',o._id]">update</button>
+      </tr>
+    </tbody>
+  </table>
+<pagination-controls (pageChange)="p = $event"></pagination-controls>
+

@@ -1,14 +1,12 @@
 const admin_model  = require ("../models/admin-model")
 
-
-
 module.exports={
 
     register:(req,res)=>{
-
-            req.body["image"] = req.file.filename
+           
+        req.body["image"] = req.file.filename  
         
-           const admin = new admin_model(req.body)
+             const admin = new admin_model(req.body)
            admin.save(req.body,(err,item)=>{
             if(err){
                 res.status(406).json({message:"failed to save admin "+err})
