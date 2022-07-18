@@ -1,3 +1,5 @@
+import { environment } from 'src/environments/environment';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -5,5 +7,8 @@ import { Injectable } from '@angular/core';
 })
 export class ShopService {
 
-  constructor() { }
+  constructor(private http:HttpClient) { }
+
+  
+
 }

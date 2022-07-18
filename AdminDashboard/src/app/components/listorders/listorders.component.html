@@ -6,8 +6,10 @@
     <thead>
       <tr>
         <th scope="col">#</th>
-        <th scope="col">name</th>
-        <th scope="col">description</th>
+        <th scope="col">ref</th>
+        <th scope="col">priceTotal</th>
+        <th scope="col">date</th>
+        <th scope="col">status</th>
 
       </tr>
     </thead>
@@ -18,9 +20,8 @@
         <td>{{o.priceTotal}}</td>
         <td>{{o.date}}</td>
         <td>{{o.status}}</td>
-       <button type="button" class="btn btn-info" [routerLink]="['/detailorders',o._id]">detail</button>
-       &nbsp;
-       <button type="button" class="btn btn-info" [routerLink]="['/updateorders',o._id]">update</button>
+
+       <button   type="button" class="btn btn-info" [routerLink]="['/updateorders',o._id]">update</button>
       </tr>
     </tbody>
   </table>

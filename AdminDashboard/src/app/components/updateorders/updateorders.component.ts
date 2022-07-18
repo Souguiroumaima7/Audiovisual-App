@@ -24,7 +24,7 @@ export class UpdateordersComponent implements OnInit {
           description: ['', Validators.required]
         })
     }
-    
+
     getordbyid() {
       this.OrderService.getordbyid(this.id).subscribe((res:any)=>{
         this.category =res["data"]

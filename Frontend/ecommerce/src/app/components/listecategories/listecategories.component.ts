@@ -1,3 +1,4 @@
+import { CategoryService } from './../../services/category.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./listecategories.component.css']
 })
 export class ListecategoriesComponent implements OnInit {
+  listecategory:any
+  p: number = 1;
+  search_name:any
 
-  constructor() { }
+ constructor(private CategoryService:CategoryService) { }
 
-  ngOnInit(): void {
-  }
+ ngOnInit(): void {
+   this.getall()
+ }
+ getall () {
+   this.CategoryService.getcategories().subscribe((res:any)=>{
+     this.listecategory = res["data"]
+     console.log("listecategory", this.listecategory)
+   })
+
+ }
 
 }
