@@ -9,7 +9,6 @@ const baseOptions = {
     discriminatorKey: 'itemtype', 
     collection: 'users',
   };
-  
 const userSchema = new mongoose.Schema({
     firstName:{
         type:String,
@@ -27,15 +26,7 @@ const userSchema = new mongoose.Schema({
     password:{
         type:String,
         required:true
-    },
-    tel:{
-          type:String,
-          required:true
-    },
-      image:{
-          type:String,
-          required:true
-    } 
+    },  
 },baseOptions,
 {timestamps:true})
 
@@ -47,14 +38,9 @@ userSchema.pre("save",function(next){
     next()
 })
 
-         
-
-          
-
 
 
 
 module.exports = mongoose.model("users",userSchema)
 
 
-    

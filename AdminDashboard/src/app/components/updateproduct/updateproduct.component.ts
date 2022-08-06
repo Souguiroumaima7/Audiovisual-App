@@ -1,14 +1,16 @@
-import { ProductService } from './../../services/product.service';
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
+import { ProductService } from 'src/app/services/product.service';
 import Swal from 'sweetalert2';
+
 @Component({
   selector: 'app-updateproduct',
   templateUrl: './updateproduct.component.html',
   styleUrls: ['./updateproduct.component.css']
 })
 export class UpdateproductComponent implements OnInit {
+
   submitted = false;
   form!:FormGroup;
   id=this.activeroute.snapshot.params["id"]
@@ -36,21 +38,18 @@ constructor(private activeroute : ActivatedRoute,private ProductService:ProductS
    this.form.patchValue({
     name:res["data"].name,
     description:res["data"].description,
-    price:res["data"].price,
-    stock:res["data"].stock
+    price:res["data"].price
+
    })
    console.log("detail product",this.product)
    })
-   }
 
-   
+   }
    updateproduct() {
     this.ProductService.updateproduct(this.id,this.form.value).subscribe((res:any) =>{
       console.log(res)
       Swal.fire("product updated")
-      this.route.navigateByUrl("/listproduct")
+      this.route.navigateByUrl("/listeproduct")
     })
    }
-
 }
-                      

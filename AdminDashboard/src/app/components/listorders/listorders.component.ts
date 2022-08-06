@@ -12,6 +12,7 @@ export class ListordersComponent implements OnInit {
   listorders: any;
   p: number = 1;
 
+  
   constructor(private OrderService:OrderService) { }
 
   ngOnInit(): void {

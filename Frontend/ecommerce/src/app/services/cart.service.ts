@@ -1,49 +1,59 @@
-import { HttpClient } from '@angular/common/http';
-import { StorageService } from './storage.service';
 import { Injectable } from '@angular/core';
-import { map, Observable } from 'rxjs';
-import { CartItem } from '../components/shopping-cart/cart-item.model';
-import { Product } from '../components/shopping-cart/product.model';
-import { cartUrl } from 'config/api';
-
+import { BehaviorSubject } from 'rxjs';
+import { Product } from '../models/product.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CartService {
 
-  constructor(private http: HttpClient) { }
+  
+ public cardItemList :any =[]   
 
-  getCartItems(): Observable<CartItem[]> {
-    //TODO: Mapping the obtained result to our CartItem props. (pipe() and map())
-    return this.http.get<CartItem[]>(cartUrl).pipe(
-      map((result: any[]) => {
-        let cartItems: CartItem[] = [];
+ public ProductList = new BehaviorSubject<any>([])  ;
 
-        for (let item of result) {
-          let productExists = false
 
-          for (let i in cartItems) {
-            if (cartItems[i].productId === item.product.id) {
-              cartItems[i].qty++
-              productExists = true
-              break;
-            }
-          }
+ getProducts() {
+  return this.ProductList.asObservable() ;
+ }
 
-          if (!productExists) {
-            cartItems.push(new CartItem(item.id, item.product));
-          }
-        }
+ setProducts (product:any) {
+    this.cardItemList.push(...product)  
+    this.ProductList.next(product)
+    
+ }
 
-        return cartItems;
-      })
-    );
+ addToCart(product:any)  {
+  this.cardItemList.push(product)   
+  this.cardItemList.next(this.cardItemList)   
+this.getTotalPrice() ;
+ }
+
+
+getTotalPrice() :number {
+     
+  let Total = 0 ;
+  this.cardItemList.map((a:any)=>{
+    Total += a.total 
+  })
+  return Total ;
+}
+
+removeCardItem(product:any)  {
+
+this.cardItemList.map((a:any , index:any) =>{
+  if(product.id === a.id)   {
+    this.cardItemList.splice(index,1)  ;
   }
+})
 
-  addProductToCart(product: Product): Observable<any> {
-    return this.http.post(cartUrl, { product });
-  }
+}
+
+removeAllCart()  {
+
+  this.cardItemList = [] ;
+  this.ProductList.next(this.cardItemList)
 }
 
 
+}

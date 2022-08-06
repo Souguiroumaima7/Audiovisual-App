@@ -9,8 +9,9 @@ export class SettingsService {
 
  constructor(private http:HttpClient) {}
 
+
    save(changes:any) {
-  return this.http.put(`${environment.baseurl}`,changes)
+  return this.http.put(`${environment.baseUrl}`,changes)
 }
 
 }

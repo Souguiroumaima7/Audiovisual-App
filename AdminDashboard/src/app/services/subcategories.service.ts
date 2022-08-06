@@ -10,6 +10,6 @@ export class SubcategoriesService {
   constructor(private http:HttpClient) { }
 
   getsubcategories() {
-    return this.http.get(`${environment.baseurl}/subcategories/getAll`)
+    return this.http.get(`${environment.baseUrl}/subcategory/getall`)
   }
 }

@@ -1,5 +1,6 @@
 {
     "cSpell.words": [
         "getbyname"
-    ]
+    ],
+    "git.ignoreLimitWarning": true
 }

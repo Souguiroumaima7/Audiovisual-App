@@ -1,5 +1,5 @@
 const product_model = require("../models/product-model")
-const subcategory_model = require("../models/subcategory-model")
+
 
 module.exports = {
     create: (req, res) => {
@@ -11,15 +11,12 @@ module.exports = {
             if (err) {
                 res.status(406).json({ message: "fail to create product " })
             } else {
-                subcategory_model.findByIdAndUpdate(req.body.subcategory, { $push: { products: product } }, () => {
-
-                    res.status(201).json({ message: "product created  successfully ", data: item })
-                })
+               res.status(201).json({ message: "product created  successfully ", data: item })
             }
         })
     },
     getAll: function(req, res) { //read 
-        product_model.find({}).populate("subcategory").exec(function(err, items) { //pour retourner tous les informations 
+         product_model.find({}, function(err, items) { 
             if (err) {
                 res.status(406).json({ message: "cannot get products" })
 
@@ -36,7 +33,7 @@ module.exports = {
         product_model.findById(req.params.id, function(err, item) {
             if (err) {
                 res.status(406).json({ message: "cannot get product by this id" })
-
+   
 
             } else {
 
@@ -90,7 +87,5 @@ module.exports = {
 
     }
 }     
-
-
 
 

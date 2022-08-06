@@ -1,4 +1,5 @@
-import { CartService } from './../../services/cart.service';
+import { CartService } from 'src/app/services/cart.service';
+
 import { ProductService } from './../../services/product.service';
 import { FormBuilder } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
@@ -10,13 +11,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./section.component.css']
 })
 export class SectionComponent implements OnInit {
-  submitted!: boolean;
 
-  constructor(private form:FormBuilder,private CartService:CartService) { }
 
+  constructor() {}
+  
   ngOnInit(): void {
-
-}
+        
+   
+  }
 
 
 

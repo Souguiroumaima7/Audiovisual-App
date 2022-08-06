@@ -7,12 +7,11 @@ const DB = process.env.URI
 
 const database = mongoose.connect(DB,(err)=>{
     if(!err){
-        console.log("mongodb connect successfully")
+        console.log("mongodb connect successuflly")
     }else{
         console.log("failed to connect with mongodb")
     }
 })
-
 
 
 

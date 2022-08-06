@@ -10,7 +10,7 @@ import Swal from 'sweetalert2';
   styleUrls: ['./updateorders.component.css']
 })
 export class UpdateordersComponent implements OnInit {
-  category:any
+  order:any
   submitted = false;
   form!:FormGroup;
   id=this.activeroute.snapshot.params["id"]
@@ -27,12 +27,12 @@ export class UpdateordersComponent implements OnInit {
 
     getordbyid() {
       this.OrderService.getordbyid(this.id).subscribe((res:any)=>{
-        this.category =res["data"]
+        this.order =res["data"]
         this.form.patchValue({
          name:res["data"].name,
          description:res["data"].description,
         })
-        console.log("detail product",this.category)
+        console.log("detail product",this.order)
         })
       }
         updateorders(): void {

@@ -2,15 +2,16 @@
 
 const route = require("express").Router()
 
-const subcategory_controller = require("../controllers/subcategory-controller")
+const Subcategory_controller = require("../controllers/Subcategory-controller")
+     
 
 
-route.post("/create",subcategory_controller.create)
-route.get("/getall",subcategory_controller.getall)
-route.get("/getbyid/:id",subcategory_controller.getbyid)
-route.get("/getbyname",subcategory_controller.getbyname)
-route.put("/update/:id",subcategory_controller.update)
-route.delete("/delete/:id",subcategory_controller.delete)
+route.post("/create",Subcategory_controller.create)
+route.get("/getall",Subcategory_controller.getall)
+route.get("/getbyid/:id",Subcategory_controller.getbyid)
+route.get("/getbyname",Subcategory_controller.getbyname)
+route.put("/update/:id",Subcategory_controller.update)
+route.delete("/delete/:id",Subcategory_controller.delete)
 
 
 

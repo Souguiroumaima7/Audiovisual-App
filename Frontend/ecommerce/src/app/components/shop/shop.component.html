@@ -1,189 +1,445 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
-
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">Simple Ecommerce</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse justify-content-end" id="navbarsExampleDefault">
-            <ul class="navbar-nav m-auto">
-                <li class="nav-item m-auto">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="category.html">Categories</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="product.html">Product</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="contact.html">Cart <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-
-            <form class="form-inline my-2 my-lg-0">
-                <div class="input-group input-group-sm">
-                    <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Search...">
-                    <div class="input-group-append">
-                        <button type="button" class="btn btn-secondary btn-number">
-                            <i class="fa fa-search"></i>
-                        </button>
-                    </div>
-                </div>
-                <a class="btn btn-success btn-sm ml-3" href="cart.html">
-                    <i class="fa fa-shopping-cart"></i> Cart
-                    <span class="badge badge-light">3</span>
-                </a>
-            </form>
-        </div>
-    </div>
-</nav>
-<section class="jumbotron text-center">
-    <div class="container">
-        <h1 class="jumbotron-heading">E-COMMERCE CART</h1>
-     </div>
-</section>
-
-<div class="container mb-4">
+<div class="section">
+  <!-- container -->
+  <div class="container">
+    <!-- row -->
     <div class="row">
-        <div class="col-12">
-            <div class="table-responsive">
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th scope="col"> </th>
-                            <th scope="col">Product</th>
-                            <th scope="col">Available</th>
-                            <th scope="col" class="text-center">Quantity</th>
-                            <th scope="col" class="text-right">Price</th>
-                            <th> </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
-                            <td>Product Name Dada</td>
-                            <td>In stock</td>
-                            <td><input class="form-control" type="text" value="1" /></td>
-                            <td class="text-right">124,90 €</td>
-                            <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
-                        </tr>
-                        <tr>
-                            <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
-                            <td>Product Name Toto</td>
-                            <td>In stock</td>
-                            <td><input class="form-control" type="text" value="1" /></td>
-                            <td class="text-right">33,90 €</td>
-                            <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
-                        </tr>
-                        <tr>
-                            <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
-                            <td>Product Name Titi</td>
-                            <td>In stock</td>
-                            <td><input class="form-control" type="text" value="1" /></td>
-                            <td class="text-right">70,00 €</td>
-                            <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>Sub-Total</td>
-                            <td class="text-right">255,90 €</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>Shipping</td>
-                            <td class="text-right">6,90 €</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td><strong>Total</strong></td>
-                            <td class="text-right"><strong>346,90 €</strong></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="col mb-2">
-            <div class="row">
-                <div class="col-sm-12  col-md-6">
-                    <button class="btn btn-block btn-light">Continue Shopping</button>
-                </div>
-                <div class="col-sm-12 col-md-6 text-right">
-                    <button class="btn btn-lg btn-block btn-success text-uppercase">Checkout</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+      <!-- ASIDE -->
+      <div id="aside" class="col-md-3">
+        <!-- aside Widget -->
+        <div class="aside">
+          <h3 class="aside-title">Categories</h3>
+          <div class="checkbox-filter">
 
-<!-- Footer -->
-<footer class="text-light">
-    <div class="container">
+            <div class="input-checkbox">
+              <input type="checkbox" id="category-1">
+              <label for="category-1">
+                <span></span>
+                  Data Projecteurs
+                <small>(120)</small>
+              </label>
+            </div>
+
+            <div class="input-checkbox">
+              <input type="checkbox" id="category-2">
+              <label for="category-2">
+                <span></span>
+                 Wireless Microphones
+                <small>(740)</small>
+              </label>
+            </div>
+
+            <div class="input-checkbox">
+              <input type="checkbox" id="category-3">
+              <label for="category-3">
+                <span></span>
+                Cameras
+                <small>(1450)</small>
+              </label>
+            </div>
+
+            <div class="input-checkbox">
+              <input type="checkbox" id="category-4">
+              <label for="category-4">
+                <span></span>
+                 Televisions
+                <small>(578)</small>
+              </label>
+            </div>
+
+            <div class="input-checkbox">
+              <input type="checkbox" id="category-5">
+              <label for="category-5">
+                <span></span>
+                Laptops
+                <small>(120)</small>
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- /aside Widget -->
+
+        <!-- aside Widget -->
+        <div class="aside">
+          <h3 class="aside-title">Price</h3>
+          <div class="price-filter">
+            <div id="price-slider" class="noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-origin" style="left: 0%;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" style="z-index: 5;" aria-valuemin="0.0" aria-valuemax="100.0" aria-valuenow="0.0" aria-valuetext="1.00"></div></div><div class="noUi-connect" style="left: 0%; right: 0%;"></div><div class="noUi-origin" style="left: 100%;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" style="z-index: 4;" aria-valuemin="0.0" aria-valuemax="100.0" aria-valuenow="100.0" aria-valuetext="999.00"></div></div></div></div>
+            <div class="input-number price-min">
+              <input id="price-min" type="number">
+              <span class="qty-up">+</span>
+              <span class="qty-down">-</span>
+            </div>
+            <span>-</span>
+            <div class="input-number price-max">
+              <input id="price-max" type="number">
+              <span class="qty-up">+</span>
+              <span class="qty-down">-</span>
+            </div>
+          </div>
+        </div>
+        <!-- /aside Widget -->
+
+        <!-- aside Widget -->
+        <div class="aside">
+          <h3 class="aside-title">Brand</h3>
+          <div class="checkbox-filter">
+            <div class="input-checkbox">
+              <input type="checkbox" id="brand-1">
+              <label for="brand-1">
+                <span></span>
+               Hp
+                <small>(578)</small>
+              </label>
+            </div>
+            <div class="input-checkbox">
+              <input type="checkbox" id="brand-2">
+              <label for="brand-2">
+                <span></span>
+                 Dell
+                <small>(125)</small>
+              </label>
+            </div>
+            <div class="input-checkbox">
+              <input type="checkbox" id="brand-3">
+              <label for="brand-3">
+                <span></span>
+                  Epsion
+                <small>(755)</small>
+              </label>
+            </div>
+            <div class="input-checkbox">
+              <input type="checkbox" id="brand-4">
+              <label for="brand-4">
+                <span></span>
+                 JBL
+                <small>(578)</small>
+              </label>
+            </div>
+
+          </div>
+        </div>
+        <!-- /aside Widget -->
+
+        <!-- aside Widget -->
+        <div class="aside">
+          <h3 class="aside-title">Top selling</h3>
+          <div class="product-widget">
+            <div class="product-img">
+              <img src="assets/img/product20.png" alt="">
+            </div>
+            <div class="product-body">
+              <p class="product-category">Laptops</p>
+              <h3 class="product-name"><a href="#">Laptop HP</a></h3>
+              <h4 class="product-price">1488<del class="product-old-price">1400</del></h4>
+            </div>
+          </div>
+
+          <div class="product-widget">
+            <div class="product-img">
+              <img src="assets/img/product23.png" alt="">
+            </div>
+            <div class="product-body">
+              <p class="product-category">Power Speakers</p>
+              <h3 class="product-name"><a href="#">Haut paleurs speaker</a></h3>
+              <h4 class="product-price">1500<del class="product-old-price">1400</del></h4>
+            </div>
+          </div>
+
+          <div class="product-widget">
+            <div class="product-img">
+              <img src="assets/img/product15.png" alt="">
+            </div>
+            <div class="product-body">
+              <p class="product-category">Data Projecteurs</p>
+              <h3 class="product-name"><a href="#">Esion Projecteur</a></h3>
+              <h4 class="product-price">3000<del class="product-old-price">2500</del></h4>
+            </div>
+          </div>
+        </div>
+        <!-- /aside Widget -->
+      </div>
+      <!-- /ASIDE -->
+
+      <!-- STORE -->
+      <div id="store" class="col-md-9">
+        <!-- store top filter -->
+        <div class="store-filter clearfix">
+          <div class="store-sort">
+            <label>
+              Sort By:
+              <select class="input-select">
+                <option value="0">Popular</option>
+                <option value="1">Position</option>
+              </select>
+            </label>
+
+            <label>
+              Show:
+              <select class="input-select">
+                <option value="0">20</option>
+                <option value="1">50</option>
+              </select>
+            </label>
+          </div>
+          <ul class="store-grid">
+            <li class="active"><i class="fa fa-th"></i></li>
+            <li><a href="#"><i class="fa fa-th-list"></i></a></li>
+          </ul>
+        </div>
+        <!-- /store top filter -->
+
+        <!-- store products -->
         <div class="row">
-            <div class="col-md-3 col-lg-4 col-xl-3">
-                <h5>About</h5>
-                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
-                <p class="mb-0">
-                    Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.
-                </p>
+          <!-- product -->
+          <div class="col-md-4 col-xs-6">
+            <div class="product">
+              <div class="product-img">
+                <img src="assets/img/product19.png" alt="">
+                <div class="product-label">
+                  <span class="sale">-30%</span>
+                  <span class="new">NEW</span>
+                </div>
+              </div>
+              <div class="product-body">
+                <p class="product-category">Laptops</p>
+                <h3 class="product-name"><a href="#">PC Dell</a></h3>
+                <h4 class="product-price">1780<del class="product-old-price">1700</del></h4>
+                <div class="product-rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <div class="add-to-cart">
+                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+              </div>
             </div>
+          </div>
+          <!-- /product -->
 
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
-                <h5>Informations</h5>
-                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
-                <ul class="list-unstyled">
-                    <li><a href="">Link 1</a></li>
-                    <li><a href="">Link 2</a></li>
-                    <li><a href="">Link 3</a></li>
-                    <li><a href="">Link 4</a></li>
-                </ul>
+          <!-- product -->
+          <div class="col-md-4 col-xs-6">
+            <div class="product">
+              <div class="product-img">
+                <img src="assets/img/product24.png" alt="">
+                <div class="product-label">
+                  <span class="new">NEW</span>
+                </div>
+              </div>
+              <div class="product-body">
+                <p class="product-category">Wireless Microphones</p>
+                <h3 class="product-name"><a href="#">Microphone Gaming</a></h3>
+                <h4 class="product-price">1120<del class="product-old-price">1000</del></h4>
+                <div class="product-rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+              </div>
+              <div class="add-to-cart">
+                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+              </div>
             </div>
+          </div>
+          <!-- /product -->
 
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto">
-                <h5>Others links</h5>
-                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
-                <ul class="list-unstyled">
-                    <li><a href="">Link 1</a></li>
-                    <li><a href="">Link 2</a></li>
-                    <li><a href="">Link 3</a></li>
-                    <li><a href="">Link 4</a></li>
-                </ul>
-            </div>
+          <div class="clearfix visible-sm visible-xs"></div>
 
-            <div class="col-md-4 col-lg-3 col-xl-3">
-                <h5>Contact</h5>
-                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
-                <ul class="list-unstyled">
-                    <li><i class="fa fa-home mr-2"></i> My company</li>
-                    <li><i class="fa fa-envelope mr-2"></i> email@example.com</li>
-                    <li><i class="fa fa-phone mr-2"></i> + 33 12 14 15 16</li>
-                    <li><i class="fa fa-print mr-2"></i> + 33 12 14 15 16</li>
-                </ul>
+          <!-- product -->
+          <div class="col-md-4 col-xs-6">
+            <div class="product">
+              <div class="product-img">
+                <img src="assets/img/product9.png" alt="">
+              </div>
+              <div class="product-body">
+                <p class="product-category">Powered Speakers</p>
+                <h3 class="product-name"><a href="#"> Wileress Speakers</a></h3>
+                <h4 class="product-price">2000<del class="product-old-price">1500</del></h4>
+                <div class="product-rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <div class="add-to-cart">
+                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+              </div>
             </div>
-            <div class="col-12 copyright mt-3">
-                <p class="float-left">
-                    <a href="#">Back to top</a>
-                </p>
-                <p class="text-right text-muted">created with <i class="fa fa-heart"></i> by <a href="https://t-php.fr/43-theme-ecommerce-bootstrap-4.html"><i>t-php</i></a> | <span>v. 1.0</span></p>
+          </div>
+          <!-- /product -->
+
+          <div class="clearfix visible-lg visible-md"></div>
+
+          <!-- product -->
+          <div class="col-md-4 col-xs-6">
+            <div class="product">
+              <div class="product-img">
+                <img src="  assets/img/product12.png" alt="">
+              </div>
+              <div class="product-body">
+                <p class="product-category">Data Projecteur</p>
+                <h3 class="product-name"><a href="#">Dell Projecteur</a></h3>
+                <h4 class="product-price">1800<del class="product-old-price">1600</del></h4>
+                <div class="product-rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <div class="add-to-cart">
+                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+              </div>
             </div>
+          </div>
+          <!-- /product -->
+
+          <div class="clearfix visible-sm visible-xs"></div>
+
+          <!-- product -->
+          <div class="col-md-4 col-xs-6">
+            <div class="product">
+              <div class="product-img">
+                <img src="assets/img/product15.png" alt="">
+              </div>
+              <div class="product-body">
+                <p class="product-category">Data Projecteur</p>
+                <h3 class="product-name"><a href="#">Espion Projecteur</a></h3>
+                <h4 class="product-price">1800<del class="product-old-price">1400</del></h4>
+                <div class="product-rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <div class="add-to-cart">
+                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- /product -->
+
+          <!-- product -->
+          <div class="col-md-4 col-xs-6">
+            <div class="product">
+              <div class="product-img">
+                <img src="assets/img/product24.png" alt="">
+              </div>
+              <div class="product-body">
+                <p class="product-category">Wireless Speakers</p>
+                <h3 class="product-name"><a href="#">JBL Microphone </a></h3>
+                <h4 class="product-price">800<del class="product-old-price">750</del></h4>
+                <div class="product-rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <div class="product-btns">
+
+                </div>
+              </div>
+              <div class="add-to-cart">
+                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- /product -->
+
+          <div class="clearfix visible-lg visible-md visible-sm visible-xs"></div>
+
+          <!-- product -->
+          <div class="col-md-4 col-xs-6">
+            <div class="product">
+              <div class="product-img">
+                <img src="assets/img/product7.png" alt="">
+              </div>
+              <div class="product-body">
+                <p class="product-category">Camera</p>
+                <h3 class="product-name"><a href="#">Canon Camera</a></h3>
+                <h4 class="product-price">1200<del class="product-old-price">1000</del></h4>
+                <div class="product-rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <div class="add-to-cart">
+                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- /product -->
+
+          <!-- product -->
+          <div class="col-md-4 col-xs-6">
+            <div class="product">
+              <div class="product-img">
+                <img src="assets/img/product11.png" alt="">
+              </div>
+              <div class="product-body">
+                <p class="product-category">Wireless Microphones</p>
+                <h3 class="product-name"><a href="#">Microphone</a></h3>
+                <h4 class="product-price">1990<del class="product-old-price">1800</del></h4>
+                <div class="product-rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+
+              </div>
+              <div class="add-to-cart">
+                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- /product -->
+
+          <div class="clearfix visible-sm visible-xs"></div>
+
+          <!-- product -->
+          <div class="col-md-4 col-xs-6">
+            <div class="product">
+              <div class="product-img">
+                <img src="assets/img/product22.png" alt="">
+              </div>
+              <div class="product-body">
+                <p class="product-category">Powered Speakers</p>
+                <h3 class="product-name"><a href="#">JBL Speaker</a></h3>
+                <h4 class="product-price">3000<del class="product-old-price">2800</del></h4>
+                <div class="product-rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <div class="add-to-cart">
+                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- /product -->
         </div>
+        <!-- /store products -->
+      </div>
+      <!-- /STORE -->
     </div>
-</footer>
+    <!-- /row -->
+  </div>
+  <!-- /container -->
+</div>

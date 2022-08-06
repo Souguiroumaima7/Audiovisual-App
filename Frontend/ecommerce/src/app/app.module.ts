@@ -12,20 +12,31 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { NewsletterComponent } from './components/newsletter/newsletter.component';
 import { ShopComponent } from './components/shop/shop.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { AddproductComponent } from './components/addproduct/addproduct.component';
-import { ListproductComponent } from './components/shopping-cart/listproduct/listproduct.component';
 import { ProductdetailComponent } from './components/productdetail/productdetail.component';
 import { ListecategoriesComponent } from './components/listecategories/listecategories.component';
-import { ListesubcategoriesComponent } from './components/listesubcategories/listesubcategories.component';
-import { DetailcategoryComponent } from './components/detailcategory/detailcategory.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { ContactComponent } from './components/contact/contact.component';
 import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-policy.component';
-import { DetailorderComponent } from './components/detailorder/detailorder.component';
+
 import { AboutusComponent } from './components/aboutus/aboutus.component';
-import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
-import { CartComponent } from './components/shopping-cart/cart/cart.component';
-import { FiltersComponent } from './components/shopping-cart/filters/filters.component';
+import { AccountComponent } from './components/account/account.component';
+import { CheckoutComponent } from './components/checkout/checkout.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegistreComponent } from './components/registre/registre.component';
+import { OrdreConfirmationComponent } from './components/ordre-confirmation/ordre-confirmation.component';
+import { SharedComponent } from './components/shared/shared.component';
+
+import { DetailCartComponent } from './components/detail-cart/detail-cart.component';
+import { ClientReviewComponent } from './components/client-review/client-review.component';
+
+import { SearchPipe } from './pipes/search.pipe';
+import { ListproductComponent } from './components/listproduct/listproduct.component';
+import { SearchComponent } from './components/search/search.component';
+import { CartComponent } from './components/cart/cart.component';
+
+
+
+
 
 
 
@@ -42,19 +53,25 @@ import { FiltersComponent } from './components/shopping-cart/filters/filters.com
     NavbarComponent,
     NewsletterComponent,
     ShopComponent,
-    AddproductComponent,
-    ListproductComponent,
     ProductdetailComponent,
     ListecategoriesComponent,
-    ListesubcategoriesComponent,
-    DetailcategoryComponent,
     ContactComponent,
     PrivacyPolicyComponent,
-    DetailorderComponent,
     AboutusComponent,
-    ShoppingCartComponent,
+    AccountComponent,
+    CheckoutComponent,
+    LoginComponent,
+    RegistreComponent,
+    OrdreConfirmationComponent,
+    SharedComponent,
+    DetailCartComponent,
+    ClientReviewComponent,
+    SearchPipe,
+    ListproductComponent,
+    SearchComponent,
     CartComponent,
-    FiltersComponent,
+
+
 
 
   ],

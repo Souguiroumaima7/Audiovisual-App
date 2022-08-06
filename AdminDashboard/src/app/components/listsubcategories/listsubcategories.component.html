@@ -1,3 +1,7 @@
+<div class="form-group">
+  <input type="text" [(ngModel)]="search_name" class="form-control" />
+  <label>Search</label>
+</div>
 <table class="table">
   <thead>
     <tr>
@@ -7,10 +11,11 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor = "let s of listesubcategories |paginate: { itemsPerPage: 3, currentPage: p};let index=index">
+    <tr *ngFor = "let s of listesubcategories |search:search_name |paginate: { itemsPerPage: 3, currentPage: p};let index=index">
       <th scope = "row">{{index+1}}</th>
       <td>{{s.name}}</td>
       <td>{{s.description}}</td>
+
     </tr>
   </tbody>
 </table>

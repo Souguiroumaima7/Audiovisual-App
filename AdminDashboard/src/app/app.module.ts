@@ -15,8 +15,6 @@ import { AddproductComponent } from './components/addproduct/addproduct.componen
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
 import { ListcategoriesComponent } from './components/listcategories/listcategories.component';
-import { ListsubcategoriesComponent } from './components/listsubcategories/listsubcategories.component';
-import { UpdateproductComponent } from './components/updateproduct/updateproduct.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { DetailcategoryComponent } from './components/detailcategory/detailcategory.component';
 import { ListordersComponent } from './components/listorders/listorders.component';
@@ -25,8 +23,20 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { SettingsComponent } from './components/settings/settings.component';
 import { ActivityComponent } from './components/activity/activity.component';
 import { SearchComponent } from './components/search/search.component';
-import { ReportComponent } from './components/report/report.component';
 import { TablesComponent } from './components/tables/tables.component';
+import { ListsubcategoriesComponent } from './components/listsubcategories/listsubcategories.component';
+import { UpdateProfileComponent } from './components/update-profile/update-profile.component';
+import { SearchPipe } from './pipes/search.pipe';
+import { UpdateproductComponent } from './components/updateproduct/updateproduct.component';
+import { UtilitiesBorderComponent } from './components/utilities-border/utilities-border.component';
+import { UtilitiesColorComponent } from './components/utilities-color/utilities-color.component';
+import { UtilitiesAnimationComponent } from './components/utilities-animation/utilities-animation.component';
+import { UtilitiesOtherComponent } from './components/utilities-other/utilities-other.component';
+import { ButtonsComponent } from './components/buttons/buttons.component';
+import { CardsComponent } from './components/cards/cards.component';
+import { ForgetPasswordComponent } from './components/forget-password/forget-password.component';
+import { FormsComponent } from './components/forms/forms.component';
+
 
 
 @NgModule({
@@ -43,8 +53,6 @@ import { TablesComponent } from './components/tables/tables.component';
     LoginComponent,
     ListproductComponent,
     ListcategoriesComponent,
-    ListsubcategoriesComponent,
-    UpdateproductComponent,
     DetailcategoryComponent,
     ListordersComponent,
     UpdateordersComponent,
@@ -52,11 +60,19 @@ import { TablesComponent } from './components/tables/tables.component';
     SettingsComponent,
     ActivityComponent,
     SearchComponent,
-    ReportComponent,
-
     TablesComponent,
-
-
+    ListsubcategoriesComponent,
+    UpdateProfileComponent,
+    SearchPipe,
+    UpdateproductComponent,
+    UtilitiesBorderComponent,
+    UtilitiesColorComponent,
+    UtilitiesAnimationComponent,
+    UtilitiesOtherComponent,
+    ButtonsComponent,
+    CardsComponent,
+    ForgetPasswordComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule,

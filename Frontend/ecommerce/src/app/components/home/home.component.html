@@ -20,7 +20,7 @@
             <p>Sign Up for the <strong>NEWSLETTER</strong></p>
             <form>
               <input class="input" type="email" placeholder="Enter Your Email">
-              <button class="newsletter-btn"><i class="fa fa-envelope"></i> Subscribe</button>
+              <button   (click)="subscribe()"  class="newsletter-btn"><i class="fa fa-envelope"></i> Subscribe</button>
             </form>
             <ul class="newsletter-follow">
               <li>
@@ -39,12 +39,51 @@
           </div>
         </div>
       </div>
+
+      <div class="container-m">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card"> <i class="fa fa-quote-left u-color"></i>
+                    <p>hello , I used this service for a long a week and I satisfied by the service , I hope all get a long with it</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="user-about">Alex Smith <span class="font-weight-bold d-block"></span><span class="u-color">Designer</span>
+                            <div class="d-flex flex-row mt-1"> <i class="fa fa-star u-color"></i> <i class="fa fa-star u-color"></i> <i class="fa fa-star-o u-color"></i> <i class="fa fa-star-o u-color"></i><i class="fa fa-star-o u-color"></i> <i class="fa fa-star-o u-color"></i> </div>
+                        </div>
+                        <div class="user-image"> <img src= 'https://i.imgur.com/oLHPcwCb.jpg' class="rounded-circle" width="70"> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card"> <i class="fa fa-quote-left u-color"></i>
+                    <p>hello , I used this service for a long a week and I satisfied by the service , I hope all get a long with it </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="user-about">Sophia<span class="font-weight-bold d-block"></span> <span class="u-color">Developer</span>
+                            <div class="d-flex flex-row mt-1"> <i class="fa fa-star u-color"></i> <i class="fa fa-star u-color"></i>   <i class="fa fa-star u-color"></i><i class="fa fa-star u-color"></i> <i class="fa fa-star-o u-color"></i> <i class="fa fa-star-o u-color"></i> </div>
+                        </div>
+                        <div class="user-image"> <img src="https://i.imgur.com/o5uMfKo.jpg" class="rounded-circle" width="70"> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card"> <i class="fa fa-quote-left u-color"></i>
+                    <p>hello , I used this service for a long a week and I satisfied by the service , I hope all get a long with it </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="user-about"> <span class="font-weight-bold d-block">Mike Vincent</span> <span class="u-color">Developer</span>
+                            <div class="d-flex flex-row mt-1"> <i class="fa fa-star u-color"></i> <i class="fa fa-star u-color"></i> <i class="fa fa-star u-color"></i> <i class="fa fa-star u-color"></i> <i class="fa fa-star-o u-color"></i> </div>
+                        </div>
+                        <div class="user-image"> <img src="https://i.imgur.com/At1IG6H.png" class="rounded-circle" width="70"> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
       <!-- /row -->
     </div>
     <!-- /container -->
   </div>
   <!-- /NEWSLETTER -->
 
+  
   <!-- FOOTER -->
 <app-footer></app-footer>
   <!-- /FOOTER -->

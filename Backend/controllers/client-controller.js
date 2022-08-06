@@ -1,8 +1,7 @@
 const client_model = require("../models/client-model")
-      
+
 
 const nodemailer = require("nodemailer")
-
 
 var transport = nodemailer.createTransport({
     host: "smtp.mailtrap.io",
@@ -12,12 +11,11 @@ var transport = nodemailer.createTransport({
       pass: "db2ac02b47c7d8"
     }
   });
-
+      
 
 module.exports={
  register:(req,res)=>{
 
-  req.body["image"]=req.file.filename
 
    const client = new client_model(req.body)
    client.save(req.body,(err,item)=>{
@@ -39,7 +37,7 @@ module.exports={
               <title>Welcome Email</title>
             </head>
             <body>
-              <h2>Hello ${item.firstName +" "+ item.lastName}! </h2>
+              <h2>Hello ${item.firstname +" "+ item.lastname}! </h2>
               <p>We're glad to have you on board at ${item.email}. </p>
               <p>We're glad to have you on board at it gate</p>
             </body>
@@ -58,7 +56,7 @@ module.exports={
    })
  }, 
  
-    getAll:(req,res)=>{
+    getall:(req,res)=>{
         client_model.find({},(err,items)=>{
             if(err){
                 res.status(406).json({message:"failed to get all registred clients"})
@@ -67,13 +65,12 @@ module.exports={
             }
         })
     },
-   
     getById:(req,res)=>{
         client_model.findById(req.params.id,(err,item)=>{
             if(err){
-                res.status(406).json({message:"cannot get Client by this id"})
+                res.status(406).json({message:"cannot get client by this id"})
             }else{
-                res.status(201).json({message:"Client",data:item})
+                res.status(201).json({message:"clients",data:item})
             }
         }) 
     },

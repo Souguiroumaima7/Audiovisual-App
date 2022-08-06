@@ -10,19 +10,24 @@ export class ProductService {
   constructor(private http:HttpClient) { }
 
   getproducts() {
-    return this.http.get(`${environment.baseurl}/products/getall`)
+    return this.http.get(`${environment.baseUrl}/products/getAll`)
   }
   deleteproducts(id:any) {
-    return this.http.delete(`${environment.baseurl}/products/delete/${id}`)
+    return this.http.delete(`${environment.baseUrl}/products/delete/${id}`)
   }
-  getbyid (id:any) {
+  getbyid(id:any) {
 
-     return this.http.get(`${environment.baseurl}/products/getbyid/${id}`)
+     return this.http.get(`${environment.baseUrl}/products/getById/${id}`)
   }
+
+
  addproduct(product:any) {
-  return this.http.post(`${environment.baseurl}/products/create`,product)
+  return this.http.post(`${environment.baseUrl}/products/create`,product)
  }
-  updateproduct(id:any,product:any) {
-    return this.http.put(`${environment.baseurl}/products/update/${id}`,product)
+
+   updateproduct(id:any,product:any) {
+
+    return this.http.put(`${environment.baseUrl}/products/update/${id}`,product)
   }
+
 }

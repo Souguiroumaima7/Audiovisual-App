@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { FormControl, Validators } from '@angular/forms';
 @Component({
   selector: 'app-newsletter',
   templateUrl: './newsletter.component.html',
@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewsletterComponent implements OnInit {
 
-  constructor() { }
+  newsletterForm!:FormControl
+
+  subscribe() {
+    if(this.newsletterForm.valid) {
+      console.log(this.newsletterForm.value);
+    }
+
+  }
 
   ngOnInit(): void {
+
+    this.newsletterForm = new FormControl('', [
+      Validators.required,
+      Validators.email,
+    ]);
   }
+
 
 }

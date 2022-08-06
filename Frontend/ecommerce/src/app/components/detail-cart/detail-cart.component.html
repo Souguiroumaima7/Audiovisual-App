@@ -1,0 +1,92 @@
+
+
+<section class="jumbotron text-center">
+
+  <div class="container">
+      <h1 class="jumbotron-heading"> CART</h1>
+   </div>
+</section>
+<div class="container mb-4">
+  <div class="row">
+      <div class="col-12">
+          <div class="table-responsive">
+              <table class="table table-striped">
+                  <thead>
+                      <tr>
+                          <th scope="col">photo</th>
+                          <th scope="col">name</th>
+                          <th scope="col">description</th>
+                          <th scope="col" class="text-right">Price</th>
+                          <th> </th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr  *ngFor = "let item of products  ; let i = index " >
+                           <td>{{i+1}}</td>
+                          <td><img src= {{item.photo}}> </td>
+                          <td>{{item.name}}</td>
+                          <td>{{item.description}}</td>
+                          <td class="text-right">{{item.price}}</td>
+                          <td class="text-right"><button (click) = "removeItem(item)"   class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
+                      </tr>
+
+
+                      <tr  *ngFor = "let item of products  ; let i = index " >
+                        <td>{{i+1}}</td>
+                       <td><img src= {{item.photo}}> </td>
+                       <td>{{item.name}}</td>
+                       <td>{{item.description}}</td>
+                       <td class="text-right">{{item.price}}</td>
+                       <td class="text-right"><button (click) = "removeItem(item)"  class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
+                   </tr>
+
+
+                   <tr  *ngFor = "let item of products  ; let i = index " >
+                    <td>{{i+1}}</td>
+                   <td><img src= {{item.photo}}> </td>
+                   <td>{{item.name}}</td>
+                   <td>{{item.description}}</td>
+                   <td class="text-right">{{item.price}}</td>
+                   <td class="text-right"><button (click) = "removeItem(item)"  class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
+               </tr>
+                      <tr *ngFor = "let item of products  ; let i = index ">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td>Sub-Total</td>
+                          <td class="text-right">{{item.price}}</td>
+                      </tr>
+                      <tr *ngFor = "let item of products  ; let i = index ">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td>Shipping</td>
+                          <td class="text-right">100</td>
+                      </tr>
+                      <tr *ngFor = "let item of products  ; let i = index ">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td><strong>Total</strong></td>
+                          <td class="text-right"><strong>{{item.price}}</strong></td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+      <div class="col mb-2">
+          <div class="row">
+              <div class="col-sm-12  col-md-6">
+                  <button   onclick="shop"   class="btn btn-submit">Continue Shopping</button>
+              </div>
+              <div class="col-sm-12 col-md-6 text-right">
+                  <button  onclick="checkout" class="btn btn-submit">Checkout</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+

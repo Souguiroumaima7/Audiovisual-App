@@ -10,7 +10,7 @@ export class LoginService {
   constructor(private http:HttpClient) { }
 
   login(requestlogin:any) {
-    return this.http.post(`${environment.baseurl}/auth/login`,requestlogin)
+    return this.http.post(`${environment.baseUrl}/auth/login`,requestlogin)
   }
 }
 

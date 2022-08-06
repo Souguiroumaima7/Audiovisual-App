@@ -1,5 +1,4 @@
 import { SubcategoriesService } from './../../services/subcategories.service';
-import { CategoryService } from './../../services/category.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -11,6 +10,7 @@ export class ListsubcategoriesComponent implements OnInit {
 
   listesubcategories: any;
   p: number = 1;
+  search_name:any 
   constructor(private SubcategoriesService:SubcategoriesService) { }
 
   ngOnInit(): void {
@@ -23,4 +23,6 @@ export class ListsubcategoriesComponent implements OnInit {
     })
 
   }
+
+
 }

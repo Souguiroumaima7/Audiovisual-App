@@ -9,20 +9,18 @@
       <th scope="col">name</th>
       <th scope="col">description</th>
       <th scope="col">price</th>
-      <th scope="col">stock</th>
+
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor = "let p of listproduct|paginate: { itemsPerPage: 2, currentPage:p};let index=index">
+    <tr *ngFor = "let p of listproduct|search:search_name|paginate: { itemsPerPage: 2, currentPage:p};let index=index">
       <th scope = "row">{{index+1}}</th>
       <td>{{p.name}}</td>
       <td>{{p.description}}</td>
       <td>{{p.price}}</td>
-      <td>{{p.stock}}</td>
     <td>
 
       <button type="button" class="btn btn-danger"(click)="deleteproducts(p._id)">delete</button>
-      
     </td>
     </tr>
   </tbody>

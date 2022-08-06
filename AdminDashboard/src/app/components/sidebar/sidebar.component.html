@@ -34,14 +34,21 @@
       <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
               <h6 class="collapse-header">components:</h6>
-              <a routerLink ="addproduct" class="collapse-item" href="buttons.html">addproduct</a>
+              <a routerLink ="addproduct" class="collapse-item" href="buttons.html">adding products</a>
               <a routerLink="listproduct" class="collapse-item" href="cards.html">listproducts</a>
               <a routerLink="listcategories" class="collapse-item" href="cards.html">listcategories</a>
               <a routerLink="listsubcategories" class="collapse-item" href="cards.html">listsubcategories</a>
               <a routerLink="listorders" class="collapse-item" href="cards.html">listorders</a>
-
           </div>
+
       </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">components:</h6>
+            <a routerLink ="buttons"      class="collapse-item" href="buttons.html">buttons</a>
+            <a  routerLink = "cards"   class="collapse-item" href="cards.html">cards</a>
+        </div>
+        </div>
   </li>
   <!-- Nav Item - Utilities Collapse Menu -->
   <li class="nav-item">
@@ -54,10 +61,10 @@
           data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
               <h6 class="collapse-header">Custom Utilities:</h6>
-              <a class="collapse-item" href="utilities-color.html">Colors</a>
-              <a class="collapse-item" href="utilities-border.html">Borders</a>
-              <a class="collapse-item" href="utilities-animation.html">Animations</a>
-              <a class="collapse-item" href="utilities-other.html">Other</a>
+              <a   routerLink ="utilitiescolor"     class="collapse-item" href="utilities-color.html">Colors</a>
+              <a  routerLink = "utilitiesborder"    class="collapse-item" href="utilities-border.html">Borders</a>
+              <a  routerLink = "utilitiesanimation"   class="collapse-item" href="utilities-animation.html">Animations</a>
+              <a    routerLink ="utilitiesother"     class="collapse-item" href="utilities-other.html">Other</a>
           </div>
       </div>
   </li>
@@ -80,17 +87,27 @@
       <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
               <h6 class="collapse-header">Login Screens:</h6>
-              <a class="collapse-item" href="login.html">Login</a>
-              <a class="collapse-item" href="register.html">Register</a>
-              <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-              <div class="collapse-divider"></div>
-              <h6 class="collapse-header">Other Pages:</h6>
-              <a class="collapse-item" href="404.html">404 Page</a>
-              <a class="collapse-item" href="blank.html">Blank Page</a>
+              <a routerLink = ""   class="collapse-item" href="login.html">Login</a>
+              <a routerLink = ""   class="collapse-item" href="register.html">Register</a>
+              <a    routerLink = "" class="collapse-item" href="forgot-password.html">Forgot Password</a>
           </div>
       </div>
   </li>
 
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+        aria-expanded="true" aria-controls="collapsePages">
+        <i class="fas fa-fw fa-folder"></i>
+        <span>forms</span>
+    </a>
+    <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Forms:</h6>
+            <a routerLink = "forms"   class="collapse-item" href="login.html">Forms</a>
+
+        </div>
+    </div>
+</li>
 
   <!-- Nav Item - Tables -->
   <li class="nav-item">

@@ -1,4 +1,4 @@
-import { RegistreService } from './../../services/registre.service';
+import { RegistreService } from '../../services/registre.service';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import Validation from 'helper/match';
@@ -11,8 +11,9 @@ import { Router } from '@angular/router';
 })
 export class RegistreComponent implements OnInit {
 
-  form!:FormGroup
+  form!: FormGroup;
   submitted!: boolean;
+
   fileToUpload:Array<File>= [];
 
   constructor(private formbuilder:FormBuilder,private RegistreService:RegistreService,private route:Router ) { }
@@ -43,7 +44,6 @@ export class RegistreComponent implements OnInit {
     );
   }
 
-  //convenience getter for easy access to form fields
   get f()  {
     return this.form.controls;
   }

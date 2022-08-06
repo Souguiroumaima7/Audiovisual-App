@@ -9,6 +9,8 @@ const clientSchema = new mongoose.Schema({
     }
 })
 
+
+
 const Clients = user_model.discriminator("Clients",clientSchema)
 
-module.exports = mongoose.model("Clients")          
+module.exports = mongoose.model("Clients")

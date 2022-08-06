@@ -1,5 +1,7 @@
 {
     "cSpell.words": [
+        "requestlogin",
         "signin"
-    ]
+    ],
+    "git.ignoreLimitWarning": true
 }

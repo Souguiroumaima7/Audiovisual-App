@@ -1,7 +1,8 @@
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { ProductService } from './../../services/product.service';
 import { Component, OnInit } from '@angular/core';
 import Swal from 'sweetalert2'
-
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-listproduct',
@@ -10,9 +11,12 @@ import Swal from 'sweetalert2'
 })
 export class ListproductComponent implements OnInit {
   listproduct:any
+  id=this.activeroute.snapshot.params["id"]
+  product:any
+  form!:FormGroup
   p: number = 1;
   search_name:any
-   constructor(private ProductService:ProductService) { }
+   constructor(private ProductService:ProductService, private activeroute:ActivatedRoute  , private formbuilder:FormBuilder) { }
 
    ngOnInit(): void {
 
@@ -47,6 +51,28 @@ export class ListproductComponent implements OnInit {
          })
        }
        })
+     }
+     updateproduct(id:any) {
+      this.ProductService.getbyid(this.id).subscribe((res:any)=>{
+        this.product =res["data"]
+        console.log("detail product",this.product)
+        })
+     }
+
+     productdetail(id:any) {
+
+
+      this.ProductService.getbyid(this.id).subscribe((res:any)=>{
+        this.product =res["data"]
+        this.form.patchValue({
+         name:res["data"].name,
+         description:res["data"].description,
+         price:res["data"].price,
+
+        })
+        console.log("detail product",this.product)
+        })
+
      }
    }
 

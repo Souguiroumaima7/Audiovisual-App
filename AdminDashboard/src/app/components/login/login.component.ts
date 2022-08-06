@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
  onsubmit() {
     this.LoginService.login(this.form.value).subscribe((res:any)=>{
        console.log(res)
-       if (res.message ==="Welcome") {
+       if (res.message ==="welcome") {
         localStorage.setItem("userconnect",JSON.stringify(res["data"]))
         localStorage.setItem("token",res.AT)
         localStorage.setItem("state","0")
