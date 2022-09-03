@@ -1,53 +1,48 @@
-<!--Main Content Start-->
-<div class="main-content p40 innerpagebg wf100">
-  <!--Login Page Start-->
-  <div class="contact">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-3">
-              </div>
-              <div class="col-md-6">
-                  <!--Form Start-->
-                  <form>
+<div class="container">
+  <!-- Outer Row -->
+  <div class="row justify-content-center">
 
-                      <div class="contact-form">
+      <div class="col-xl-10 col-lg-12 col-md-9">
 
-                          <h2>Login</h2>
-                          <ul class="form-row">
-                              <li class="full-col">
-                                  <input type="email" class="form-control"
-                                  name="email"
-                                  placeholder="Email address"
-                                  required
-                                  [(ngModel)]="form.email"
-                                  #email="ngModel" />
-                              </li>
-                              <li class="full-col">
-                                  <input type="password" class="form-control"
-                                  name="password"
-                                  placeholder="Password"
-                                  required
-                                  [(ngModel)]="form.password"
-                                  #password="ngModel" />
-                              </li>
-                              <li class="full-col">
-                                  <button (click)="loginUser()" type="button">Login</button>
-                              </li>
-                              <li class="full-col">
-                                  <span class="float-left mt-3">New to JustSports? <a routerLink="register" class="text-danger"> Create account</a></span>
-                                  <a href="#" class="float-right mt-3 text-danger">Forgot pasword?</a>
-                              </li>
-                          </ul>
+          <div class="card o-hidden border-0 shadow-lg my-5">
+              <div class="card-body p-0">
+                  <!-- Nested Row within Card Body -->
+                  <div class="row">
+                      <div class="row no-gutters align-items-center"></div>
+                      <div class="row no-gutters align-items-center">
+                          <div class="p-6">
+                              <div class="text-center">
+                                  <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
+                              </div>
+                              <form  [formGroup]="form">
+                                  <div class="form-group">
+                                      <input type="email" formControlName="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address...">
+                                  </div>
+                                  <div class="form-group">
+                                      <input type="password" formControlName="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
+                                  </div>
+                                  <div class="form-group">
+                                      <div class="custom-control custom-checkbox small">
+                                          <input type="checkbox" class="custom-control-input" id="customCheck">
+                                          <label class="custom-control-label" for="customCheck">Remember
+                                              Me</label>
+                                      </div>
+                                  </div>
+                                  <a (click)= "login()" class="btn btn-primary btn-user btn-block">
+                                      Login
+                                  </a>
+
+                              </form>
+                              <hr>
+                          </div>
                       </div>
-                  </form>
-                  <!--Form End-->
-              </div>
-
-              <div class="col-md-3">
+                  </div>
               </div>
           </div>
+
       </div>
+
   </div>
-  <!--Login Page End-->
+
+
 </div>
-<!--Main Content End-->

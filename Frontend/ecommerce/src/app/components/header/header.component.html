@@ -8,8 +8,8 @@
         <li><a><i class="fa fa-map-marker"></i>Rue Hedi Nouira,4022 Akouda</a></li>
       </ul>
       <ul class="header-links pull-right">
-        <li><a><i class="fa fa-dollar"></i>TN </a></li>
-        <li><a  routerLink="account"><i  class="fa fa-user-o"></i>my account</a></li>
+        <li><a><i class="fa fa-dollar"></i>TN</a></li>
+        <li><a  routerLink="account"><i  class="fa fa-user-o"></i>account</a></li>
       </ul>
     </div>
 
@@ -37,60 +37,37 @@
             <form>
               <select class="input-select">
                 <option value="0">All Categories</option>
-                <option value="1">Data Projectors</option>
-                <option value="2">Wireless Microphones</option>
+                <option value="1">data projecteur</option>
+                <option value="2">wireless Microphones</option>
                 <option value="3">Powered Speakers</option>
-                <option value="4">TV</option>
+                <option value="4">Television</option>
+                <option value="5">Laptops</option>
               </select>
               <input class="input" placeholder="Search here">
-              <button     class="search-btn">Search</button>
+              <button  routerLink="search"  class="search-btn">Search</button>
             </form>
           </div>
         </div>
         <!-- /SEARCH BAR -->
         <!-- ACCOUNT -->
-        <!--sign in-->
+      <!--     sign in-->
         <div class="col-md-3 clearfix">
           <div class="header-ctn">
+
              <!--/sign in-->
             <!-- Cart -->
 
-            
+
             <div class="dropdown">
               <a   class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
                 <i class="fa fa-shopping-cart"></i>
-                <span>Your Cart</span>
+                <span >Your Cart</span>
               </a>
               <div class="cart-dropdown">
-                <div class="cart-list">
-                  <div class="product-widget">
-                    <div class="product-img">
-                      <img src="assets/img/product1.png" alt="">
-                    </div>
-                    <div class="product-body">
-                      <h3 class="product-name"><a href="#">casque </a></h3>
-                      <h4 class="product-price"><span class="qty">2x</span>400</h4>
-                    </div>
-                    <button class="delete"><i class="fa fa-close"></i></button>
-                  </div>
 
-                  <div class="product-widget">
-                    <div class="product-img">
-                      <img src="assets/img/product2.png" alt="">
-                    </div>
-                    <div class="product-body">
-                      <h3 class="product-name"><a href="#">Camera </a></h3>
-                      <h4 class="product-price"><span class="qty">3x</span>1500</h4>
-                    </div>
-                    <button class="delete"><i class="fa fa-close"></i></button>
-                  </div>
-                </div>
-                <div class="cart-summary">
-                  <small>3 Item(s) selected</small>
-                  <h5>SUBTOTAL:3000 TN</h5>
-                </div>
+
                 <div class="cart-btns">
-                  <a routerLink="viewCart">View Cart</a>
+                  <a routerLink="viewcart">View Cart</a>
                   <a routerLink="checkout">Checkout<i class="fa fa-arrow-circle-right"></i></a>
                 </div>
               </div>

@@ -1,32 +1,27 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
-
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
 
-  constructor(private http:HttpClient) { }
+  constructor(private HTTP:HttpClient) { }
 
-
-  getproducts() {
-    return this.http.get(`${environment.baseUrl}/products/getall`)
-  }
   deleteproducts(id:any) {
-    return this.http.delete(`${environment.baseUrl}/products/delete/${id}`)
+  return this.HTTP.delete(`${environment.baseUrl}products/delete/${id}`)
   }
-  getbyid (id:any) {
-
-     return this.http.get(`${environment.baseUrl}/products/getbyid/${id}`)
+  getproducts() {
+    return this.HTTP.get(`${environment.baseUrl}products/getAll`)
   }
- addproduct(product:any) {
-  return this.http.post(`${environment.baseUrl}/products/create`,product)
- }
-  updateproduct(id:any,product:any) {
-    return this.http.put(`${environment.baseUrl}/products/update/${id}`,product)
+  getbyid(id:any) {
+    return this.HTTP.get(`${environment.baseUrl}/products/getbyid/${id}`)
   }
-
+  addproduct(product:any) {
+    return this.HTTP.post(`${environment.baseUrl}/products/create`,product)
+   }
+ updateproduct(id:any,product:any) {
+      return this.HTTP.put(`${environment.baseUrl}/products/update/${id}`,product)
+    }
 }

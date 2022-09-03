@@ -58,25 +58,7 @@
         </div>
         <!-- /aside Widget -->
 
-        <!-- aside Widget -->
-        <div class="aside">
-          <h3 class="aside-title">Price</h3>
-          <div class="price-filter">
-            <div id="price-slider" class="noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-origin" style="left: 0%;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" style="z-index: 5;" aria-valuemin="0.0" aria-valuemax="100.0" aria-valuenow="0.0" aria-valuetext="1.00"></div></div><div class="noUi-connect" style="left: 0%; right: 0%;"></div><div class="noUi-origin" style="left: 100%;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" style="z-index: 4;" aria-valuemin="0.0" aria-valuemax="100.0" aria-valuenow="100.0" aria-valuetext="999.00"></div></div></div></div>
-            <div class="input-number price-min">
-              <input id="price-min" type="number">
-              <span class="qty-up">+</span>
-              <span class="qty-down">-</span>
-            </div>
-            <span>-</span>
-            <div class="input-number price-max">
-              <input id="price-max" type="number">
-              <span class="qty-up">+</span>
-              <span class="qty-down">-</span>
-            </div>
-          </div>
-        </div>
-        <!-- /aside Widget -->
+
 
         <!-- aside Widget -->
         <div class="aside">
@@ -124,7 +106,7 @@
           <h3 class="aside-title">Top selling</h3>
           <div class="product-widget">
             <div class="product-img">
-              <img src="assets/img/product20.png" alt="">
+              <img src="assets/img/product20.jpg" alt="">
             </div>
             <div class="product-body">
               <p class="product-category">Laptops</p>
@@ -135,7 +117,7 @@
 
           <div class="product-widget">
             <div class="product-img">
-              <img src="assets/img/product23.png" alt="">
+              <img src="assets/img/product23.jpg" alt="">
             </div>
             <div class="product-body">
               <p class="product-category">Power Speakers</p>
@@ -143,10 +125,9 @@
               <h4 class="product-price">1500<del class="product-old-price">1400</del></h4>
             </div>
           </div>
-
           <div class="product-widget">
             <div class="product-img">
-              <img src="assets/img/product15.png" alt="">
+              <img src="assets/img/product15.jpg" alt="">
             </div>
             <div class="product-body">
               <p class="product-category">Data Projecteurs</p>
@@ -160,44 +141,15 @@
       <!-- /ASIDE -->
 
       <!-- STORE -->
-      <div id="store" class="col-md-9">
-        <!-- store top filter -->
-        <div class="store-filter clearfix">
-          <div class="store-sort">
-            <label>
-              Sort By:
-              <select class="input-select">
-                <option value="0">Popular</option>
-                <option value="1">Position</option>
-              </select>
-            </label>
-
-            <label>
-              Show:
-              <select class="input-select">
-                <option value="0">20</option>
-                <option value="1">50</option>
-              </select>
-            </label>
-          </div>
-          <ul class="store-grid">
-            <li class="active"><i class="fa fa-th"></i></li>
-            <li><a href="#"><i class="fa fa-th-list"></i></a></li>
-          </ul>
-        </div>
-        <!-- /store top filter -->
-
+      <div  id="store" class="col-md-9">
         <!-- store products -->
-        <div class="row">
+        <div  class="row">
           <!-- product -->
-          <div class="col-md-4 col-xs-6">
+          <div   class="col-md- 4 col-xs-4">
             <div class="product">
               <div class="product-img">
-                <img src="assets/img/product19.png" alt="">
-                <div class="product-label">
-                  <span class="sale">-30%</span>
-                  <span class="new">NEW</span>
-                </div>
+                <img src="assets/img/product19.jpg" alt="">
+
               </div>
               <div class="product-body">
                 <p class="product-category">Laptops</p>
@@ -212,24 +164,44 @@
                 </div>
               </div>
               <div class="add-to-cart">
-                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                <button  (click)= "addtocart(product)"  class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
               </div>
             </div>
           </div>
           <!-- /product -->
-
-          <!-- product -->
-          <div class="col-md-4 col-xs-6">
+          <div class="col-md- 4 col-xs-4">
             <div class="product">
               <div class="product-img">
-                <img src="assets/img/product24.png" alt="">
-                <div class="product-label">
-                  <span class="new">NEW</span>
-                </div>
+                <img src="assets/img/product27.jpg" alt="">
+
               </div>
               <div class="product-body">
-                <p class="product-category">Wireless Microphones</p>
-                <h3 class="product-name"><a href="#">Microphone Gaming</a></h3>
+                <p class="product-category">Laptops</p>
+                <h3 class="product-name"><a href="#">PC HP</a></h3>
+                <h4 class="product-price">2000<del class="product-old-price">1700</del></h4>
+                <div class="product-rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <div class="add-to-cart">
+                <button   (click)= "addtocart(product)"   class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- product -->
+          <div class="col-md- 4 col-xs-4">
+            <div class="product">
+              <div class="product-img">
+                <img src="assets/img/PAIRE DE HAUT-PARLEURS ACTIFS.jpg" alt="">
+
+              </div>
+              <div class="product-body">
+                <p class="product-category">Powered Speakers</p>
+                <h3 class="product-name"><a href="#">Paire de haut-parleurs actifs</a></h3>
                 <h4 class="product-price">1120<del class="product-old-price">1000</del></h4>
                 <div class="product-rating">
                   <i class="fa fa-star"></i>
@@ -240,7 +212,7 @@
                 </div>
               </div>
               <div class="add-to-cart">
-                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                <button    (click)= "addtocart(product)"  class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
               </div>
             </div>
           </div>
@@ -249,37 +221,16 @@
           <div class="clearfix visible-sm visible-xs"></div>
 
           <!-- product -->
-          <div class="col-md-4 col-xs-6">
-            <div class="product">
-              <div class="product-img">
-                <img src="assets/img/product9.png" alt="">
-              </div>
-              <div class="product-body">
-                <p class="product-category">Powered Speakers</p>
-                <h3 class="product-name"><a href="#"> Wileress Speakers</a></h3>
-                <h4 class="product-price">2000<del class="product-old-price">1500</del></h4>
-                <div class="product-rating">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                </div>
-              </div>
-              <div class="add-to-cart">
-                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
-              </div>
-            </div>
-          </div>
+
           <!-- /product -->
 
           <div class="clearfix visible-lg visible-md"></div>
 
           <!-- product -->
-          <div class="col-md-4 col-xs-6">
+          <div class="col-md- 4 col-xs-4">
             <div class="product">
               <div class="product-img">
-                <img src="  assets/img/product12.png" alt="">
+                <img src="assets/img/product12.jpg" alt="">
               </div>
               <div class="product-body">
                 <p class="product-category">Data Projecteur</p>
@@ -294,7 +245,7 @@
                 </div>
               </div>
               <div class="add-to-cart">
-                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                <button   (click)= "addtocart(product)"      class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
               </div>
             </div>
           </div>
@@ -303,14 +254,14 @@
           <div class="clearfix visible-sm visible-xs"></div>
 
           <!-- product -->
-          <div class="col-md-4 col-xs-6">
+          <div class="col-md- 4 col-xs-4">
             <div class="product">
               <div class="product-img">
-                <img src="assets/img/product15.png" alt="">
+                <img src="assets/img/product15.jpg" alt="">
               </div>
               <div class="product-body">
                 <p class="product-category">Data Projecteur</p>
-                <h3 class="product-name"><a href="#">Espion Projecteur</a></h3>
+                <h3 class="product-name"><a href="#">Xiaomi Projecteur</a></h3>
                 <h4 class="product-price">1800<del class="product-old-price">1400</del></h4>
                 <div class="product-rating">
                   <i class="fa fa-star"></i>
@@ -321,17 +272,84 @@
                 </div>
               </div>
               <div class="add-to-cart">
-                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                <button     (click)= "addtocart(product)"   class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+              </div>
+            </div>
+
+          </div>
+          <!-- /product -->
+          <div class="col-md- 4 col-xs-4">
+            <div class="product">
+              <div class="product-img">
+                <img src="assets/img/product28.jpg" alt="">
+              </div>
+              <div class="product-body">
+                <p class="product-category">wireless Speakers</p>
+                <h3 class="product-name"><a href="#">shark speaker</a></h3>
+                <h4 class="product-price">2000<del class="product-old-price">1500</del></h4>
+                <div class="product-rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <div class="add-to-cart">
+                <button     (click)= "addtocart(product)"     class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
               </div>
             </div>
           </div>
-          <!-- /product -->
-
-          <!-- product -->
-          <div class="col-md-4 col-xs-6">
+          <div class="col-md- 4 col-xs-4">
             <div class="product">
               <div class="product-img">
-                <img src="assets/img/product24.png" alt="">
+                <img src="assets/img/product25.jpg" alt="">
+              </div>
+              <div class="product-body">
+                <p class="product-category">Speaker</p>
+                <h3 class="product-name"><a href="#">Paire de haut-parleurs</a></h3>
+                <h4 class="product-price">2000<del class="product-old-price">1500</del></h4>
+                <div class="product-rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <div class="add-to-cart">
+                <button   (click)= "addtocart(product)"    class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-xs-7">
+            <div class="product">
+              <div class="product-img">
+                <img src="assets/img/product24.jpg" alt="">
+              </div>
+              <div class="product-body">
+                <p class="product-category">Powered Speakers</p>
+                <h3 class="product-name"><a href="#">Barre de son active</a></h3>
+                <h4 class="product-price">2000<del class="product-old-price">1500</del></h4>
+                <div class="product-rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <div class="add-to-cart">
+                <button    (click)= "addtocart(product)"  class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- product -->
+          <div class="col-md- 4 col-xs-4">
+            <div class="product">
+              <div class="product-img">
+                <img src="assets/img/product10.jpg" alt="">
               </div>
               <div class="product-body">
                 <p class="product-category">Wireless Speakers</p>
@@ -349,7 +367,7 @@
                 </div>
               </div>
               <div class="add-to-cart">
-                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                <button    (click)= "addtocart(product)"    class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
               </div>
             </div>
           </div>
@@ -358,10 +376,10 @@
           <div class="clearfix visible-lg visible-md visible-sm visible-xs"></div>
 
           <!-- product -->
-          <div class="col-md-4 col-xs-6">
+          <div class="col-md- 4 col-xs-4">
             <div class="product">
               <div class="product-img">
-                <img src="assets/img/product7.png" alt="">
+                <img src="assets/img/product7.jpg" alt="">
               </div>
               <div class="product-body">
                 <p class="product-category">Camera</p>
@@ -376,17 +394,17 @@
                 </div>
               </div>
               <div class="add-to-cart">
-                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                <button   (click)= "addtocart(product)"   class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
               </div>
             </div>
           </div>
           <!-- /product -->
 
           <!-- product -->
-          <div class="col-md-4 col-xs-6">
+          <div class="col-md- 4 col-xs-4">
             <div class="product">
               <div class="product-img">
-                <img src="assets/img/product11.png" alt="">
+                <img src="assets/img/product11.jpg" alt="">
               </div>
               <div class="product-body">
                 <p class="product-category">Wireless Microphones</p>
@@ -402,7 +420,7 @@
 
               </div>
               <div class="add-to-cart">
-                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                <button      (click)= "addtocart(product)"  class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
               </div>
             </div>
           </div>
@@ -411,10 +429,10 @@
           <div class="clearfix visible-sm visible-xs"></div>
 
           <!-- product -->
-          <div class="col-md-4 col-xs-6">
+          <div class="col-md-4 col-xs-5">
             <div class="product">
               <div class="product-img">
-                <img src="assets/img/product22.png" alt="">
+                <img src="assets/img/product22.jpg" alt="">
               </div>
               <div class="product-body">
                 <p class="product-category">Powered Speakers</p>
@@ -429,7 +447,7 @@
                 </div>
               </div>
               <div class="add-to-cart">
-                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                <button    (click)= "addtocart(product)"   class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
               </div>
             </div>
           </div>

@@ -1,5 +1,10 @@
-import { CartService } from 'src/app/services/cart.service';
-import { Component, OnInit } from '@angular/core';
+import { ProductService } from './../../services/product.service';
+import { CartService } from './../../services/cart.service';
+import { Router } from '@angular/router';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
+import { Product, products } from 'src/app/models/product.model';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-detail-cart',
@@ -7,35 +12,64 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./detail-cart.component.css']
 })
 export class DetailCartComponent implements OnInit {
-   products : any = []
-  public totalitem :number = 0 ;
 
-  public Total !:number  ;
+   listproduct:any
 
-  constructor(private CartService:CartService) {}
+   public products : any = [];
+   public grandTotal !: number;
 
-
-  ngOnInit(): void {
-
-    this.CartService.getProducts().subscribe(res=>{
-       this.products = res
-       this.Total = this.CartService.getTotalPrice()  ;
-
-    })
-  }
-  addToCart(product:any) {
-    this.CartService.addToCart(this.products)
-  }
-
-  removeItem(item:any){
-
-    this.CartService.removeCardItem(item)  ;
-
-  }
-
-  emptycart()   {
-
-    this.CartService.removeAllCart()  ;
-  }
+  constructor(private CartService:CartService,public productservice:ProductService) {
 
 }
+ngOnInit(): void {
+
+  this.getall()
+
+    this.CartService.getProducts()
+    .subscribe(res=>{
+      this.products = res;
+  
+    })
+
+  }
+
+  getall () {
+    this.productservice.getproducts().subscribe((res:any)=>{
+      this.listproduct = res["data"]
+      console.log("list product", this.listproduct)
+    })
+  }
+    deleteproducts(id:any) {
+      Swal.fire({
+        title: 'Are you sure?',
+        text: "You won't be able to revert this!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, delete it!'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          this.productservice.deleteproducts(id).subscribe((res:any)=>{
+            console.log(res)
+
+          Swal.fire(
+            'Deleted!',
+            'Your file has been deleted.',
+            'success'
+          )
+          this.getall()
+        })
+      }
+      })
+    }
+    removeItem(item: any){
+      this.CartService.removeCartItem(item);
+    }
+    emptycart(){
+      this.CartService.removeAllCart();
+    }
+
+}
+
+

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="96be5495-bda2-4654-9574-c919c786ea82" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../AdminDashboard/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../AdminDashboard/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdminDashboard/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../AdminDashboard/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdminDashboard/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../AdminDashboard/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdminDashboard/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../AdminDashboard/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdminDashboard/src/app/components/activity/activity.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../AdminDashboard/src/app/components/activity/activity.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdminDashboard/src/app/components/activity/activity.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../AdminDashboard/src/app/components/activity/activity.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdminDashboard/src/app/components/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../AdminDashboard/src/app/components/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdminDashboard/src/app/components/profile/profile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../AdminDashboard/src/app/components/profile/profile.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdminDashboard/src/app/components/profile/profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../AdminDashboard/src/app/components/profile/profile.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdminDashboard/src/app/components/search/search.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../AdminDashboard/src/app/components/search/search.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdminDashboard/src/app/components/search/search.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../AdminDashboard/src/app/components/search/search.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdminDashboard/src/app/components/settings/settings.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../AdminDashboard/src/app/components/settings/settings.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdminDashboard/src/app/components/update-profile/update-profile.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdminDashboard/src/app/components/update-profile/update-profile.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdminDashboard/src/app/components/update-profile/update-profile.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdminDashboard/src/app/components/update-profile/update-profile.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdminDashboard/src/app/services/auth.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdminDashboard/src/app/services/auth.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdminDashboard/src/app/services/category.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../AdminDashboard/src/app/services/category.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdminDashboard/src/app/services/profile.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../AdminDashboard/src/app/services/profile.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdminDashboard/src/app/services/settings.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../AdminDashboard/src/app/services/settings.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdminDashboard/src/app/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../AdminDashboard/src/app/services/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/client-model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/client-model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routers/product-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/routers/product-router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/config/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/config/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/aboutus/aboutus.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/aboutus/aboutus.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/aboutus/aboutus.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/aboutus/aboutus.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/account/account.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/account/account.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/account/account.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/account/account.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/account/account.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/account/account.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/cart/cart.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/cart/cart.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/cart/cart.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/cart/cart.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/checkout/checkout.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/checkout/checkout.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/checkout/checkout.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/checkout/checkout.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/checkout/checkout.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/checkout/checkout.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/contact/contact.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/contact/contact.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/contact/contact.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/contact/contact.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/contact/contact.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/contact/contact.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/detail-cart/detail-cart.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/detail-cart/detail-cart.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/detail-cart/detail-cart.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/detail-cart/detail-cart.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/footer/footer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/header/header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/home/home.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/listproduct/listproduct.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/listproduct/listproduct.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/listproduct/listproduct.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/listproduct/listproduct.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/navbar/navbar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/newsletter/newsletter.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/newsletter/newsletter.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/productdetail/productdetail.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/productdetail/productdetail.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/productdetail/productdetail.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/productdetail/productdetail.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/registre/registre.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/registre/registre.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/registre/registre.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/registre/registre.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/search/search.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/search/search.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/search/search.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/search/search.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/section/section.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/section/section.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/section/section.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/section/section.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/shared/shared.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/shared/shared.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/shared/shared.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/shared/shared.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/shop/shop.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/shop/shop.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/shop/shop.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/shop/shop.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/shop/shop.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/components/shop/shop.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/models/carte-product.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/models/product.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/models/product.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/services/api.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/services/api.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/services/cart.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/services/cart.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/services/category.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/services/category.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/services/messenger.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/services/messenger.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/services/newsletter.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/services/newsletter.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/services/product.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/services/product.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/services/registre.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/services/registre.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/services/shop.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/ecommerce/src/app/services/shop.service.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2DUv0jghMxupcXnwfenhf7e2fg7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="96be5495-bda2-4654-9574-c919c786ea82" name="Changes" comment="" />
+      <created>1660766276916</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660766276916</updated>
+      <workItem from="1660766276927" duration="18000" />
+      <workItem from="1660932885503" duration="34000" />
+    </task>
+    <servers />
+  </component>
+</project>

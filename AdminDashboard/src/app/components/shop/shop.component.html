@@ -1,0 +1,124 @@
+<!-- Main -->
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width: 20rem;">
+<img class="card-img-top" src="assets/img/img/videoprojecteurXaomi.jpg" alt="Card image cap">
+<div class="card-block">
+  <h4 class="card-title">VideoProjecteur Xiaomi</h4>
+  <p class="card-text">Price: 2400</p>
+  <a  (click) = "addtocart(product)"   class="add-to-cart btn btn-primary">Add to cart</a>
+</div>
+</div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 20rem;">
+<img class="card-img-top" src="assets/img/img/microphone-gaming-white-shark-dsm-01-zonis-noir.jpg" alt="Card image cap">
+<div class="card-block">
+  <h4 class="card-title">Shark Microphones</h4>
+  <p class="card-text">Price: 1600</p>
+  <a   (click) = "addtocart(product)"  data-name="Shark Microphone" class="add-to-cart btn btn-primary">Add to cart</a>
+</div>
+</div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 20rem;">
+<img class="card-img-top" src="assets/img/img/Wireless Microphones.jpg" alt="Card image cap">
+<div class="card-block">
+  <h4 class="card-title">  Wireless Microphones</h4>
+  <p class="card-text">Price: 1250</p>
+  <a    (click) = "addtocart(product)"  data-name="Shark Microphone" class="add-to-cart btn btn-primary">Add to cart</a>
+</div>
+</div>
+    </div>
+
+
+    <div class="col">
+      <div class="card" style="width: 20rem;">
+<img class="card-img-top" src="assets/img/img/canon camera.jpg" alt="Card image cap">
+<div class="card-block">
+  <h4 class="card-title">canon camera</h4>
+  <p class="card-text">Price: 1300</p>
+  <a  (click) = "addtocart(product)"   class="add-to-cart btn btn-primary">Add to cart</a>
+</div>
+</div>
+    </div>
+
+    <div class="col">
+      <div class="card" style="width: 20rem;">
+<img class="card-img-top" src="assets/img/img/Microphone Filaire JBL PBM100.jpg" alt="Card image cap">
+<div class="card-block">
+  <h4 class="card-title">Microphone Filaire JBL </h4>
+  <p class="card-text">Price: 1580</p>
+  <a  (click) = "addtocart(product)"   class="add-to-cart btn btn-primary">Add to cart</a>
+</div>
+</div>
+    </div>
+
+    <div class="col">
+      <div class="card" style="width: 20rem;">
+<img class="card-img-top" src="assets/img/img/PAIRE DE HAUT-PARLEURS ACTIFS.jpg" alt="Card image cap">
+<div class="card-block">
+  <h4 class="card-title">PAIRE DE HAUT-PARLEURS </h4>
+  <p class="card-text">Price: 1300</p>
+  <a  (click) = "addtocart(product)"    class="add-to-cart btn btn-primary">Add to cart</a>
+</div>
+</div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 20rem;">
+<img class="card-img-top" src="assets/img/img/webcam-usb-xtrike-me-xpc01.jpg" alt="Card image cap">
+<div class="card-block">
+  <h4 class="card-title">webcam-usb </h4>
+  <p class="card-text">Price: 1400</p>
+  <a   (click) = "addtocart(product)"  class="add-to-cart btn btn-primary">Add to cart</a>
+</div>
+</div>
+    </div>
+
+    <div class="col">
+      <div class="card" style="width: 20rem;">
+<img class="card-img-top" src="assets/img/img/televiseur-toshiba-s25-32-led-hd-recepteur-integre.jpg" alt="Card image cap">
+<div class="card-block">
+  <h4 class="card-title">televiseur toshiba</h4>
+  <p class="card-text">Price: 1600</p>
+  <a  (click) = "addtocart(product)"  class="add-to-cart btn btn-primary">Add to cart</a>
+</div>
+</div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 20rem;">
+<img class="card-img-top" src="assets/img/img/videoprojecteur-professionnel-3lcd-epson-eb-e01.jpg" alt="Card image cap">
+<div class="card-block">
+  <h4 class="card-title">videoprojecteur professionnel epson </h4>
+  <p class="card-text">Price: 1500</p>
+  <a   (click) = "addtocart(product)"   class="add-to-cart btn btn-primary">Add to cart</a>
+</div>
+</div>
+    </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <table class="show-cart table">
+
+      </table>
+      <div>Total price: $<span class="total-cart"></span></div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      <button type="button" class="btn btn-primary">Order now</button>
+    </div>
+  </div>
+</div>
+</div>
+

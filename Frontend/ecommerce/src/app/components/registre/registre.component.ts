@@ -10,6 +10,7 @@ import { RegistreService } from '../../../../../../AdminDashboard/src/app/servic
   styleUrls: ['./registre.component.css']
 })
 export class RegistreComponent implements OnInit {
+
   form!: FormGroup;
   submitted!: boolean;
 
@@ -71,5 +72,4 @@ formdata.append("photo",this.fileToUpload[0]);
    this.submitted = false;
    this.form.reset();
  }
-
 }

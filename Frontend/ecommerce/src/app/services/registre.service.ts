@@ -7,7 +7,8 @@ import { environment } from 'src/environments/environment';
 })
 export class RegistreService {
 constructor(private http:HttpClient) {}
+
   register(registrelogin:any) {
-    return this.http.post(`${environment.baseUrl}/admin/register`,registrelogin)
+    return this.http.post(`${environment.baseUrl}clients/register`,registrelogin)
   }
 }

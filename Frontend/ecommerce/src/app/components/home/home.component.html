@@ -14,42 +14,30 @@
     <!-- container -->
     <div class="container">
       <!-- row -->
-      <div class="row">
-        <div class="col-md-12">
-          <div class="newsletter">
-            <p>Sign Up for the <strong>NEWSLETTER</strong></p>
-            <form>
-              <input class="input" type="email" placeholder="Enter Your Email">
-              <button   (click)="subscribe()"  class="newsletter-btn"><i class="fa fa-envelope"></i> Subscribe</button>
-            </form>
-            <ul class="newsletter-follow">
-              <li>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-pinterest"></i></a>
-              </li>
-            </ul>
-          </div>
+
+      <div class="subscribe">
+        <h2 class="subscribe__title">Let's keep in touch</h2>
+        <p class="subscribe__copy">Subscribe to keep up with fresh news and exciting updates. We promise not to spam you!</p>
+        <div class="form">
+          <input type="email" class="form__email" placeholder="Enter your email address" />
+          <button   (click)= "sendMessage()"       class="form__button">Send</button>
+        </div>
+        <div class="notice">
+          <input type="checkbox">
+          <span class="notice__copy">I agree to my email address being stored and uses to recieve monthly newsletter.</span>
         </div>
       </div>
-
+&nbsp;&nbsp;
       <div class="container-m">
         <div class="row">
             <div class="col-md-4">
                 <div class="card"> <i class="fa fa-quote-left u-color"></i>
-                    <p>hello , I used this service for a long a week and I satisfied by the service , I hope all get a long with it</p>
+                    <p>hello , I used this service for a long a week and I am not  satisfied by this service ,This my opinon  </p>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="user-about">Alex Smith <span class="font-weight-bold d-block"></span><span class="u-color">Designer</span>
                             <div class="d-flex flex-row mt-1"> <i class="fa fa-star u-color"></i> <i class="fa fa-star u-color"></i> <i class="fa fa-star-o u-color"></i> <i class="fa fa-star-o u-color"></i><i class="fa fa-star-o u-color"></i> <i class="fa fa-star-o u-color"></i> </div>
                         </div>
-                        <div class="user-image"> <img src= 'https://i.imgur.com/oLHPcwCb.jpg' class="rounded-circle" width="70"> </div>
+                        <div class="user-image"> <img src= 'assets/img/image1.jpg' class="rounded-circle" width="70"> </div>
                     </div>
                 </div>
             </div>
@@ -60,7 +48,7 @@
                         <div class="user-about">Sophia<span class="font-weight-bold d-block"></span> <span class="u-color">Developer</span>
                             <div class="d-flex flex-row mt-1"> <i class="fa fa-star u-color"></i> <i class="fa fa-star u-color"></i>   <i class="fa fa-star u-color"></i><i class="fa fa-star u-color"></i> <i class="fa fa-star-o u-color"></i> <i class="fa fa-star-o u-color"></i> </div>
                         </div>
-                        <div class="user-image"> <img src="https://i.imgur.com/o5uMfKo.jpg" class="rounded-circle" width="70"> </div>
+                        <div class="user-image"> <img src='assets/img/image2.jpg' class="rounded-circle" width="70"> </div>
                     </div>
                 </div>
             </div>
@@ -71,7 +59,7 @@
                         <div class="user-about"> <span class="font-weight-bold d-block">Mike Vincent</span> <span class="u-color">Developer</span>
                             <div class="d-flex flex-row mt-1"> <i class="fa fa-star u-color"></i> <i class="fa fa-star u-color"></i> <i class="fa fa-star u-color"></i> <i class="fa fa-star u-color"></i> <i class="fa fa-star-o u-color"></i> </div>
                         </div>
-                        <div class="user-image"> <img src="https://i.imgur.com/At1IG6H.png" class="rounded-circle" width="70"> </div>
+                        <div class="user-image"> <img src='assets/img/image3.jpg' class="rounded-circle" width="70"> </div>
                     </div>
                 </div>
             </div>
@@ -83,7 +71,7 @@
   </div>
   <!-- /NEWSLETTER -->
 
-  
+
   <!-- FOOTER -->
 <app-footer></app-footer>
   <!-- /FOOTER -->

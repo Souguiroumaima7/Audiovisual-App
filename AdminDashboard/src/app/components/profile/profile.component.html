@@ -1,18 +1,16 @@
 <div class="container">
     <div class="main-body">
-          <div class="row gutters-sm">
+          <div  class="row gutters-sm">
             <div class="col-md-4 mb-3">
               <div class="card">
                 <div class="card-body">
                   <div class="d-flex flex-column align-items-center text-center">
-                    <img src='assets/img/profile.png' alt="" class="rounded-circle" width="150">
+                    <img src="assets/img/profile.jpg" alt="" class="rounded-circle" width="150">
                     <div class="mt-3">
                       <h4>Oumaima Souguir</h4>
                       <p class="text-secondary mb-1">Full Stack Developer</p>
                       <p class="text-muted font-size-sm">Street Hedi Nouira, Sousse, Akouda</p>
-                      <button class="btn btn-primary">Follow</button>
-                      &nbsp;
-                      <button class="btn btn-outline-primary">Message</button>
+                      <button  (click)= "sendMessage()"  type="button" class="btn btn-outline-primary ms-1">Message</button>
                     </div>
                   </div>
                 </div>
@@ -85,15 +83,10 @@
                       street Hedi Nouira, Sousse, Akouda
                     </div>
                   </div>
+
                   <hr>
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <button  class="btn btn-primary" type="button">Update</button>
-                    </div>
-                  </div>
                 </div>
               </div>
-
               <div class="row gutters-sm">
                 <div class="col-sm-6 mb-3">
                   <div class="card h-100">
@@ -150,9 +143,6 @@
                   </div>
                 </div>
               </div>
-
-
-
             </div>
           </div>
 

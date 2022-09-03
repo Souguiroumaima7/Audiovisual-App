@@ -11,6 +11,9 @@ export class ProductdetailComponent implements OnInit {
 
   id=this.activeroute.snapshot.params["id"]
    product:any
+   ProductList:any
+   p: number = 1;
+   
   constructor(private activeroute:ActivatedRoute,private ProductService:ProductService) { }
 
   ngOnInit(): void {

@@ -7,7 +7,7 @@ import { FormControl, Validators } from '@angular/forms';
 })
 export class NewsletterComponent implements OnInit {
 
-  newsletterForm!:FormControl
+  newsletterForm!: FormControl;
 
   subscribe() {
     if(this.newsletterForm.valid) {
@@ -23,6 +23,5 @@ export class NewsletterComponent implements OnInit {
       Validators.email,
     ]);
   }
-
 
 }

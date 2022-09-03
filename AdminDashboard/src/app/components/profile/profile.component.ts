@@ -1,8 +1,14 @@
-import { FormBuilder } from '@angular/forms';
+
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { ProfileService } from 'src/app/services/profile.service';
 
 import { Router, ActivatedRoute } from '@angular/router';
-import { Component, OnInit } from '@angular/core';
+import { Component , Input, OnInit } from '@angular/core';
+import Swal from 'sweetalert2';
+import { MessagingService } from 'src/app/services/messaging.service';
+import { UserService } from 'src/app/services/user.service';
+import { Profile } from 'src/models/profile.model';
+import { User } from 'src/app/models/user.model';
 
 
 @Component({
@@ -12,15 +18,50 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
-  id=this.ActivatedRoute.snapshot.params["id"]
-  constructor(private ProfileService:ProfileService,private ActivatedRoute:ActivatedRoute) { }
+
+  contactForm!: FormGroup;
+
+  message :string = "";
+
+  recivedMessage :string ="";
+
+Form ! : FormGroup
+
+  profile!: Profile;
+  currentUser!: User;
+  isUser!: boolean;
+
+
+  constructor(private fb: FormBuilder,private MessengerService:MessagingService,private userService: UserService, private route:ActivatedRoute) {}
+
 
   ngOnInit(): void {
+
+    this.contactForm = this.fb.group({});
   }
 
-/* updateprofile(id:any) {
-      
-  this.ProfileService.updateProfile(this.id,this.form.).subscribe
-} */
-  
+  onSubmit() {}
+
+
+  sendMessage()
+  {
+    console.log(this.message);
+    this.MessengerService.sendMessage(this.message);
+  }
+
+reciveMessages()
+{
+  this.MessengerService.message$.subscribe(res=>{
+    console.log(res);
+    this.recivedMessage = res;
+  })
 }
+
+onToggleFollowing(following: boolean) {
+  this.profile.following = following;
+}
+  }
+
+
+
+

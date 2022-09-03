@@ -11,7 +11,7 @@
           </div>
           <div class="shop-body">
             <h3>Cameras<br>Collection</h3>
-            <a routerLink="shop" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
+            <a routerLink="/shop" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
       </div>
@@ -21,12 +21,12 @@
       <div class="col-md-4 col-xs-6">
         <div class="shop">
           <div class="shop-img">
-            <img src="assets/img/product4" alt="">
+            <img src="assets/img/product4.jpg" alt="">
           </div>
 
           <div class="shop-body">
             <h3>Microphone<br>Collection</h3>
-            <a  routerLink="shop" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
+            <a  routerLink="/shop" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
       </div>
@@ -39,7 +39,7 @@
           </div>
           <div class="shop-body">
             <h3>Accessories<br>Collection</h3>
-            <a routerLink="shop"class="cta-btn">Shop now<i class="fa fa-arrow-circle-right"></i></a>
+            <a routerLink="/shop"  class="cta-btn">Shop now<i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
       </div>
@@ -101,10 +101,9 @@
                       <i class="fa fa-star"></i>
                       <i class="fa fa-star"></i>
                     </div>
-
                   </div>
                   <div class="add-to-cart">
-                    <button  routerLink="addtocart" class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                    <button  (click)= "addtocart(product)" class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
                   </div>
                 </div>
                 <!-- /product -->
@@ -131,7 +130,7 @@
 
                   </div>
                   <div class="add-to-cart">
-                    <button routerLink="addtocart" class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                    <button  (click)= "addtocart(product)"  class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
                   </div>
                 </div>
                 <!-- /product -->
@@ -153,7 +152,7 @@
 
                   </div>
                   <div class="add-to-cart">
-                    <button routerLink="addtocart" class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                    <button   (click)= "addtocart(product)"  class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
                   </div>
                 </div>
                 <!-- /product -->
@@ -176,7 +175,7 @@
 
                   </div>
                   <div class="add-to-cart">
-                    <button  routerLink="addtocart" class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                    <button (click)= "addtocart(product)"  class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
                   </div>
                 </div>
                 <!-- /product -->
@@ -231,7 +230,7 @@
           </ul>
           <h2 class="text-uppercase">hot deal this week</h2>
           <p>New Products Up to 50% OFF</p>
-          <a   routerLink="checkout"     class="primary-btn cta-btn" href="#">checkout now</a>
+          <a   routerLink="/checkout"     class="primary-btn cta-btn" href="#">checkout now</a>
         </div>
       </div>
     </div>
@@ -274,7 +273,7 @@
                 <!-- product -->
                 <div class="product">
                   <div class="product-img">
-                    <img src="assets/img/product28.png" alt="">
+                    <img src="assets/img/product28.jpg" alt="">
                     <div class="product-label">
                       <span class="sale">-30%</span>
                       <span class="new">NEW</span>
@@ -294,7 +293,7 @@
 
                   </div>
                   <div class="add-to-cart">
-                    <button routerLink="addtocart" class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                    <button   (click)= "addtocart(product)"  class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
                   </div>
                 </div>
                 <!-- /product -->
@@ -321,7 +320,7 @@
 
                   </div>
                   <div class="add-to-cart">
-                    <button routerLink="addtocart" class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                    <button   (click)= "addtocart(product)"  class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
                   </div>
                 </div>
                 <!-- /product -->
@@ -348,7 +347,7 @@
 
                   </div>
                   <div class="add-to-cart">
-                    <button routerLink="addtocart" class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                    <button (click)= "addtocart(product)"   class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
                   </div>
                 </div>
                 <!-- /product -->
@@ -372,7 +371,7 @@
 
                   </div>
                   <div class="add-to-cart">
-                    <button routerLink="addtocart" class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                    <button   (click)= "addtocart(product)"   class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
                   </div>
                 </div>
                 <!-- /product -->
@@ -395,7 +394,7 @@
                     </div>
                   </div>
                   <div class="add-to-cart">
-                    <button  routerLink="addtocart" class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                    <button  (click)= "addtocart(product)"  class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
                   </div>
                 </div>
                 <div class="product">
@@ -416,7 +415,7 @@
 
                   </div>
                   <div class="add-to-cart">
-                    <button  class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                    <button  (click) ="addtocart(product)"    class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
                   </div>
                 </div>
                 <!-- /product -->

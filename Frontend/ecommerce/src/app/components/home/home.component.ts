@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { MessengerService } from 'src/app/services/messenger.service';
 
 @Component({
   selector: 'app-home',
@@ -7,16 +8,35 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  newsletterForm!:FormControl
-  constructor() { }
+  message :string = "";
+  NewsletterForm!: FormGroup;
+  recivedMessage :string ="";
+
+
+
+  constructor(private fb: FormBuilder,private MessengerService:MessengerService) {}
+
 
   ngOnInit(): void {
-  }
-  
-  subscribe() {
-    if(this.newsletterForm.valid) {
-      console.log(this.newsletterForm.value);
-    }
 
+    this.NewsletterForm = this.fb.group({});
+  }
+
+  onSubmit() {}
+
+
+  sendMessage()
+  {
+    console.log(this.message);
+    this.MessengerService.sendMessage(this.message);
+  }
+
+reciveMessages()
+{
+  this.MessengerService.message$.subscribe(res=>{
+    console.log(res);
+    this.recivedMessage = res;
+  })
 }
+
 }

@@ -2,13 +2,13 @@
 
   <!-- Sidebar - Brand -->
   <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-      <div class="sidebar-brand-icon rotate-n-15">
+      <div class="sidebar-brand-icon rotate-n-20">
           <i class="fas fa-laugh-wink"></i>
       </div>
       <div class="sidebar-brand-text mx-3">Admin Dashboard</div>
   </a>
   <!-- Divider -->
-  <hr class="sidebar-divider my-0">
+  <hr class="sidebar-divider my-40">
 
   <!-- Nav Item - Dashboard -->
   <li class="nav-item active">
@@ -26,30 +26,23 @@
 
   <!-- Nav Item - Pages Collapse Menu -->
   <li class="nav-item">
-      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-          aria-expanded="true" aria-controls="collapseTwo">
-          <i class="fas fa-fw fa-cog"></i>
-          <span>Components</span>
-      </a>
-      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-              <h6 class="collapse-header">components:</h6>
-              <a routerLink ="addproduct" class="collapse-item" href="buttons.html">adding products</a>
-              <a routerLink="listproduct" class="collapse-item" href="cards.html">listproducts</a>
-              <a routerLink="listcategories" class="collapse-item" href="cards.html">listcategories</a>
-              <a routerLink="listsubcategories" class="collapse-item" href="cards.html">listsubcategories</a>
-              <a routerLink="listorders" class="collapse-item" href="cards.html">listorders</a>
-          </div>
-
-      </div>
-      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-        <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">components:</h6>
-            <a routerLink ="buttons"      class="collapse-item" href="buttons.html">buttons</a>
-            <a  routerLink = "cards"   class="collapse-item" href="cards.html">cards</a>
-        </div>
-        </div>
-  </li>
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+        aria-expanded="true" aria-controls="collapseTwo">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>Components</span>
+    </a>
+  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+    <div class="bg-white py-2 collapse-inner rounded">
+        <h6 class="collapse-header">components:</h6>
+        <a routerLink ="buttons"      class="collapse-item" href="buttons.html">buttons</a>
+        <a  routerLink="cards"  class="collapse-item" href="cards.html">cards</a>
+        <a  routerLink="alert"  class="collapse-item" href="cards.html">Alerts</a>
+        <a  routerLink="dropdown"  class="collapse-item" href="cards.html">Dropdown</a>
+        <a  routerLink="timeline"  class="collapse-item" href="cards.html">Timeline</a>
+        <a routerLink = "forms"   class="collapse-item" href="login.html">Forms</a>
+    </div>
+    </div>
+    </li>
   <!-- Nav Item - Utilities Collapse Menu -->
   <li class="nav-item">
       <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
@@ -64,7 +57,9 @@
               <a   routerLink ="utilitiescolor"     class="collapse-item" href="utilities-color.html">Colors</a>
               <a  routerLink = "utilitiesborder"    class="collapse-item" href="utilities-border.html">Borders</a>
               <a  routerLink = "utilitiesanimation"   class="collapse-item" href="utilities-animation.html">Animations</a>
-              <a    routerLink ="utilitiesother"     class="collapse-item" href="utilities-other.html">Other</a>
+              <a  routerLink ="utilitiesother"     class="collapse-item" href="utilities-other.html">Other</a>
+              <a  routerLink ="background"   class="collapse-item"  href="utilities-other.html">background</a>
+              <a  routerLink ="typograph"   class="collapse-item"  href="utilities-other.html">Typograph</a>
           </div>
       </div>
   </li>
@@ -90,6 +85,7 @@
               <a routerLink = ""   class="collapse-item" href="login.html">Login</a>
               <a routerLink = ""   class="collapse-item" href="register.html">Register</a>
               <a    routerLink = "" class="collapse-item" href="forgot-password.html">Forgot Password</a>
+
           </div>
       </div>
   </li>
@@ -98,17 +94,69 @@
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
         aria-expanded="true" aria-controls="collapsePages">
         <i class="fas fa-fw fa-folder"></i>
-        <span>forms</span>
+        <span> Errors Pages</span>
     </a>
     <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Forms:</h6>
-            <a routerLink = "forms"   class="collapse-item" href="login.html">Forms</a>
+            <h6 class="collapse-header">Login Screens:</h6>
+            <a routerLink = "404"   class="collapse-item" href="login.html">404</a>
+            <a routerLink = "500"   class="collapse-item" href="login.html">500</a>
 
         </div>
     </div>
 </li>
 
+<li class="nav-item">
+  <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+      aria-expanded="true" aria-controls="collapsePages">
+      <i class="fas fa-fw fa-folder"></i>
+      <span>Products</span>
+  </a>
+  <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+      <div class="bg-white py-2 collapse-inner rounded">
+          <h6 class="collapse-header">Products:</h6>
+          <a  routerLink="addproduct"   class="collapse-item" href="login.html">Add Product</a>
+          <a     routerLink="listproduct"     class="collapse-item" href="login.html">Product List</a>
+          <a     routerLink="productdetail"     class="collapse-item" href="login.html">Product Detail</a>
+
+
+      </div>
+  </div>
+</li>
+
+<li class="nav-item">
+  <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+      aria-expanded="true" aria-controls="collapsePages">
+      <i class="fas fa-fw fa-folder"></i>
+      <span>Orders</span>
+  </a>
+  <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+      <div class="bg-white py-2 collapse-inner rounded">
+          <h6 class="collapse-header">Orders:</h6>
+          <a    routerLink="addorders"     class="collapse-item" href="login.html">Add Orders</a>
+          <a    routerLink="ListOrders"    class="collapse-item" href="login.html">Orders List</a>
+          <a     routerLink="ordersDetail"  class="collapse-item" href="login.html">Orders Detail</a>
+      </div>
+  </div>
+</li>
+<li class="nav-item">
+  <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+      aria-expanded="true" aria-controls="collapsePages">
+      <i class="fas fa-fw fa-folder"></i>
+      <span>Cart</span>
+  </a>
+  <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+      <div class="bg-white py-2 collapse-inner rounded">
+          <h6 class="collapse-header">Cart:</h6>
+          <a    routerLink="Shop"   class="collapse-item" href="login.html">Shopping Cart</a>
+          <a    routerLink="viewcart"   class="collapse-item" href="login.html">View Cart</a>
+          <a    routerLink="checkout"   class="collapse-item" href="login.html">Checkout</a>
+
+
+
+      </div>
+  </div>
+</li>
   <!-- Nav Item - Tables -->
   <li class="nav-item">
       <a class="nav-link">
@@ -119,8 +167,5 @@
   <!-- Divider -->
   <hr class="sidebar-divider d-none d-md-block">
 
-  <!-- Sidebar Toggler (Sidebar) -->
-  <div class="text-center d-none d-md-inline">
-      <button class="rounded-circle border-0" id="sidebarToggle"></button>
-  </div>
+
 </ul>

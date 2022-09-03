@@ -1,92 +1,65 @@
-
-
-<section class="jumbotron text-center">
-
+<ng-container *ngIf="products.length != 0">
   <div class="container">
-      <h1 class="jumbotron-heading"> CART</h1>
-   </div>
-</section>
-<div class="container mb-4">
-  <div class="row">
-      <div class="col-12">
-          <div class="table-responsive">
-              <table class="table table-striped">
-                  <thead>
-                      <tr>
-                          <th scope="col">photo</th>
-                          <th scope="col">name</th>
-                          <th scope="col">description</th>
-                          <th scope="col" class="text-right">Price</th>
-                          <th> </th>
-                      </tr>
-                  </thead>
-                  <tbody>
-                      <tr  *ngFor = "let item of products  ; let i = index " >
-                           <td>{{i+1}}</td>
-                          <td><img src= {{item.photo}}> </td>
-                          <td>{{item.name}}</td>
-                          <td>{{item.description}}</td>
-                          <td class="text-right">{{item.price}}</td>
-                          <td class="text-right"><button (click) = "removeItem(item)"   class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
-                      </tr>
+    <div class="card-table">
+      <div class="cart-product">
+        <table class="table table-responsive">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>name</th>
+              <th>description</th>
+              <th>price</th>
 
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of listproduct; let i = index">
+              <td>{{ i + 1 }}</td>
+              <td>{{ item.name }}</td>
+              <td style="width: 25%">
+                {{ item.description }}
+              </td>
+              <td style="width: 12%">{{ item.price }}</td>
 
-                      <tr  *ngFor = "let item of products  ; let i = index " >
-                        <td>{{i+1}}</td>
-                       <td><img src= {{item.photo}}> </td>
-                       <td>{{item.name}}</td>
-                       <td>{{item.description}}</td>
-                       <td class="text-right">{{item.price}}</td>
-                       <td class="text-right"><button (click) = "removeItem(item)"  class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
-                   </tr>
+              <td style="width: 12%">
+                <button (click)= "deleteproducts(item._id)" class="btn btn-danger">
 
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4"></td>
+              <td>
+                <button (click) ="emptycart()" class="btn btn-danger">
+                  Empty Cart
+                </button>
+              </td>
+              <td>
+                <button routerLink="/shop" class="btn btn-primary">
+                  Shop More
+                </button>
+              </td>
+              <td><button routerLink = "/checkout" class="btn btn-success">Check Out</button></td>
 
-                   <tr  *ngFor = "let item of products  ; let i = index " >
-                    <td>{{i+1}}</td>
-                   <td><img src= {{item.photo}}> </td>
-                   <td>{{item.name}}</td>
-                   <td>{{item.description}}</td>
-                   <td class="text-right">{{item.price}}</td>
-                   <td class="text-right"><button (click) = "removeItem(item)"  class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
-               </tr>
-                      <tr *ngFor = "let item of products  ; let i = index ">
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td>Sub-Total</td>
-                          <td class="text-right">{{item.price}}</td>
-                      </tr>
-                      <tr *ngFor = "let item of products  ; let i = index ">
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td>Shipping</td>
-                          <td class="text-right">100</td>
-                      </tr>
-                      <tr *ngFor = "let item of products  ; let i = index ">
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td><strong>Total</strong></td>
-                          <td class="text-right"><strong>{{item.price}}</strong></td>
-                      </tr>
-                  </tbody>
-              </table>
-          </div>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <div class="col mb-2">
-          <div class="row">
-              <div class="col-sm-12  col-md-6">
-                  <button   onclick="shop"   class="btn btn-submit">Continue Shopping</button>
-              </div>
-              <div class="col-sm-12 col-md-6 text-right">
-                  <button  onclick="checkout" class="btn btn-submit">Checkout</button>
-              </div>
-          </div>
-      </div>
+    </div>
   </div>
-</div>
-
+</ng-container>
+<ng-container *ngIf="products.length == 0">
+  <div class="container">
+    <div class="card">
+      <div class="card-title"><strong>My Cart</strong></div>
+    </div>
+    <div class="center">
+      <img
+        src="https://rukminim1.flixcart.com/www/800/800/promos/16/05/2019/d438a32e-765a-4d8b-b4a6-520b560971e8.png?q=90"
+      />
+      <h4>Your cart is empty!</h4>
+      <h6>Add item to it now!</h6>
+      <button routerLink="/shop" class="btn btn-primary">Shop Now!</button>
+    </div>
+  </div>
+</ng-container>

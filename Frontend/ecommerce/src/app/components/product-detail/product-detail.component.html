@@ -1,0 +1,20 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">name</th>
+      <th scope="col">description</th>
+      <th scope="col">price</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor = "let p of ProductList|paginate: { itemsPerPage: 2, currentPage: p};let index=index">
+      <th scope = "row">{{index+1}}</th>
+      <td>{{p.name}}</td>
+      <td>{{p.description}}</td>
+      <td>{{p.price}}</td>
+
+    </tr>
+  </tbody>
+</table>

@@ -1,6 +1,8 @@
 import { LoginService } from './../../services/login.service';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-login',
@@ -8,39 +10,51 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  form: any = {
-    email: null,
-    password: null
-  };
+  loginform!:FormGroup
+  form : any
+   submitted!: boolean;
 
-  constructor(
-    private LoginService:LoginService, 
-    private router: Router, 
-    private activatedRoute: ActivatedRoute
-  ) { }
+    constructor(private formbuilder:FormBuilder,private LoginService:LoginService, private route:Router) { }
 
-  ngOnInit() : void {
-  }
+    ngOnInit(): void {
+          this.form = this.formbuilder.group({
+             email:['',Validators.required],
+             password:['',Validators.required]
+     })
 
-  //### Login user - button click method
-  loginUser() : void {
-   
-    var requestlogin = {
-      email:this.form.email,
-      password:this.form.password
     }
 
-    console.log(requestlogin);
 
-    this.LoginService.login(requestlogin).subscribe({
-        next: () => {
-              // get return url from query parameters or default to home page
-            //const returnUrl = this.activatedRoute.snapshot.queryParams['returnUrl'] || '/';
-            this.router.navigateByUrl('/Client');
-        },
-       
-    });
-  }
+    login() {
+      this.LoginService.login(this.form.value).subscribe((res:any)=>{
+         console.log(res["data"])
+         if (res.message ==="welcome") {
+          localStorage.setItem("userconnect",JSON.stringify(res["data"]))
+          localStorage.setItem("token",res.AT)
+          localStorage.setItem("state","0")
+          this.route.navigateByUrl("/home")
+        }
+      }
+        , err=> {
+          Swal.fire({
+           icon:"error",
+           title:"user not found",
+           text:"email invalid",
+           footer:"password"
+          })
+        }
+      )
+     }
+
+     Login(): void {
+      this.submitted = true;
+       this.LoginService.login(this.form.value).subscribe((res:any)=>{
+      console.log(res)
+
+     })
+
+     console.log(JSON.stringify(this.form.value, null, 2))
+    }
 
 
 }

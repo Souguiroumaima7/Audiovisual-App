@@ -1,0 +1,536 @@
+<div id="layoutSidenav_content">
+  <main>
+      <header class="page-header page-header-dark bg-gradient-primary-to-secondary pb-10">
+          <div class="container-xl px-4">
+              <div class="page-header-content pt-4">
+                  <div class="row align-items-center justify-content-between">
+                      <div class="col-auto mt-4">
+                          <h1 class="page-header-title">
+                              <div class="page-header-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-triangle"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg></div>
+                              Alerts
+                          </h1>
+                          <div class="page-header-subtitle">Alert components to add special emphasis to select content</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </header>
+      <!-- Main page content-->
+      <div class="container-xl px-4 mt-n10">
+          <div class="row">
+              <!-- Style Reference-->
+              <div class="col-lg-9">
+                  <!-- Default Bootstrap Alerts-->
+                  <div id="default">
+                      <div class="card mb-4">
+                          <div class="card-header">Default Bootstrap Alerts</div>
+                          <div class="card-body">
+                              <!-- Component Preview-->
+                              <div class="sbp-preview">
+                                  <div class="sbp-preview-content">
+                                      <div class="alert alert-primary" role="alert">A primary alert—check it out!</div>
+                                      <div class="alert alert-secondary" role="alert">A secondary alert—check it out!</div>
+                                      <div class="alert alert-success" role="alert">A success alert—check it out!</div>
+                                      <div class="alert alert-danger" role="alert">A danger alert—check it out!</div>
+                                      <div class="alert alert-warning" role="alert">A warning alert—check it out!</div>
+                                      <div class="alert alert-info" role="alert">A info alert—check it out!</div>
+                                      <div class="alert alert-light" role="alert">A light alert—check it out!</div>
+                                      <div class="alert alert-dark mb-0" role="alert">A dark alert—check it out!</div>
+                                  </div>
+                                  <div class="sbp-preview-code">
+                                      <!-- Code sample-->
+                                      <ul class="nav nav-tabs" id="alertsDefaultTabs" role="tablist">
+                                          <li class="nav-item">
+                                              <a class="nav-link active me-1" id="alertsDefaultHtmlTab" data-bs-toggle="tab" href="#alertsDefaultHtml" role="tab" aria-controls="alertsDefaultHtml" aria-selected="true">
+                                                  <svg class="svg-inline--fa fa-html5 text-orange me-1" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="html5" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"></path></svg><!-- <i class="fab fa-html5 text-orange me-1"></i> Font Awesome fontawesome.com -->
+                                                  HTML
+                                              </a>
+                                          </li>
+                                          <li class="nav-item">
+                                              <a class="nav-link" id="alertsDefaultPugTab" data-bs-toggle="tab" href="#alertsDefaultPug" role="tab" aria-controls="alertsDefaultPug" aria-selected="false">
+                                                  <img class="img-pug me-1" src="assets/img/demo/pug.svg">
+                                                  PUG
+                                              </a>
+                                          </li>
+                                      </ul>
+                                      <!-- Tab panes-->
+                                      <div class="tab-content">
+                                          <div class="tab-pane active" id="alertsDefaultHtml" role="tabpanel" aria-labelledby="alertsDefaultHtmlTab">
+                                              <pre class="  language-markup"><code class="  language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-primary<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+A primary alert—check it out!
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-secondary<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+A secondary alert—check it out!
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-success<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+A success alert—check it out!
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-danger<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+A danger alert—check it out!
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-warning<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+A warning alert—check it out!
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-info<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+A info alert—check it out!
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-light<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+A light alert—check it out!
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-dark<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+A dark alert—check it out!
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                                          </div>
+                                          <div class="tab-pane" id="alertsDefaultPug" role="tabpanel" aria-labelledby="alertsDefaultPugTab">
+                                              <pre class="  language-pug"><code class="  language-pug"><span class="token tag">.alert.alert-primary<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span>
+<span class="token punctuation">|</span> A primary alert—check it out<span class="token punctuation">!</span>
+<span class="token tag">.alert.alert-secondary<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span>
+<span class="token punctuation">|</span> A secondary alert—check it out<span class="token punctuation">!</span>
+<span class="token tag">.alert.alert-success<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span>
+<span class="token punctuation">|</span> A success alert—check it out<span class="token punctuation">!</span>
+<span class="token tag">.alert.alert-danger<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span>
+<span class="token punctuation">|</span> A danger alert—check it out<span class="token punctuation">!</span>
+<span class="token tag">.alert.alert-warning<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span>
+<span class="token punctuation">|</span> A warning alert—check it out<span class="token punctuation">!</span>
+<span class="token tag">.alert.alert-info<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span>
+<span class="token punctuation">|</span> A info alert—check it out<span class="token punctuation">!</span>
+<span class="token tag">.alert.alert-light<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span>
+<span class="token punctuation">|</span> A light alert—check it out<span class="token punctuation">!</span>
+<span class="token tag">.alert.alert-dark<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span>
+<span class="token punctuation">|</span> A dark alert—check it out<span class="token punctuation">!</span></code></pre>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="sbp-preview-text">Bootstrap's default state-specific alert styles have been styled to fit the SB Admin Pro theme.</div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Bootstrap Alerts Content-->
+                  <div id="content">
+                      <div class="card mb-4">
+                          <div class="card-header">Alert Content Styling</div>
+                          <div class="card-body">
+                              <!-- Component Preview-->
+                              <div class="sbp-preview">
+                                  <div class="sbp-preview-content">
+                                      <div class="alert alert-primary alert-dismissible fade show mb-0" role="alert">
+                                          <h5 class="alert-heading">Alert Heading</h5>
+                                          This alert example has an alert heading, an alert link, and is dismissible!
+                                          <a class="alert-link" href="#!">Example alert link!</a>
+                                          <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
+                                      </div>
+                                  </div>
+                                  <div class="sbp-preview-code">
+                                      <!-- Code sample-->
+                                      <ul class="nav nav-tabs" id="alertsContentTabs" role="tablist">
+                                          <li class="nav-item">
+                                              <a class="nav-link active me-1" id="alertsContentHtmlTab" data-bs-toggle="tab" href="#alertsContentHtml" role="tab" aria-controls="alertsContentHtml" aria-selected="true">
+                                                  <svg class="svg-inline--fa fa-html5 text-orange me-1" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="html5" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"></path></svg><!-- <i class="fab fa-html5 text-orange me-1"></i> Font Awesome fontawesome.com -->
+                                                  HTML
+                                              </a>
+                                          </li>
+                                          <li class="nav-item">
+                                              <a class="nav-link" id="alertsContentPugTab" data-bs-toggle="tab" href="#alertsContentPug" role="tab" aria-controls="alertsContentPug" aria-selected="false">
+                                                  <img class="img-pug me-1" src="assets/img/demo/pug.svg">
+                                                  PUG
+                                              </a>
+                                          </li>
+                                      </ul>
+                                      <!-- Tab panes-->
+                                      <div class="tab-content">
+                                          <div class="tab-pane active" id="alertsContentHtml" role="tabpanel" aria-labelledby="alertsContentHtmlTab">
+                                              <pre class="  language-markup"><code class="  language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-primary alert-dismissible fade show<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h5</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert-heading<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Alert Heading<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h5</span><span class="token punctuation">&gt;</span></span>
+This alert example has an alert heading, an alert link, and is dismissible! <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert-link<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#!<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Example alert link!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn-close<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-dismiss</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Close<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                                          </div>
+                                          <div class="tab-pane" id="alertsContentPug" role="tabpanel" aria-labelledby="alertsContentPugTab">
+                                              <pre class="  language-pug"><code class="  language-pug"><span class="token tag">.alert.alert-primary.alert-dismissible.fade.show<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span>
+<span class="token tag">h5.alert-heading</span> <span class="token plain-text">Alert Heading</span>
+<span class="token punctuation">|</span> This alert example has an alert heading, an alert link, and is dismissible<span class="token punctuation">!</span>
+<span class="token tag">a.alert-link<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">href</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'#!'</span></span><span class="token punctuation">)</span></span></span> <span class="token plain-text">Example alert link!</span>
+<span class="token tag">button.btn-close<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">type</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'button'</span></span><span class="token punctuation">,</span> <span class="token attr-name">data-bs-dismiss</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">,</span> <span class="token attr-name">aria-label</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'Close'</span></span><span class="token punctuation">)</span></span></span></code></pre>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="sbp-preview-text">
+                                      <p>
+                                          By default, Bootstrap styles the content within alerts. Use
+                                          <code>.alert-heading</code>
+                                          to style a heading within an alert,
+                                          <code>.alert-link</code>
+                                          to style a link within an alert, or you can use the dismissible option by using the
+                                          <code>data-bs-dismiss='alert'</code>
+                                          data attribute.
+                                      </p>
+                                      <p class="mb-0">
+                                          Learn more about dismissing Bootstrap alerts in the
+                                          <a target="_blank" href="https://getbootstrap.com/docs/4.4/components/alerts/#dismissing">Bootstrap alerts component documentation</a>
+                                          .
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Custom Icon Alerts-->
+                  <div id="icons">
+                      <div class="card mb-4">
+                          <div class="card-header">Custom Icon Alerts</div>
+                          <div class="card-body">
+                              <!-- Component Preview-->
+                              <div class="sbp-preview">
+                                  <div class="sbp-preview-content">
+                                      <div class="alert alert-primary alert-icon" role="alert">
+                                          <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
+                                          <div class="alert-icon-aside"><svg class="svg-inline--fa fa-flag" aria-hidden="true" focusable="false" data-prefix="far" data-icon="flag" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M476.3 0c-6.365 0-13.01 1.35-19.34 4.233c-45.69 20.86-79.56 27.94-107.8 27.94c-59.96 0-94.81-31.86-163.9-31.87c-34.63 0-77.87 8.003-137.2 32.05V24C48 10.75 37.25 0 24 0S0 10.75 0 24v464C0 501.3 10.75 512 24 512s24-10.75 24-24v-104c53.59-23.86 96.02-31.81 132.8-31.81c73.63 0 124.9 31.78 198.6 31.78c31.91 0 68.02-5.971 111.1-23.09C504.1 355.9 512 344.4 512 332.1V30.73C512 11.1 495.3 0 476.3 0zM464 319.8c-30.31 10.82-58.08 16.1-84.6 16.1c-30.8 0-58.31-7-87.44-14.41c-32.01-8.141-68.29-17.37-111.1-17.37c-42.35 0-85.99 9.09-132.8 27.73V84.14l18.03-7.301c47.39-19.2 86.38-28.54 119.2-28.54c28.24 .0039 49.12 6.711 73.31 14.48c25.38 8.148 54.13 17.39 90.58 17.39c35.43 0 72.24-8.496 114.9-26.61V319.8z"></path></svg><!-- <i class="far fa-flag"></i> Font Awesome fontawesome.com --></div>
+                                          <div class="alert-icon-content">
+                                              <h6 class="alert-heading">Primary Icon Alert</h6>
+                                              This alert uses an icon from Font Awesome!
+                                          </div>
+                                      </div>
+                                      <div class="alert alert-secondary alert-icon mb-0" role="alert">
+                                          <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
+                                          <div class="alert-icon-aside"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-feather"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path><line x1="16" y1="8" x2="2" y2="22"></line><line x1="17.5" y1="15" x2="9" y2="15"></line></svg></div>
+                                          <div class="alert-icon-content">
+                                              <h6 class="alert-heading">Danger Icon Alert</h6>
+                                              This alert uses an icon from Feather Icons!
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="sbp-preview-code">
+                                      <!-- Code sample-->
+                                      <ul class="nav nav-tabs" id="alertsIconsTabs" role="tablist">
+                                          <li class="nav-item">
+                                              <a class="nav-link active me-1" id="alertsIconsHtmlTab" data-bs-toggle="tab" href="#alertsIconsHtml" role="tab" aria-controls="alertsIconsHtml" aria-selected="true">
+                                                  <svg class="svg-inline--fa fa-html5 text-orange me-1" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="html5" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"></path></svg><!-- <i class="fab fa-html5 text-orange me-1"></i> Font Awesome fontawesome.com -->
+                                                  HTML
+                                              </a>
+                                          </li>
+                                          <li class="nav-item">
+                                              <a class="nav-link" id="alertsIconsPugTab" data-bs-toggle="tab" href="#alertsIconsPug" role="tab" aria-controls="alertsIconsPug" aria-selected="false">
+                                                  <img class="img-pug me-1" src="assets/img/demo/pug.svg">
+                                                  PUG
+                                              </a>
+                                          </li>
+                                      </ul>
+                                      <!-- Tab panes-->
+                                      <div class="tab-content">
+                                          <div class="tab-pane active" id="alertsIconsHtml" role="tabpanel" aria-labelledby="alertsIconsHtmlTab">
+                                              <pre class="  language-markup"><code class="  language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-primary alert-icon<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn-close<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-dismiss</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Close<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert-icon-aside<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>far fa-flag<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert-icon-content<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h6</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert-heading<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Primary Icon Alert<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h6</span><span class="token punctuation">&gt;</span></span>
+This alert uses an icon from Font Awesome!
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-secondary alert-icon<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn-close<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-dismiss</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Close<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert-icon-aside<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">data-feather</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>feather<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert-icon-content<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h6</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert-heading<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Danger Icon Alert<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h6</span><span class="token punctuation">&gt;</span></span>
+This alert uses an icon from Feather Icons!
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                                          </div>
+                                          <div class="tab-pane" id="alertsIconsPug" role="tabpanel" aria-labelledby="alertsIconsPugTab">
+                                              <pre class="  language-pug"><code class="  language-pug"><span class="token tag">.alert.alert-primary.alert-icon<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span>
+<span class="token tag">button.btn-close<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">type</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'button'</span></span><span class="token punctuation">,</span> <span class="token attr-name">data-bs-dismiss</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">,</span> <span class="token attr-name">aria-label</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'Close'</span></span><span class="token punctuation">)</span></span></span>
+<span class="token tag">.alert-icon-aside</span>
+<span class="token tag">i.far.fa-flag</span>
+<span class="token tag">.alert-icon-content</span>
+<span class="token tag">h6.alert-heading</span> <span class="token plain-text">Primary Icon Alert</span>
+<span class="token punctuation">|</span> This alert uses an icon from Font Awesome<span class="token punctuation">!</span>
+<span class="token tag">.alert.alert-secondary.alert-icon<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span>
+<span class="token tag">button.btn-close<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">type</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'button'</span></span><span class="token punctuation">,</span> <span class="token attr-name">data-bs-dismiss</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">,</span> <span class="token attr-name">aria-label</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'Close'</span></span><span class="token punctuation">)</span></span></span>
+<span class="token tag">.alert-icon-aside</span>
+<span class="token tag">i<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">data-feather</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'feather'</span></span><span class="token punctuation">)</span></span></span>
+<span class="token tag">.alert-icon-content</span>
+<span class="token tag">h6.alert-heading</span> <span class="token plain-text">Danger Icon Alert</span>
+<span class="token punctuation">|</span> This alert uses an icon from Feather Icons<span class="token punctuation">!</span></code></pre>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="sbp-preview-text">The custom icon alert option allows you to use icons within alerts for additional context. Use icons from either Font Awesome or Feather Icons!</div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Custom Solid Alerts-->
+                  <div id="solid">
+                      <div class="card mb-4">
+                          <div class="card-header">Custom Solid Alerts</div>
+                          <div class="card-body">
+                              <!-- Component Preview-->
+                              <div class="sbp-preview">
+                                  <div class="sbp-preview-content">
+                                      <div class="alert alert-primary alert-solid" role="alert">This is a solid, primary alert!</div>
+                                      <div class="alert alert-secondary alert-solid" role="alert">This is a solid, secondary alert!</div>
+                                      <div class="alert alert-success alert-solid" role="alert">This is a solid, success alert!</div>
+                                      <div class="alert alert-danger alert-solid" role="alert">This is a solid, danger alert!</div>
+                                      <div class="alert alert-warning alert-solid" role="alert">This is a solid, warning alert!</div>
+                                      <div class="alert alert-info alert-solid" role="alert">This is a solid, info alert!</div>
+                                      <div class="alert alert-light alert-solid" role="alert">This is a solid, light alert!</div>
+                                      <div class="alert alert-dark alert-solid mb-0" role="alert">This is a solid, dark alert!</div>
+                                  </div>
+                                  <div class="sbp-preview-code">
+                                      <!-- Code sample-->
+                                      <ul class="nav nav-tabs" id="alertsSolidTabs" role="tablist">
+                                          <li class="nav-item">
+                                              <a class="nav-link active me-1" id="alertsSolidHtmlTab" data-bs-toggle="tab" href="#alertsSolidHtml" role="tab" aria-controls="alertsSolidHtml" aria-selected="true">
+                                                  <svg class="svg-inline--fa fa-html5 text-orange me-1" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="html5" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"></path></svg><!-- <i class="fab fa-html5 text-orange me-1"></i> Font Awesome fontawesome.com -->
+                                                  HTML
+                                              </a>
+                                          </li>
+                                          <li class="nav-item">
+                                              <a class="nav-link" id="alertsSolidPugTab" data-bs-toggle="tab" href="#alertsSolidPug" role="tab" aria-controls="alertsSolidPug" aria-selected="false">
+                                                  <img class="img-pug me-1" src="assets/img/demo/pug.svg">
+                                                  PUG
+                                              </a>
+                                          </li>
+                                      </ul>
+                                      <!-- Tab panes-->
+                                      <div class="tab-content">
+                                          <div class="tab-pane active" id="alertsSolidHtml" role="tabpanel" aria-labelledby="alertsSolidHtmlTab">
+                                              <pre class="  language-markup"><code class="  language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-primary alert-solid<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>This is a solid, primary alert!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-secondary alert-solid<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>This is a solid, secondary alert!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-success alert-solid<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>This is a solid, success alert!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-danger alert-solid<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>This is a solid, danger alert!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-warning alert-solid<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>This is a solid, warning alert!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-info alert-solid<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>This is a solid, info alert!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-light alert-solid<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>This is a solid, light alert!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-dark alert-solid<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>This is a solid, dark alert!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                                          </div>
+                                          <div class="tab-pane" id="alertsSolidPug" role="tabpanel" aria-labelledby="alertsSolidPugTab">
+                                              <pre class="  language-pug"><code class="  language-pug"><span class="token tag">.alert.alert-primary.alert-solid<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span>
+<span class="token punctuation">|</span> This is a solid, primary alert<span class="token punctuation">!</span>
+<span class="token tag">.alert.alert-secondary.alert-solid<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span>
+<span class="token punctuation">|</span> This is a solid, secondary alert<span class="token punctuation">!</span>
+<span class="token tag">.alert.alert-success.alert-solid<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span>
+<span class="token punctuation">|</span> This is a solid, success alert<span class="token punctuation">!</span>
+<span class="token tag">.alert.alert-danger.alert-solid<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span>
+<span class="token punctuation">|</span> This is a solid, danger alert<span class="token punctuation">!</span>
+<span class="token tag">.alert.alert-warning.alert-solid<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span>
+<span class="token punctuation">|</span> This is a solid, warning alert<span class="token punctuation">!</span>
+<span class="token tag">.alert.alert-info.alert-solid<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span>
+<span class="token punctuation">|</span> This is a solid, info alert<span class="token punctuation">!</span>
+<span class="token tag">.alert.alert-light.alert-solid<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span>
+<span class="token punctuation">|</span> This is a solid, light alert<span class="token punctuation">!</span>
+<span class="token tag">.alert.alert-dark.alert-solid<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span>
+<span class="token punctuation">|</span> This is a solid, dark alert<span class="token punctuation">!</span></code></pre>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="sbp-preview-text">
+                                      Append the
+                                      <code>.alert-solid</code>
+                                      class to any alert to get a custom solid state color instead of the default low contrast color. Any of the other alert content options, including custom icon alerts, are supported with the solid alert styles.
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Extended Alert Colors-->
+                  <div id="colors">
+                      <div class="card mb-4">
+                          <div class="card-header">Extended Alert Colors</div>
+                          <div class="card-body">
+                              <!-- Custom Alert Colors with Default Alert Styling-->
+                              <h6 class="small text-muted fw-500">Custom Colors with Default Alerts:</h6>
+                              <div class="sbp-preview mb-4">
+                                  <div class="sbp-preview-content">
+                                      <div class="row">
+                                          <div class="col-6">
+                                              <div class="alert alert-red" role="alert">This is a red alert.</div>
+                                              <div class="alert alert-orange" role="alert">This is a orange alert.</div>
+                                              <div class="alert alert-yellow" role="alert">This is a yellow alert.</div>
+                                              <div class="alert alert-green" role="alert">This is a green alert.</div>
+                                              <div class="alert alert-teal mb-0" role="alert">This is a teal alert.</div>
+                                          </div>
+                                          <div class="col-6">
+                                              <div class="alert alert-cyan" role="alert">This is a cyan alert.</div>
+                                              <div class="alert alert-blue" role="alert">This is a blue alert.</div>
+                                              <div class="alert alert-indigo" role="alert">This is a indigo alert.</div>
+                                              <div class="alert alert-purple" role="alert">This is a purple alert.</div>
+                                              <div class="alert alert-pink mb-0" role="alert">This is a pink alert.</div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="sbp-preview-code">
+                                      <!-- Code sample-->
+                                      <ul class="nav nav-tabs" id="alertsExtendedTabs" role="tablist">
+                                          <li class="nav-item">
+                                              <a class="nav-link active me-1" id="alertsExtendedHtmlTab" data-bs-toggle="tab" href="#alertsExtendedHtml" role="tab" aria-controls="alertsExtendedHtml" aria-selected="true">
+                                                  <svg class="svg-inline--fa fa-html5 text-orange me-1" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="html5" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"></path></svg><!-- <i class="fab fa-html5 text-orange me-1"></i> Font Awesome fontawesome.com -->
+                                                  HTML
+                                              </a>
+                                          </li>
+                                          <li class="nav-item">
+                                              <a class="nav-link" id="alertsExtendedPugTab" data-bs-toggle="tab" href="#alertsExtendedPug" role="tab" aria-controls="alertsExtendedPug" aria-selected="false">
+                                                  <img class="img-pug me-1" src="assets/img/demo/pug.svg">
+                                                  PUG
+                                              </a>
+                                          </li>
+                                      </ul>
+                                      <!-- Tab panes-->
+                                      <div class="tab-content">
+                                          <div class="tab-pane active" id="alertsExtendedHtml" role="tabpanel" aria-labelledby="alertsExtendedHtmlTab">
+                                              <pre class="  language-markup"><code class="  language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-red<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>This is a red alert.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-orange<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>This is a orange alert.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-yellow<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>This is a yellow alert.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-green<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>This is a green alert.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-teal<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>This is a teal alert.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-cyan<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>This is a cyan alert.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-blue<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>This is a blue alert.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-indigo<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>This is a indigo alert.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-purple<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>This is a purple alert.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-pink<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>This is a pink alert.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                                          </div>
+                                          <div class="tab-pane" id="alertsExtendedPug" role="tabpanel" aria-labelledby="alertsExtendedPugTab">
+                                              <pre class="  language-pug"><code class="  language-pug"><span class="token tag">.alert.alert-red<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span> <span class="token plain-text">This is a red alert.</span>
+<span class="token tag">.alert.alert-orange<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span> <span class="token plain-text">This is a orange alert.</span>
+<span class="token tag">.alert.alert-yellow<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span> <span class="token plain-text">This is a yellow alert.</span>
+<span class="token tag">.alert.alert-green<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span> <span class="token plain-text">This is a green alert.</span>
+<span class="token tag">.alert.alert-teal<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span> <span class="token plain-text">This is a teal alert.</span>
+<span class="token tag">.alert.alert-cyan<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span> <span class="token plain-text">This is a cyan alert.</span>
+<span class="token tag">.alert.alert-blue<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span> <span class="token plain-text">This is a blue alert.</span>
+<span class="token tag">.alert.alert-indigo<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span> <span class="token plain-text">This is a indigo alert.</span>
+<span class="token tag">.alert.alert-purple<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span> <span class="token plain-text">This is a purple alert.</span>
+<span class="token tag">.alert.alert-pink<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span> <span class="token plain-text">This is a pink alert.</span>
+</code></pre>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="sbp-preview-text">SB Admin Pro's expanded color system allows you to use the non-contextual colors in the same way as Bootstrap's colors.</div>
+                              </div>
+                              <!-- Custom Alert Colors with Solid Alert Styling-->
+                              <h6 class="small text-muted fw-500">Custom Colors with Solid Alerts:</h6>
+                              <div class="sbp-preview">
+                                  <div class="sbp-preview-content">
+                                      <div class="row">
+                                          <div class="col-6">
+                                              <div class="alert alert-red alert-solid" role="alert">This is a red alert.</div>
+                                              <div class="alert alert-orange alert-solid" role="alert">This is a orange alert.</div>
+                                              <div class="alert alert-yellow alert-solid" role="alert">This is a yellow alert.</div>
+                                              <div class="alert alert-green alert-solid" role="alert">This is a green alert.</div>
+                                              <div class="alert alert-teal alert-solid mb-0" role="alert">This is a teal alert.</div>
+                                          </div>
+                                          <div class="col-6">
+                                              <div class="alert alert-cyan alert-solid" role="alert">This is a cyan alert.</div>
+                                              <div class="alert alert-blue alert-solid" role="alert">This is a blue alert.</div>
+                                              <div class="alert alert-indigo alert-solid" role="alert">This is a indigo alert.</div>
+                                              <div class="alert alert-purple alert-solid" role="alert">This is a purple alert.</div>
+                                              <div class="alert alert-pink alert-solid mb-0" role="alert">This is a pink alert.</div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="sbp-preview-code">
+                                      <!-- Code sample-->
+                                      <ul class="nav nav-tabs" id="alertsExtendedSolidTabs" role="tablist">
+                                          <li class="nav-item">
+                                              <a class="nav-link active me-1" id="alertsExtendedSolidHtmlTab" data-bs-toggle="tab" href="#alertsExtendedSolidHtml" role="tab" aria-controls="alertsExtendedSolidHtml" aria-selected="true">
+                                                  <svg class="svg-inline--fa fa-html5 text-orange me-1" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="html5" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"></path></svg><!-- <i class="fab fa-html5 text-orange me-1"></i> Font Awesome fontawesome.com -->
+                                                  HTML
+                                              </a>
+                                          </li>
+                                          <li class="nav-item">
+                                              <a class="nav-link" id="alertsExtendedSolidPugTab" data-bs-toggle="tab" href="#alertsExtendedSolidPug" role="tab" aria-controls="alertsExtendedSolidPug" aria-selected="false">
+                                                  <img class="img-pug me-1" src="assets/img/demo/pug.svg">
+                                                  PUG
+                                              </a>
+                                          </li>
+                                      </ul>
+                                      <!-- Tab panes-->
+                                      <div class="tab-content">
+                                          <div class="tab-pane active" id="alertsExtendedSolidHtml" role="tabpanel" aria-labelledby="alertsExtendedSolidHtmlTab">
+                                              <pre class="  language-markup"><code class="  language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-red alert-solid<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>This is a red alert.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-orange alert-solid<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>This is a orange alert.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-yellow alert-solid<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>This is a yellow alert.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-green alert-solid<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>This is a green alert.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-teal alert-solid<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>This is a teal alert.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-cyan alert-solid<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>This is a cyan alert.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-blue alert-solid<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>This is a blue alert.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-indigo alert-solid<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>This is a indigo alert.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-purple alert-solid<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>This is a purple alert.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert alert-pink alert-solid<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>This is a pink alert.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                                          </div>
+                                          <div class="tab-pane" id="alertsExtendedSolidPug" role="tabpanel" aria-labelledby="alertsExtendedSolidPugTab">
+                                              <pre class="  language-pug"><code class="  language-pug"><span class="token tag">.alert.alert-red.alert-solid<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span> <span class="token plain-text">This is a red alert.</span>
+<span class="token tag">.alert.alert-orange.alert-solid<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span> <span class="token plain-text">This is a orange alert.</span>
+<span class="token tag">.alert.alert-yellow.alert-solid<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span> <span class="token plain-text">This is a yellow alert.</span>
+<span class="token tag">.alert.alert-green.alert-solid<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span> <span class="token plain-text">This is a green alert.</span>
+<span class="token tag">.alert.alert-teal.alert-solid<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span> <span class="token plain-text">This is a teal alert.</span>
+<span class="token tag">.alert.alert-cyan.alert-solid<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span> <span class="token plain-text">This is a cyan alert.</span>
+<span class="token tag">.alert.alert-blue.alert-solid<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span> <span class="token plain-text">This is a blue alert.</span>
+<span class="token tag">.alert.alert-indigo.alert-solid<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span> <span class="token plain-text">This is a indigo alert.</span>
+<span class="token tag">.alert.alert-purple.alert-solid<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span> <span class="token plain-text">This is a purple alert.</span>
+<span class="token tag">.alert.alert-pink.alert-solid<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">role</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'alert'</span></span><span class="token punctuation">)</span></span></span> <span class="token plain-text">This is a pink alert.</span>
+</code></pre>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="sbp-preview-text">
+                                      Use the
+                                      <code>.alert-solid</code>
+                                      class to utilize custom solid alert colors with the expanded color system.
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Bootstrap Docs Link-->
+                  <div class="card card-icon mb-4">
+                      <div class="row g-0">
+                          <div class="col-auto card-icon-aside bg-secondary"><svg class="svg-inline--fa fa-bootstrap me-1 text-white-50" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="bootstrap" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M333.5 201.4c0-22.1-15.6-34.3-43-34.3h-50.4v71.2h42.5C315.4 238.2 333.5 225 333.5 201.4zM517 188.6c-9.5-30.9-10.9-68.8-9.8-98.1c1.1-30.5-22.7-58.5-54.7-58.5H123.7c-32.1 0-55.8 28.1-54.7 58.5c1 29.3-.3 67.2-9.8 98.1c-9.6 31-25.7 50.6-52.2 53.1v28.5c26.4 2.5 42.6 22.1 52.2 53.1c9.5 30.9 10.9 68.8 9.8 98.1c-1.1 30.5 22.7 58.5 54.7 58.5h328.7c32.1 0 55.8-28.1 54.7-58.5c-1-29.3 .3-67.2 9.8-98.1c9.6-31 25.7-50.6 52.1-53.1v-28.5C542.7 239.2 526.5 219.6 517 188.6zM300.2 375.1h-97.9V136.8h97.4c43.3 0 71.7 23.4 71.7 59.4c0 25.3-19.1 47.9-43.5 51.8v1.3c33.2 3.6 55.5 26.6 55.5 58.3C383.4 349.7 352.1 375.1 300.2 375.1zM290.2 266.4h-50.1v78.4h52.3c34.2 0 52.3-13.7 52.3-39.5C344.7 279.6 326.1 266.4 290.2 266.4z"></path></svg><!-- <i class="me-1 text-white-50 fab fa-bootstrap"></i> Font Awesome fontawesome.com --></div>
+                          <div class="col">
+                              <div class="card-body py-5">
+                                  <h5 class="card-title">Bootstrap Documentation Available</h5>
+                                  <p class="card-text">Alerts are a default component included with the Bootstrap framework. For more information on implementing, modifying, and extending the usage of alerts within your project, visit the official Bootstrap modal documentation page.</p>
+                                  <a class="btn btn-secondary btn-sm" href="https://getbootstrap.com/docs/4.4/components/alerts/" target="_blank">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link me-1"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                      Visit Bootstrap Alerts Docs
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- Sticky Nav-->
+              <div class="col-lg-3">
+                  <div class="nav-sticky">
+                      <div class="card">
+                          <div class="card-body">
+                              <ul class="nav flex-column" id="stickyNav">
+                                  <li class="nav-item"><a class="nav-link" href="#default">Default</a></li>
+                                  <li class="nav-item"><a class="nav-link" href="#content">Content</a></li>
+                                  <li class="nav-item"><a class="nav-link" href="#icons">Icon</a></li>
+                                  <li class="nav-item"><a class="nav-link" href="#solid">Solid</a></li>
+                                  <li class="nav-item"><a class="nav-link" href="#colors">Extended</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </main>
+  <footer class="footer-admin mt-auto footer-light">
+      <div class="container-xl px-4">
+          <div class="row">
+              <div class="col-md-6 small">Copyright © Your Website 2021</div>
+              <div class="col-md-6 text-md-end small">
+                  <a href="#!">Privacy Policy</a>
+                  ·
+                  <a href="#!">Terms &amp; Conditions</a>
+              </div>
+          </div>
+      </div>
+  </footer>
+</div>

@@ -1,0 +1,87 @@
+<div class="container-fluid">
+  <div class="card shadow mb-4">
+    <div class="card-header py-3">
+      <h3 class="m-0 font-weight-bold text-primary">Product Table</h3>
+
+    </div>
+    <div class="card-body">
+      <div class="row">
+      <div class="col-6" >
+        <label>Search By name:</label>
+          <input [width]="30" class="form-control" type="text" name="search" (keyup)="applyFilter()" [(ngModel)]="searchText" autocomplete="off" placeholder="Start searching..." style="display:inline;width:300px " >
+      </div>
+&nbsp;
+      <div class="col-6"  >
+        <label>Search By Category:</label>
+        <select
+        class="form-select"
+        aria-label="Default select example"
+        [formControl]="searchCategory"
+        (change)="applyFilter()"
+      >
+      <option [value]="'all'"> all Categories</option>
+        <option *ngFor="let category of categories" [value]="category?._id">
+          {{ category?.name }}
+        </option>
+      </select>
+      </div>
+    </div>
+      <div class="table-responsive">
+        <table
+          class="table table-bordered"
+          id="dataTable"
+          width="100%"
+          cellspacing="0"
+        >
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Price</th>
+
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr
+              *ngFor="let p of filtredProducts | paginate: { itemsPerPage: 3, currentPage: p };let index = index">
+              <th scope="row">{{ index + 1 }}</th>
+              <td>{{ p.name }}</td>
+              <td>{{ p.description }}</td>
+              <td>{{ p.price }}</td>
+
+              <td>
+                <button
+                  type="button"
+                  class="btn btn-info"
+                  [routerLink]="['productdetail', p?.id]">
+                  details
+                </button>
+              </td>
+              <td>
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  (click)="deleteProduct(p?.id)">
+                  Delete</button><br />
+              </td>
+              <td>
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  [routerLink]="['updateproduct', p?.id]"
+>
+                  Update
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <pagination-controls (pageChange)="p = $event"></pagination-controls>
+      </div>
+    </div>
+  </div>
+</div>
+

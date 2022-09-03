@@ -1,0 +1,592 @@
+<div class="container-xl px-4 mt-n10">
+  <div class="row">
+      <div class="col-lg-9">
+          <!-- Base timeline component-->
+          <div id="timelineBasic">
+              <div class="card mb-4">
+                  <div class="card-header">Basic Timeline</div>
+                  <div class="card-body">
+                      <!-- Component Preview-->
+                      <div class="sbp-preview">
+                          <div class="sbp-preview-content">
+                              <div class="timeline">
+                                  <div class="timeline-item">
+                                      <div class="timeline-item-marker">
+                                          <div class="timeline-item-marker-text">01/01/2021</div>
+                                          <div class="timeline-item-marker-indicator"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                                      </div>
+                                      <div class="timeline-item-content">This is the content for the first timeline item.</div>
+                                  </div>
+                                  <div class="timeline-item">
+                                      <div class="timeline-item-marker">
+                                          <div class="timeline-item-marker-text">02/02/2021</div>
+                                          <div class="timeline-item-marker-indicator"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                                      </div>
+                                      <div class="timeline-item-content">A second timeline item comes after the first item.</div>
+                                  </div>
+                                  <div class="timeline-item">
+                                      <div class="timeline-item-marker">
+                                          <div class="timeline-item-marker-text">03/03/2021</div>
+                                          <div class="timeline-item-marker-indicator"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                                      </div>
+                                      <div class="timeline-item-content">The first and last items do not extend the border to the next marker.</div>
+                                  </div>
+                                  <div class="timeline-item">
+                                      <div class="timeline-item-marker">
+                                          <div class="timeline-item-marker-text">04/04/2021</div>
+                                          <div class="timeline-item-marker-indicator"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                                      </div>
+                                      <div class="timeline-item-content">This is the last item. The last item will not show a line after it's respective timeline marker.</div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="sbp-preview-code">
+                              <!-- Code sample-->
+                              <ul class="nav nav-tabs" id="timelineExampleTabs" role="tablist">
+                                  <li class="nav-item">
+                                      <a class="nav-link active me-1" id="timelineExampleExampleHtmlTab" data-bs-toggle="tab" href="#timelineExampleExampleHtml" role="tab" aria-controls="timelineExampleExampleHtml" aria-selected="true">
+                                          <svg class="svg-inline--fa fa-html5 text-orange me-1" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="html5" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"></path></svg><!-- <i class="fab fa-html5 text-orange me-1"></i> Font Awesome fontawesome.com -->
+                                          HTML
+                                      </a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" id="timelineExampleExamplePugTab" data-bs-toggle="tab" href="#timelineExampleExamplePug" role="tab" aria-controls="timelineExampleExamplePug" aria-selected="false">
+                                          <img class="img-pug me-1" src="assets/img/demo/pug.svg">
+                                          PUG
+                                      </a>
+                                  </li>
+                              </ul>
+                              <!-- Tab panes-->
+                              <div class="tab-content">
+                                  <div class="tab-pane active" id="timelineExampleExampleHtml" role="tabpanel" aria-labelledby="timelineExampleExampleHtmlTab">
+                                      <pre class="  language-markup"><code class="  language-markup"><span class="token comment">&lt;!-- Fade In Animation --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker-text<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker-indicator<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">data-feather</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>check<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-content<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>First item<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker-text<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker-indicator<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">data-feather</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>check<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-content<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Second item<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker-text<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker-indicator<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">data-feather</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>check<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-content<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Third item<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                                  </div>
+                                  <div class="tab-pane" id="timelineExampleExamplePug" role="tabpanel" aria-labelledby="timelineExampleExamplePugTab">
+                                      <pre class="  language-pug"><code class="  language-pug"><span class="token comment">//- Timeline component</span>
+<span class="token tag">.timeline</span>
+<span class="token tag">.timeline-item</span>
+<span class="token tag">.timeline-item-marker</span>
+<span class="token tag">.timeline-item-marker-text</span>
+<span class="token punctuation">|</span> <span class="token punctuation">...</span>
+<span class="token tag">.timeline-item-marker-indicator</span>
+<span class="token tag">i<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">data-feather</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'check'</span></span><span class="token punctuation">)</span></span></span>
+<span class="token tag">.timeline-item-content</span>
+<span class="token punctuation">|</span> First item
+<span class="token tag">.timeline-item</span>
+<span class="token tag">.timeline-item-marker</span>
+<span class="token tag">.timeline-item-marker-text</span>
+<span class="token punctuation">|</span> <span class="token punctuation">...</span>
+<span class="token tag">.timeline-item-marker-indicator</span>
+<span class="token tag">i<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">data-feather</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'check'</span></span><span class="token punctuation">)</span></span></span>
+<span class="token tag">.timeline-item-content</span>
+<span class="token punctuation">|</span> Second item
+<span class="token tag">.timeline-item</span>
+<span class="token tag">.timeline-item-marker</span>
+<span class="token tag">.timeline-item-marker-text</span>
+<span class="token punctuation">|</span> <span class="token punctuation">...</span>
+<span class="token tag">.timeline-item-marker-indicator</span>
+<span class="token tag">i<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">data-feather</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'check'</span></span><span class="token punctuation">)</span></span></span>
+<span class="token tag">.timeline-item-content</span>
+<span class="token punctuation">|</span> Third item</code></pre>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="sbp-preview-text">
+                              The
+                              <code>.timeline</code>
+                              component allows you to add a
+                              <code>.timeline-item</code>
+                              to display content within a sequence. The timeline also includes a marker, a field to the left of the marker for a date, and a line connecting the markers. This is a custom component designed specifically for use in the SB Admin Pro theme.
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Small timeline component-->
+          <div id="timelineSmall">
+              <div class="card mb-4">
+                  <div class="card-header">Small Timeline Variant</div>
+                  <div class="card-body">
+                      <!-- Component Preview-->
+                      <div class="sbp-preview">
+                          <div class="sbp-preview-content">
+                              <div class="timeline timeline-sm">
+                                  <div class="timeline-item">
+                                      <div class="timeline-item-marker">
+                                          <div class="timeline-item-marker-text">01/01/2021</div>
+                                          <div class="timeline-item-marker-indicator"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                                      </div>
+                                      <div class="timeline-item-content">This is the content for the first timeline item.</div>
+                                  </div>
+                                  <div class="timeline-item">
+                                      <div class="timeline-item-marker">
+                                          <div class="timeline-item-marker-text">02/02/2021</div>
+                                          <div class="timeline-item-marker-indicator"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                                      </div>
+                                      <div class="timeline-item-content">A second timeline item comes after the first item.</div>
+                                  </div>
+                                  <div class="timeline-item">
+                                      <div class="timeline-item-marker">
+                                          <div class="timeline-item-marker-text">03/03/2021</div>
+                                          <div class="timeline-item-marker-indicator"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                                      </div>
+                                      <div class="timeline-item-content">The first and last items do not extend the border to the next marker.</div>
+                                  </div>
+                                  <div class="timeline-item">
+                                      <div class="timeline-item-marker">
+                                          <div class="timeline-item-marker-text">04/04/2021</div>
+                                          <div class="timeline-item-marker-indicator"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                                      </div>
+                                      <div class="timeline-item-content">This is the last item. The last item will not show a line after it's respective timeline marker.</div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="sbp-preview-code">
+                              <!-- Code sample-->
+                              <ul class="nav nav-tabs" id="timelineSmTabs" role="tablist">
+                                  <li class="nav-item">
+                                      <a class="nav-link active me-1" id="timelineSmExampleHtmlTab" data-bs-toggle="tab" href="#timelineSmExampleHtml" role="tab" aria-controls="timelineSmExampleHtml" aria-selected="true">
+                                          <svg class="svg-inline--fa fa-html5 text-orange me-1" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="html5" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"></path></svg><!-- <i class="fab fa-html5 text-orange me-1"></i> Font Awesome fontawesome.com -->
+                                          HTML
+                                      </a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" id="timelineSmExamplePugTab" data-bs-toggle="tab" href="#timelineSmExamplePug" role="tab" aria-controls="timelineSmExamplePug" aria-selected="false">
+                                          <img class="img-pug me-1" src="assets/img/demo/pug.svg">
+                                          PUG
+                                      </a>
+                                  </li>
+                              </ul>
+                              <!-- Tab panes-->
+                              <div class="tab-content">
+                                  <div class="tab-pane active" id="timelineSmExampleHtml" role="tabpanel" aria-labelledby="timelineSmExampleHtmlTab">
+                                      <pre class="  language-markup"><code class="  language-markup"><span class="token comment">&lt;!-- Fade In Animation --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline timeline-sm<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker-text<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker-indicator<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">data-feather</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>check<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-content<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>First item<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker-text<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker-indicator<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">data-feather</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>check<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-content<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Second item<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker-text<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker-indicator<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">data-feather</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>check<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-content<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Third item<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                                  </div>
+                                  <div class="tab-pane" id="timelineSmExamplePug" role="tabpanel" aria-labelledby="timelineSmExamplePugTab">
+                                      <pre class="  language-pug"><code class="  language-pug"><span class="token comment">//- Timeline component</span>
+<span class="token tag">.timeline.timeline-sm</span>
+<span class="token tag">.timeline-item</span>
+<span class="token tag">.timeline-item-marker</span>
+<span class="token tag">.timeline-item-marker-text</span>
+<span class="token punctuation">|</span> <span class="token punctuation">...</span>
+<span class="token tag">.timeline-item-marker-indicator</span>
+<span class="token tag">i<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">data-feather</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'check'</span></span><span class="token punctuation">)</span></span></span>
+<span class="token tag">.timeline-item-content</span>
+<span class="token punctuation">|</span> First item
+<span class="token tag">.timeline-item</span>
+<span class="token tag">.timeline-item-marker</span>
+<span class="token tag">.timeline-item-marker-text</span>
+<span class="token punctuation">|</span> <span class="token punctuation">...</span>
+<span class="token tag">.timeline-item-marker-indicator</span>
+<span class="token tag">i<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">data-feather</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'check'</span></span><span class="token punctuation">)</span></span></span>
+<span class="token tag">.timeline-item-content</span>
+<span class="token punctuation">|</span> Second item
+<span class="token tag">.timeline-item</span>
+<span class="token tag">.timeline-item-marker</span>
+<span class="token tag">.timeline-item-marker-text</span>
+<span class="token punctuation">|</span> <span class="token punctuation">...</span>
+<span class="token tag">.timeline-item-marker-indicator</span>
+<span class="token tag">i<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">data-feather</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'check'</span></span><span class="token punctuation">)</span></span></span>
+<span class="token tag">.timeline-item-content</span>
+<span class="token punctuation">|</span> Third item</code></pre>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="sbp-preview-text">
+                              Append the
+                              <code>.timeline</code>
+                              component with the
+                              <code>.timeline-sm</code>
+                              class to use a smaller, more condensed version of the timeline. Keep in mind also that using icons is optional!
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Extra Small timeline component-->
+          <div id="timelineXs">
+              <div class="card mb-4">
+                  <div class="card-header">Extra Small Timeline Variant</div>
+                  <div class="card-body">
+                      <!-- Component Preview-->
+                      <div class="sbp-preview">
+                          <div class="sbp-preview-content">
+                              <div class="timeline timeline-xs">
+                                  <div class="timeline-item">
+                                      <div class="timeline-item-marker">
+                                          <div class="timeline-item-marker-text">01/01/2021</div>
+                                          <div class="timeline-item-marker-indicator bg-primary"></div>
+                                      </div>
+                                      <div class="timeline-item-content">This is the content for the first timeline item.</div>
+                                  </div>
+                                  <div class="timeline-item">
+                                      <div class="timeline-item-marker">
+                                          <div class="timeline-item-marker-text">02/02/2021</div>
+                                          <div class="timeline-item-marker-indicator bg-secondary"></div>
+                                      </div>
+                                      <div class="timeline-item-content">A second timeline item comes after the first item.</div>
+                                  </div>
+                                  <div class="timeline-item">
+                                      <div class="timeline-item-marker">
+                                          <div class="timeline-item-marker-text">03/03/2021</div>
+                                          <div class="timeline-item-marker-indicator bg-warning"></div>
+                                      </div>
+                                      <div class="timeline-item-content">The first and last items do not extend the border to the next marker.</div>
+                                  </div>
+                                  <div class="timeline-item">
+                                      <div class="timeline-item-marker">
+                                          <div class="timeline-item-marker-text">04/04/2021</div>
+                                          <div class="timeline-item-marker-indicator bg-danger"></div>
+                                      </div>
+                                      <div class="timeline-item-content">This is the last item. The last item will not show a line after it's respective timeline marker.</div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="sbp-preview-code">
+                              <!-- Code sample-->
+                              <ul class="nav nav-tabs" id="timelineXsTabs" role="tablist">
+                                  <li class="nav-item">
+                                      <a class="nav-link active me-1" id="timelineXsExampleHtmlTab" data-bs-toggle="tab" href="#timelineXsExampleHtml" role="tab" aria-controls="timelineXsExampleHtml" aria-selected="true">
+                                          <svg class="svg-inline--fa fa-html5 text-orange me-1" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="html5" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"></path></svg><!-- <i class="fab fa-html5 text-orange me-1"></i> Font Awesome fontawesome.com -->
+                                          HTML
+                                      </a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" id="timelineXsExamplePugTab" data-bs-toggle="tab" href="#timelineXsExamplePug" role="tab" aria-controls="timelineXsExamplePug" aria-selected="false">
+                                          <img class="img-pug me-1" src="assets/img/demo/pug.svg">
+                                          PUG
+                                      </a>
+                                  </li>
+                              </ul>
+                              <!-- Tab panes-->
+                              <div class="tab-content">
+                                  <div class="tab-pane active" id="timelineXsExampleHtml" role="tabpanel" aria-labelledby="timelineXsExampleHtmlTab">
+                                      <pre class="  language-markup"><code class="  language-markup"><span class="token comment">&lt;!-- Fade In Animation --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline timeline-xs<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker-text<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker-indicator<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-content<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>First item<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker-text<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker-indicator<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-content<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Second item<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker-text<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker-indicator<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>/div&gt;
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-content<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Third item<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                                  </div>
+                                  <div class="tab-pane" id="timelineXsExamplePug" role="tabpanel" aria-labelledby="timelineXsExamplePugTab">
+                                      <pre class="  language-pug"><code class="  language-pug"><span class="token comment">//- Timeline component</span>
+<span class="token tag">.timeline.timeline-xs</span>
+<span class="token tag">.timeline-item</span>
+<span class="token tag">.timeline-item-marker</span>
+<span class="token tag">.timeline-item-marker-text</span>
+<span class="token punctuation">|</span> <span class="token punctuation">...</span>
+<span class="token tag">.timeline-item-marker-indicator</span>
+<span class="token tag">.timeline-item-content</span>
+<span class="token punctuation">|</span> First item
+<span class="token tag">.timeline-item</span>
+<span class="token tag">.timeline-item-marker</span>
+<span class="token tag">.timeline-item-marker-text</span>
+<span class="token punctuation">|</span> <span class="token punctuation">...</span>
+<span class="token tag">.timeline-item-marker-indicator</span>
+<span class="token tag">.timeline-item-content</span>
+<span class="token punctuation">|</span> Second item
+<span class="token tag">.timeline-item</span>
+<span class="token tag">.timeline-item-marker</span>
+<span class="token tag">.timeline-item-marker-text</span>
+<span class="token punctuation">|</span> <span class="token punctuation">...</span>
+<span class="token tag">.timeline-item-marker-indicator</span>
+<span class="token tag">.timeline-item-content</span>
+<span class="token punctuation">|</span> Third item</code></pre>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="sbp-preview-text">
+                              Append the
+                              <code>.timeline</code>
+                              component with the
+                              <code>.timeline-xs</code>
+                              class for an even smaller timeline component variation. At this size, we do not recommend adding content to the timeline item marker, and have not include any content within that element in the examples above. Instead, you can add context to the timeline marker by using utility classes to change the background color of each marker element.
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Styled timeline component-->
+          <div id="timelineStyled">
+              <div class="card mb-4">
+                  <div class="card-header">Styled Timeline Component Example</div>
+                  <div class="card-body">
+                      <!-- Component Preview-->
+                      <div class="sbp-preview">
+                          <div class="sbp-preview-content">
+                              <div class="timeline">
+                                  <div class="timeline-item">
+                                      <div class="timeline-item-marker">
+                                          <div class="timeline-item-marker-text">01/01/2021</div>
+                                          <div class="timeline-item-marker-indicator bg-primary-soft text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-flag"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg></div>
+                                      </div>
+                                      <div class="timeline-item-content pt-0">
+                                          <div class="card shadow-sm">
+                                              <div class="card-body">
+                                                  <h5 class="text-primary">Beginning</h5>
+                                                  This is the content for the first timeline item. In this styled example, we're styling the timeline marker with background and typography utility classes. We've also shown that you can use the card component within the timeline item content.
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="timeline-item">
+                                      <div class="timeline-item-marker">
+                                          <div class="timeline-item-marker-text">02/02/2021</div>
+                                          <div class="timeline-item-marker-indicator bg-success-soft text-success"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-gift"><polyline points="20 12 20 22 4 22 4 12"></polyline><rect x="2" y="7" width="20" height="5"></rect><line x1="12" y1="22" x2="12" y2="7"></line><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path></svg></div>
+                                      </div>
+                                      <div class="timeline-item-content pt-0">
+                                          <div class="card shadow-sm">
+                                              <div class="card-body">
+                                                  <h5 class="text-success">Second Item</h5>
+                                                  This is the content for the second timeline item. In this timeline example, we're also using some spacing utilities on the timeline item content to remove the padding from the top of that element.
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="timeline-item">
+                                      <div class="timeline-item-marker">
+                                          <div class="timeline-item-marker-text">03/03/2021</div>
+                                          <div class="timeline-item-marker-indicator bg-secondary-soft text-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon><line x1="8" y1="2" x2="8" y2="18"></line><line x1="16" y1="6" x2="16" y2="22"></line></svg></div>
+                                      </div>
+                                      <div class="timeline-item-content pt-0">
+                                          <div class="card shadow-sm">
+                                              <div class="card-body">
+                                                  <h5 class="text-secondary">Third Item</h5>
+                                                  This is the content for the third timeline item. Keep in mind this is just an example of what you can put within the timeline item content. There are many other ways you can use this timeline, and it's fully responsive too!
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="timeline-item">
+                                      <div class="timeline-item-marker">
+                                          <div class="timeline-item-marker-text">04/04/2021</div>
+                                          <div class="timeline-item-marker-indicator bg-warning-soft text-warning"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg></div>
+                                      </div>
+                                      <div class="timeline-item-content pt-0">
+                                          <div class="card shadow-sm">
+                                              <div class="card-body">
+                                                  <h5 class="text-warning">Last Item</h5>
+                                                  You can use different icons in the icon markers, letters, or no icons at all if you just want a blank circle.
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="sbp-preview-code">
+                              <!-- Code sample-->
+                              <ul class="nav nav-tabs" id="timelineStyledExampleTabs" role="tablist">
+                                  <li class="nav-item">
+                                      <a class="nav-link active me-1" id="timelineStyledExampleHtmlTab" data-bs-toggle="tab" href="#timelineStyledExampleHtml" role="tab" aria-controls="timelineStyledExampleHtml" aria-selected="true">
+                                          <svg class="svg-inline--fa fa-html5 text-orange me-1" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="html5" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"></path></svg><!-- <i class="fab fa-html5 text-orange me-1"></i> Font Awesome fontawesome.com -->
+                                          HTML
+                                      </a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" id="timelineStyledExamplePugTab" data-bs-toggle="tab" href="#timelineStyledExamplePug" role="tab" aria-controls="timelineStyledExamplePug" aria-selected="false">
+                                          <img class="img-pug me-1" src="assets/img/demo/pug.svg">
+                                          PUG
+                                      </a>
+                                  </li>
+                              </ul>
+                              <!-- Tab panes-->
+                              <div class="tab-content">
+                                  <div class="tab-pane active" id="timelineStyledExampleHtml" role="tabpanel" aria-labelledby="timelineStyledExampleHtmlTab">
+                                      <pre class="  language-markup"><code class="  language-markup"><span class="token comment">&lt;!-- Styled timeline component example --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker-text<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>01/01/2021<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker-indicator bg-primary-soft text-primary<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">data-feather</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>flag<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-content pt-0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card shadow-sm<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card-body<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h5</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text-primary<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Beginning<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h5</span><span class="token punctuation">&gt;</span></span>
+This is the content for the first timeline item. In this styled example, we're styling the timeline marker with background and typography utility classes. We've also shown that you can use the card component within the timeline item content.
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker-text<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>02/02/2021<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker-indicator bg-success-soft text-success<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">data-feather</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>gift<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-content pt-0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card shadow-sm<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card-body<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h5</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text-success<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Second Item<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h5</span><span class="token punctuation">&gt;</span></span>
+This is the content for the second timeline item. In this timeline example, we're also using some spacing utilities on the timeline item content to remove the padding from the top of that element.
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker-text<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>03/03/2021<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker-indicator bg-secondary-soft text-secondary<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">data-feather</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>map<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-content pt-0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card shadow-sm<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card-body<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h5</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text-secondary<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Third Item<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h5</span><span class="token punctuation">&gt;</span></span>
+This is the content for the third timeline item. Keep in mind this is just an example of what you can put within the timeline item content. There are many other ways you can use this timeline, and it's fully responsive too!
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker-text<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>04/04/2021<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-marker-indicator bg-warning-soft text-warning<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">data-feather</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>send<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>timeline-item-content pt-0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card shadow-sm<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card-body<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h5</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text-warning<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Last Item<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h5</span><span class="token punctuation">&gt;</span></span>
+You can use different icons in the icon markers, letters, or no icons at all if you just want a blank circle.
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                                  </div>
+                                  <div class="tab-pane" id="timelineStyledExamplePug" role="tabpanel" aria-labelledby="timelineStyledExamplePugTab">
+                                      <pre class="  language-pug"><code class="  language-pug"><span class="token comment">//- Styled timeline component example</span>
+<span class="token tag">.timeline</span>
+<span class="token tag">.timeline-item</span>
+<span class="token tag">.timeline-item-marker</span>
+<span class="token tag">.timeline-item-marker-text</span>
+<span class="token punctuation">|</span> 01/01/2021
+<span class="token tag">.timeline-item-marker-indicator.bg-primary-soft.text-primary</span>
+<span class="token tag">i<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">data-feather</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'flag'</span></span><span class="token punctuation">)</span></span></span>
+<span class="token tag">.timeline-item-content.pt-0</span>
+<span class="token tag">.card.shadow-sm</span>
+<span class="token tag">.card-body</span>
+<span class="token tag">h5.text-primary</span> <span class="token plain-text">Beginning</span>
+<span class="token punctuation">|</span> This is the content for the first timeline item<span class="token punctuation">.</span> In this styled example, we're styling the timeline marker with background and typography utility classes<span class="token punctuation">.</span> We've also shown that you can use the card component within the timeline item content<span class="token punctuation">.</span>
+<span class="token tag">.timeline-item</span>
+<span class="token tag">.timeline-item-marker</span>
+<span class="token tag">.timeline-item-marker-text</span>
+<span class="token punctuation">|</span> 02/02/2021
+<span class="token tag">.timeline-item-marker-indicator.bg-success-soft.text-success</span>
+<span class="token tag">i<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">data-feather</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'gift'</span></span><span class="token punctuation">)</span></span></span>
+<span class="token tag">.timeline-item-content.pt-0</span>
+<span class="token tag">.card.shadow-sm</span>
+<span class="token tag">.card-body</span>
+<span class="token tag">h5.text-success</span> <span class="token plain-text">Second Item</span>
+<span class="token punctuation">|</span> This is the content for the second timeline item<span class="token punctuation">.</span> In this timeline example, we're also using some spacing utilities on the timeline item content to remove the padding from the top of that element<span class="token punctuation">.</span>
+<span class="token tag">.timeline-item</span>
+<span class="token tag">.timeline-item-marker</span>
+<span class="token tag">.timeline-item-marker-text</span>
+<span class="token punctuation">|</span> 03/03/2021
+<span class="token tag">.timeline-item-marker-indicator.bg-secondary-soft.text-secondary</span>
+<span class="token tag">i<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">data-feather</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'map'</span></span><span class="token punctuation">)</span></span></span>
+<span class="token tag">.timeline-item-content.pt-0</span>
+<span class="token tag">.card.shadow-sm</span>
+<span class="token tag">.card-body</span>
+<span class="token tag">h5.text-secondary</span> <span class="token plain-text">Third Item</span>
+<span class="token punctuation">|</span> This is the content for the third timeline item<span class="token punctuation">.</span> Keep in mind this is just an example of what you can put within the timeline item content<span class="token punctuation">.</span> There are many other ways you can use this timeline, and it's fully responsive too<span class="token punctuation">!</span>
+<span class="token tag">.timeline-item</span>
+<span class="token tag">.timeline-item-marker</span>
+<span class="token tag">.timeline-item-marker-text</span>
+<span class="token punctuation">|</span> 04/04/2021
+<span class="token tag">.timeline-item-marker-indicator.bg-warning-soft.text-warning</span>
+<span class="token tag">i<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">data-feather</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">'send'</span></span><span class="token punctuation">)</span></span></span>
+<span class="token tag">.timeline-item-content.pt-0</span>
+<span class="token tag">.card.shadow-sm</span>
+<span class="token tag">.card-body</span>
+<span class="token tag">h5.text-warning</span> <span class="token plain-text">Last Item</span>
+<span class="token punctuation">|</span> You can use different icons in the icon markers, letters, or no icons at all if you just want a blank circle<span class="token punctuation">.</span>
+</code></pre>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="sbp-preview-text">Use built in utility classes to change the presentation of the timeline content and the styling of the timeline markers.</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Sticky Navigation-->
+      <div class="col-lg-3">
+          <div class="nav-sticky">
+              <div class="card">
+                  <div class="card-body">
+                      <ul class="nav flex-column" id="stickyNav">
+                          <li class="nav-item"><a class="nav-link" href="#timelineBasic">Basic Timeline</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#timelineSmall">Small Timeline</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#timelineXs">Extra Small Timeline</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#timelineStyled">Styled Timeline</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

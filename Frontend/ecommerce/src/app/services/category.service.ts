@@ -7,19 +7,15 @@ import { environment } from 'src/environments/environment';
 })
 export class CategoryService {
 
-
   constructor(private http:HttpClient) { }
   getcategories() {
-    return this.http.get(`${environment.baseUrl}/categories/getall`)
-  }
-  deletecategories(id:any){
-    return this.http.delete(`${environment.baseUrl}/categories/delete/${id}`)
-  }
-  getcbyid(id:any){
-    return this.http.get(`${environment.baseUrl}/categories/getcatbyid/${id}`)
-  }
 
-  updatecategory(id:any,category:any) {
-    return this.http.put(`${environment.baseUrl}/categories/update/${id}`,category)
+    return this.http.get(`${environment.baseUrl}categories/getAll`)
+  }
+  getbyid(id:any){
+    return this.http.get(`${environment.baseUrl}categories/getbyid/${id}`)
+  }
+  updatecbyid(category:any,id:any) {
+    return this.http.put(`${environment.baseUrl}categories/update/${id}`,category)
   }
 }

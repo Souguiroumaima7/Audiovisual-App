@@ -1,6 +1,6 @@
+import { environment } from './../../environments/environment';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -15,9 +15,8 @@ export class CategoryService {
     return this.http.delete(`${environment.baseUrl}/categories/delete/${id}`)
   }
   getcbyid(id:any){
-    return this.http.get(`${environment.baseUrl}/categories/getcatbyid/${id}`)
+    return this.http.get(`${environment.baseUrl}/categories/getbyid/${id}`)
   }
-
   updatecategory(id:any,category:any) {
     return this.http.put(`${environment.baseUrl}/categories/update/${id}`,category)
   }
