@@ -17,7 +17,6 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { ProfileComponent } from './components/profile/profile.component';
 import { SettingsComponent } from './components/settings/settings.component';
 import { ActivityComponent } from './components/activity/activity.component';
-import { SearchComponent } from './components/search/search.component';
 import { TablesComponent } from './components/tables/tables.component';
 
 import { SearchPipe } from './pipes/search.pipe';
@@ -55,6 +54,7 @@ import { ViewCartComponent } from './components/view-cart/view-cart.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { UpdateProductComponent } from './components/update-product/update-product.component';
 import { ShopComponent } from './components/shop/shop.component';
+import { UpdateordersComponent } from './components/updateorders/updateorders.component';
 
 
 
@@ -71,7 +71,6 @@ import { ShopComponent } from './components/shop/shop.component';
    ProfileComponent,
     SettingsComponent,
     ActivityComponent,
-    SearchComponent,
     TablesComponent,
     SearchPipe,
     UtilitiesBorderComponent,
@@ -105,7 +104,8 @@ import { ShopComponent } from './components/shop/shop.component';
     CheckoutComponent,
     ProductdetailComponent,
     UpdateProductComponent,
-    ShopComponent
+    ShopComponent,
+    UpdateordersComponent
 
   ],
   imports: [

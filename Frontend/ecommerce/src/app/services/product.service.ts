@@ -6,22 +6,33 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class ProductService {
+  public host: string = 'http://localhost:4000';
 
-  constructor(private HTTP:HttpClient) { }
+  constructor(private http:HttpClient) { }
 
   deleteproducts(id:any) {
-  return this.HTTP.delete(`${environment.baseUrl}products/delete/${id}`)
+  return this.http.delete(`${environment.baseUrl}/products/delete/${id}`)
   }
   getproducts() {
-    return this.HTTP.get(`${environment.baseUrl}products/getAll`)
+    return this.http.get(`${environment.baseUrl}products/getAll`)
   }
   getbyid(id:any) {
-    return this.HTTP.get(`${environment.baseUrl}/products/getbyid/${id}`)
+    return this.http.get(`${environment.baseUrl}products/getbyid/${id}`)
   }
   addproduct(product:any) {
-    return this.HTTP.post(`${environment.baseUrl}/products/create`,product)
+    return this.http.post(`${environment.baseUrl}products/create`,product)
    }
  updateproduct(id:any,product:any) {
-      return this.HTTP.put(`${environment.baseUrl}/products/update/${id}`,product)
+      return this.http.put(`${environment.baseUrl}/products/update/${id}`,product)
+    }
+
+    getImageInBD(imageName: string) {
+      return this.http.get(this.host+"/image/get/" + imageName);
+
+    }
+
+    getImageInDirectory(imageName: string) {
+      return this.host+"/image/get1/" + imageName; //image path return
+
     }
 }

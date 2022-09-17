@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./order-detail.component.css']
 })
 export class OrderDetailComponent implements OnInit {
-
+  listorders : any = []  ;
   constructor() { }
 
   ngOnInit(): void {

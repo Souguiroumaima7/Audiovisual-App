@@ -1,7 +1,12 @@
-import { FormGroup } from '@angular/forms';
-import { Router } from '@angular/router';
+import { CategoryService } from './../../services/category.service';
+import { BehaviorSubject } from 'rxjs';
+import { ProductService } from 'src/app/services/product.service';
+import { FormControl, FormGroup } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { CartService } from 'src/app/services/cart.service';
+import { Category } from 'src/app/models/category.model';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-header',
@@ -10,21 +15,12 @@ import { CartService } from 'src/app/services/cart.service';
 })
 export class HeaderComponent implements OnInit {
 
-  public totalItem : number = 0;
-  public searchTerm !: string;
-  constructor(private cartService : CartService) { }
+
+  constructor(private route: ActivatedRoute, private router:Router) { }
 
   ngOnInit(): void {
-    this.cartService.getProducts()
-    .subscribe(res=>{
-      this.totalItem = res.length;
-    })
-  }
-  search(event:any){
-    this.searchTerm = (event.target as HTMLInputElement).value;
-    console.log(this.searchTerm);
-    this.cartService.search.next(this.searchTerm);
+
   }
 
-  
+
 }

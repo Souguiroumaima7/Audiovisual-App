@@ -29,10 +29,13 @@ import { HelpComponent } from './components/help/help.component';
 import { OrderandreturnComponent } from './components/orderandreturn/orderandreturn.component';
 import { TermsandconditionComponent } from './components/termsandcondition/termsandcondition.component';
 import { ForgetpasswordComponent } from './components/forgetpassword/forgetpassword.component';
-import { SearchComponent } from './components/search/search.component';
 import { AddproductComponent } from './components/addproduct/addproduct.component';
 import { UpdateproductComponent } from './components/updateproduct/updateproduct.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+import { ResultsComponent } from './components/results/results.component';
+import { ProductListComponent } from './components/product-list/product-list.component';
+import { ProductImageUrlPipe } from './pipes/product-image-url.pipe';
+import { ProductlistComponent } from './components/productlist/productlist.component';
 
 
 @NgModule({
@@ -61,10 +64,13 @@ import { ProductDetailComponent } from './components/product-detail/product-deta
     OrderandreturnComponent,
     TermsandconditionComponent,
     ForgetpasswordComponent,
-    SearchComponent,
     AddproductComponent,
     UpdateproductComponent,
     ProductDetailComponent,
+    ResultsComponent,
+    ProductListComponent,
+    ProductImageUrlPipe,
+    ProductlistComponent,
 
   ],
   imports: [

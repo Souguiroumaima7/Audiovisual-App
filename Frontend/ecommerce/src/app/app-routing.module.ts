@@ -1,5 +1,5 @@
+import { ResultsComponent } from './components/results/results.component';
 import { AddproductComponent } from './components/addproduct/addproduct.component';
-import { SearchComponent } from './components/search/search.component';
 import { ForgetpasswordComponent } from './components/forgetpassword/forgetpassword.component';
 import { RegistreComponent } from './components/registre/registre.component';
 import { TermsandconditionComponent } from './components/termsandcondition/termsandcondition.component';
@@ -21,6 +21,7 @@ import { OrdreConfirmationComponent } from './components/ordre-confirmation/ordr
 import { HelpComponent } from './components/help/help.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import { UpdateproductComponent } from './components/updateproduct/updateproduct.component';
+import { HeaderComponent } from './components/header/header.component';
 
 
 
@@ -43,15 +44,15 @@ const routes: Routes = [
   {path:"terms",component:TermsandconditionComponent},
   {path:"order",component:OrdreConfirmationComponent},
   {path:"newsletter",component:NewsletterComponent},
-  {path:"shop",component:DetailCartComponent},
   {path:"listproduct",component:DetailCartComponent},
  {path:"account/login",component:LoginComponent},
  {path:"login/forgetpassword",component:LoginComponent},
  {path:"login/register",component:RegistreComponent},
- {path:"search",component:SearchComponent},
- {path:'search/productdetail/:id',component:ProductDetailComponent},
- {path:'search/addproduct',component:AddproductComponent},
- {path:'search/updateproduct/:id',component:UpdateproductComponent}
+ {path:"search/productdetail/:id",component:ProductDetailComponent} ,
+ {path:"search",component:ResultsComponent},
+
+
+
 
 
 

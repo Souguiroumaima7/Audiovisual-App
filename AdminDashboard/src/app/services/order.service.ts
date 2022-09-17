@@ -21,4 +21,10 @@ export class OrderService {
   updateorders(id:any,orders:any) {
     return this.http.put(`${environment.baseUrl}/orders/update/${id}`,orders)
   }
+
+  addorders(orders:any) {
+
+    return this.http.post(`${environment.baseUrl}/orders/create`,orders)
+
+  }
 }

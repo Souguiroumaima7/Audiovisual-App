@@ -8,6 +8,8 @@ import { Injectable } from '@angular/core';
 export class CategoryService {
 
   constructor(private http:HttpClient) { }
+
+
   getcategories() {
     return this.http.get(`${environment.baseUrl}/categories/getall`)
   }
@@ -17,6 +19,7 @@ export class CategoryService {
   getcbyid(id:any){
     return this.http.get(`${environment.baseUrl}/categories/getbyid/${id}`)
   }
+
   updatecategory(id:any,category:any) {
     return this.http.put(`${environment.baseUrl}/categories/update/${id}`,category)
   }

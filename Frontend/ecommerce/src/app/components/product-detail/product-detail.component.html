@@ -1,20 +1,40 @@
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">name</th>
-      <th scope="col">description</th>
-      <th scope="col">price</th>
+<body>
+	<div class="container">
+		<div class="card">
+			<div class="container-fliud">
+				<div class="wrapper row">
+					<div class="preview col-md-6">
+						<div class="preview-pic tab-content">
+						  <div class="tab-pane active" id="pic-1">
+                <img [src]="product.image" alt="Product" alt="" class="img-circle">
+              </div>
+						</div>
+						<ul class="preview-thumbnail nav nav-tabs">
+						  <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src= {{product.image}} /></a></li>
+						</ul>
+					</div>
+					<div class="details col-md-6">
+						<h3 class="product-title">{{product.name}}</h3>
+						<div class="rating">
+							<div class="stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
+						</div>
 
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor = "let p of ProductList|paginate: { itemsPerPage: 2, currentPage: p};let index=index">
-      <th scope = "row">{{index+1}}</th>
-      <td>{{p.name}}</td>
-      <td>{{p.description}}</td>
-      <td>{{p.price}}</td>
+						<h4 class="price">current price: <span>DINAR {{product.price}}</span></h4>
+						<p class="vote"><strong>91%</strong> of buyers enjoyed this product! <strong>(87 votes)</strong></p>
 
-    </tr>
-  </tbody>
-</table>
+						<div class="action">
+							<button (click) = "addtocart(product)" class="add-to-cart btn btn-default" type="button">add to cart</button>
+							<button  class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  </body>

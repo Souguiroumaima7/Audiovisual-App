@@ -1,0 +1,63 @@
+
+<div class="container-fluid">
+  <div class="card shadow mb-4">
+    <div class="card-header py-3">
+      <h2 class="m-0 font-weight-bold text-primary">Product Table</h2>
+
+  <!--     <button
+        routerLink="addproduct"
+        type="button"
+        class="btn btn-primary float-right"
+        style="background-color: #36b9cc">
+        add Product
+      </button> -->
+    </div>
+    <div class="card-body">
+      <div class="row">
+      <div class="col-6" >
+        <label>Search By name:</label>
+          <input [width]="30" class="form-control" type="text" name="search" (keyup)="applyFilter()" [(ngModel)]="searchText" autocomplete="off" placeholder="Start searching..." style="display:inline;width:300px " >
+      </div>
+
+      <div class="col-6"  >
+        <label>Search By Category:</label>
+        <select
+        class="form-select"
+        aria-label="Default select example"
+        [formControl]="searchCategory"
+        (change)="applyFilter()"
+      >
+      <option [value]="'all'"> all Categories</option>
+        <option *ngFor="let category of categories" [value]="category._id">
+          {{ category.name }}
+        </option>
+      </select>
+      </div>
+    </div>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">name</th>
+      <th scope="col">description</th>
+      <th scope="col">price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor = "let p of filtredProducts|paginate: { itemsPerPage: 4 , currentPage: p};let index=index">
+      <th scope = "row">{{index+1}}</th>
+      <td>{{p.name}}</td>
+      <td>{{p.description}}</td>
+      <td>{{p.price}}</td>
+    <td>
+      <button type="button" class="btn btn-danger"(click)="deleteproducts(p._id)">delete Products</button>
+       &nbsp;
+      <button type="button" class="btn btn-primary" [routerLink]="['/productdetail',p._id]">Details Products</button>
+       &nbsp;
+      <button type="button" class="btn btn-primary" [routerLink]="['/updateproduct',p._id]">update Products</button>
+    </td>
+    </tr>
+  </tbody>
+</table>
+
+<pagination-controls (pageChange)="p = $event"></pagination-controls>

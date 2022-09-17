@@ -28,7 +28,7 @@ ngOnInit(): void {
     this.CartService.getProducts()
     .subscribe(res=>{
       this.products = res;
-  
+
     })
 
   }

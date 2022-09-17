@@ -1,6 +1,8 @@
 import { ProductService } from 'src/app/services/product.service';
 import { Component, OnInit } from '@angular/core';
 import Swal from 'sweetalert2';
+import { FormControl } from '@angular/forms';
+import { Category } from 'src/app/models/category.model';
 
 @Component({
   selector: 'app-list-product',
@@ -8,21 +10,25 @@ import Swal from 'sweetalert2';
   styleUrls: ['./list-product.component.css']
 })
 export class ListProductComponent implements OnInit {
-
-  ProductList:any
- p: number = 1;
+  products: any;
+  filtredProducts : any;
+  categories!:Category[] ;
+  searchText = ''
+  searchCategory= new FormControl('');
+  p:number=1
  search_name:any
-  constructor(private ProductService:ProductService) { }
+  constructor(private productservice:ProductService) { }
 
   ngOnInit(): void {
-
+  this.searchCategory.setValue('all')
   this.getall()
   }
 
   getall () {
-    this.ProductService.getproducts().subscribe((res:any)=>{
-      this.ProductList = res["data"]
-      console.log("list product", this.ProductList)
+    this.productservice.getproducts().subscribe((res:any)=>{
+      this.products = res["data"]
+      this.filtredProducts = this.products
+      console.log("list product", this.products)
     })
   }
     deleteproducts(id:any) {
@@ -36,7 +42,7 @@ export class ListProductComponent implements OnInit {
         confirmButtonText: 'Yes, delete it!'
       }).then((result) => {
         if (result.isConfirmed) {
-          this.ProductService.deleteproducts(id).subscribe((res:any)=>{
+          this.productservice.deleteproducts(id).subscribe((res:any)=>{
             console.log(res)
           Swal.fire(
             'Deleted!',
@@ -48,4 +54,24 @@ export class ListProductComponent implements OnInit {
       }
       })
     }
-}
+    applyFilter()
+    {
+     this.filtredProducts = this.products.filter( (product: any) => {
+      if (this.searchCategory.value=='all'){
+        if (this.searchText!='')
+               return product.name.toLowerCase().includes(this.searchText.toLowerCase())
+
+        else {
+          return true
+        }
+      }else{
+        if (this.searchText!='')
+        return product.name.toLowerCase().includes(this.searchText.toLowerCase()) && product.category==this.searchCategory.value;
+        else {
+          return product.category==this.searchCategory.value
+        }
+
+      }
+      })
+    }
+  }

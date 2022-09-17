@@ -1,6 +1,13 @@
 
 <table class="table">
     <thead>
+   <!--    <button
+        routerLink="addorder"
+        type="button"
+        class="btn btn-primary float-right"
+        style="background-color: #36b9cc">
+           add Order
+      </button> -->
       <tr>
         <th scope="col">#</th>
         <th scope="col">ref</th>
@@ -18,7 +25,9 @@
         <td>{{o.date}}</td>
         <td>{{o.status}}</td>
 
-        <button   type="button"   (click)= "delete(o._id)" class="btn btn-info">Delete Order</button>
+        <button   type="button"   (click)= "delete(o._id)" class="btn btn-danger">Delete Order</button>
+        &nbsp;
+        <button   type="button"    [routerLink]="['updateorder',o._id]" class="btn btn-primary">Update Order</button>
       </tr>
     </tbody>
   </table>

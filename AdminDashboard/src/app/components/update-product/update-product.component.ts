@@ -10,47 +10,45 @@ import Swal from 'sweetalert2';
   styleUrls: ['./update-product.component.css']
 })
 export class UpdateProductComponent implements OnInit {
-
-
   submitted = false;
   form!:FormGroup;
-  id = this.activeroute.snapshot.params["id"]
+  id = this.ActivatedRoute.snapshot.params["id"]
   product:any
 
-constructor(private activeroute : ActivatedRoute,private ProductService:ProductService, private formBuilder:FormBuilder, private route:Router) { }
-
+constructor(private ActivatedRoute : ActivatedRoute,private productService:ProductService, private formBuilder:FormBuilder, private route:Router) { }
 
  ngOnInit(): void {
-  this.getproductbyid()
+  this.getbyid()
+
   this.form = this.formBuilder.group(
     {
       name: ['', Validators.required],
       description: ['', Validators.required],
-      price: ['', Validators.required],
-      stock: ['', Validators.required],
+      price: ['', Validators.required]
     })
-
  }
 
- getproductbyid() {
- this.ProductService.getbyid(this.id).subscribe((res:any)=>{
-   this.product =res["data"]
-
+ getbyid() {
+   this.productService.getbyid(this.id).subscribe((res:any)=>{
+   this.product = res["data"]
    this.form.patchValue({
     name:res["data"].name,
     description:res["data"].description,
-    price:res["data"].price,
+    price:res["data"].price
    })
-   console.log("detail product",this.product)
+   console.log("Product Detail",this.product)
    })
 
    }
 
-   updateproduct() {
-    this.ProductService.updateproduct(this.id,this.form.value).subscribe((res:any) =>{
+   UpdateProduct() {
+    this.productService.updateproducts(this.id,this.form.value).subscribe((res:any) =>
+    {
       console.log(res)
-      Swal.fire("product updated")
-      this.route.navigateByUrl("/listproduct")
+      Swal.fire("Product  updated")
+
+      this.route.navigateByUrl("/product List")
     })
    }
+
 }

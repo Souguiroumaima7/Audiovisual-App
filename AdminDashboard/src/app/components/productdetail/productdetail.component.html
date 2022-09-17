@@ -1,20 +1,58 @@
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">name</th>
-      <th scope="col">description</th>
-      <th scope="col">price</th>
+<ng-template #noproduct>
+  <h2>No Product to Display</h2>
+</ng-template>
 
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor = "let p of ProductList|paginate: { itemsPerPage: 2, currentPage: p};let index=index">
-      <th scope = "row">{{index+1}}</th>
-      <td>{{p.name}}</td>
-      <td>{{p.description}}</td>
-      <td>{{p.price}}</td>
-     
-    </tr>
-  </tbody>
-</table>
+<div class="container" *ngIf="product; else noproduct">
+  <div class="card">
+    <div class="row">
+      <aside class="col-sm-5 border-right">
+        <article class="gallery-wrap">
+          <div class="img-big-wrap">
+            <div> <a href="#"><img src={{product.galeries}} /></a></div>
+          </div>
+          <div class="img-small-wrap">
+            <div class="item-gallery"> <img [src]="product.imageUrl" /> </div>
+            <div class="item-gallery"> <img [src]="product.imageUrl" /> </div>
+            <div class="item-gallery"> <img [src]="product.imageUrl" /> </div>
+            <div class="item-gallery"> <img [src]="product.imageUrl" /> </div>
+          </div>
+        </article>
+      </aside>
+      <aside class="col-sm-7">
+        <article class="card-body p-5">
+          <h3 class="title mb-3">{{product.name | uppercase}}</h3>
+
+          <p class="price-detail-wrap">
+            <span class="price h3 text-warning">
+             <span class="num">{{product.price}}</span>
+            </span>
+
+          </p> <!-- price-detail-wrap .// -->
+
+          <dl class="item-property">
+            <dt class="text-uppercase text-primary"><u>Description</u></dt>
+            <dd>
+              <p>
+                {{product.description}}
+              </p>
+            </dd>
+          </dl>
+          <hr>
+          <div class="row">
+            <div class="col-sm-4">
+              <dl class="param param-feature">
+                <dt class="text-uppercase text-primary"><u>In STOCK</u></dt>
+                <dd>{{true == product.outofstock ? 'No': 'Yes'}}</dd>
+              </dl>  <!-- item-property-hor .// -->
+            </div>
+          </div>
+          <hr>
+          <a    class="btn btn-lg btn-primary text-uppercase"> Buy now </a>
+          &nbsp;
+
+          <a    class="btn btn-lg btn-primary text-uppercase"> <i class="fas fa-shopping-cart"></i> Add to cart </a>
+        </article> <!-- card-body.// -->
+      </aside> <!-- col.// -->
+    </div> <!-- row.// -->
+  </div> <!-- card.// -->
+</div>

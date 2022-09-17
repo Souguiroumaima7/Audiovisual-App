@@ -11,6 +11,7 @@ export class RegistreService {
 
 
   register(registrelogin:any) {
-    return this.http.post(`${environment.baseUrl}/admin/register`,registrelogin)
+    return this.http.post(`${environment.baseUrl}admin/register`,registrelogin)
   }
 }
+   

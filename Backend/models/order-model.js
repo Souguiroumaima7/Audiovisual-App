@@ -23,7 +23,6 @@ const orderSchema = new mongoose.Schema({
 ref:{
     type:String,
     required:true,
-    trim:true,
 },
 priceTotal:{
     type:String,

@@ -1,57 +1,24 @@
-<div class="container">
 
-  <div class="row d-flex justify-content-center align-items-center height">
-
-    <div class="col-md-8">
-
-      <div class="card">
-
-
-    <div class="p-3 border-bottom d-flex align-items-center justify-content-center">
-
-      <h5>Custom Order Request</h5>
-
-    </div>
-
-    <div class="p-3 px-4 py-4 border-bottom">
-      <span class="font-weight-normal">Product Name</span>
-      <input type="text" class="form-control mb-3" placeholder="Powered Speaker" />
-      <span class="font-weight-normal">Product Description</span>
-
-       <div class="form">
-
-        <textarea class="form-control mb-3 description-area" placeholder="New Collection"></textarea>
-      </div>
- <div class="d-flex flex-column">
-
-
-        <span class="font-weight-normal">Total</span>
-        <div class="d-flex justify-content-between align-items-center">
-            <input type="text" class="form-control price" placeholder="TN">
-          <div class=" px-4">
-
-            <p class="mb-0"> you will get a request to pay and initate order.</p>
-
-          </div>
-
-          <div class="button">
-
-            <button  (click) = "sendMessage()" class="btn btn-danger send">SEND</button>
-
-          </div>
-
-        </div>
-
-
-      </div>
-
-    </div>
-
+<form [formGroup]="form">
+  <div class="form-group">
+    <label for="exampleInputEmail1">ref</label>
+    <input type="ref"  formControlName="ref" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name">
+    <small id="nameHelp" class="form-text text-muted"></small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">priceTotal</label>
+    <input type="priceTotal"  formControlName="priceTotal" class="form-control" id="exampleInputPassword1" placeholder="priceTotal">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">date</label>
+    <input type="date"  formControlName="date" class="form-control" id="exampleInputPassword1" placeholder="date">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">status</label>
+    <input type="status"  formControlName="status" class="form-control" id="exampleInputPassword1" placeholder="status">
   </div>
 
-    </div>
 
+  <button  (click)= "onSubmit()"       type="submit" class="btn btn-primary"  >Add Order</button>
 
-  </div>
-
- </div>
+</form>

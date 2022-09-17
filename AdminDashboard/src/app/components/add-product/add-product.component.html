@@ -14,7 +14,7 @@
     <input type="text" formControlName="price"  class="form-control" id="exampleInputPassword1" placeholder="price">
   </div>
   <select class="form-select"  formControlName= "subcategories" aria-label="Default select example">
-    <option *ngFor = "let categories of CategoryList" [value]="categories._id">{{categories.name}}</option>
+    <option *ngFor = "let categories of listcategories" [value]="categories._id">{{categories.name}}</option>
 
   </select>
   <br>

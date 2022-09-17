@@ -36,12 +36,12 @@ import { AlertComponent } from './components/alert/alert.component';
 import { TimelineComponent } from './components/timeline/timeline.component';
 import { BackgroundComponent } from './components/background/background.component';
 import { ErrorpagesComponent } from './components/errorpages/errorpages.component';
-import { SearchComponent } from './components/search/search.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ViewCartComponent } from './components/view-cart/view-cart.component';
 import { ProductdetailComponent } from './components/productdetail/productdetail.component';
 import { UpdateProductComponent } from './components/update-product/update-product.component';
 import { ShopComponent } from './components/shop/shop.component';
+import { UpdateordersComponent } from './components/updateorders/updateorders.component';
 
 const routes: Routes = [
  {path:"",component:LoginComponent},
@@ -69,23 +69,26 @@ const routes: Routes = [
   {path:"typograph",component:TypographComponent},
   {path:"404",component:ErrorpagesComponent},
   {path:"500",component:Error500Component},
-  {path:"addproduct",component:AddProductComponent},
+  {path:"listproduct/addproduct",component:AddProductComponent},
   {path:"listproduct",component:ListProductComponent},
-  {path:"addorders",component:AddOrdersComponent},
+  {path:"addorder",component:AddOrdersComponent},
   {path:"ListOrders",component:ListOrdersComponent},
   {path:"ordersDetail",component:OrderDetailComponent},
   {path:'productdetail',component:ProductdetailComponent},
+  {path:'updateproduct',component:UpdateProductComponent},
   {path:"viewcart",component:ViewCartComponent},
   {path:"checkout",component:CheckoutComponent},
-  {path:"search",component:SearchComponent},
-  {path:'search/productdetail/:id',component:ProductdetailComponent},
-  {path:'search/updateproduct/:id',component:UpdateProductComponent},
-  {path:"search/addproduct",component:AddProductComponent},
   {path:"viewcart/Shop",component:ShopComponent},
+  {path:"viewcart/checkout",component:CheckoutComponent},
   {path:"Shop",component:ShopComponent},
- 
-
-
+  {path:'listproduct/updateproduct/:id',component:UpdateProductComponent},
+  {path:'listproduct/productdetail/:id', component:ProductdetailComponent},
+  {path:'ListOrders/updateorder/:id',component:UpdateordersComponent},
+  {path:"ListOrders/addorder",component:AddOrdersComponent},
+  {path:'addorders',component:AddOrdersComponent},
+  {path:'updateproduct/:id',component:UpdateProductComponent},
+  {path:'updateorder/:id',component:UpdateordersComponent},
+  {path:"productdetail/:id",component:ProductdetailComponent}
 ]}
 ];
 

@@ -6,7 +6,6 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { Component , Input, OnInit } from '@angular/core';
 import Swal from 'sweetalert2';
 import { MessagingService } from 'src/app/services/messaging.service';
-import { UserService } from 'src/app/services/user.service';
 import { Profile } from 'src/models/profile.model';
 import { User } from 'src/app/models/user.model';
 
@@ -32,7 +31,7 @@ Form ! : FormGroup
   isUser!: boolean;
 
 
-  constructor(private fb: FormBuilder,private MessengerService:MessagingService,private userService: UserService, private route:ActivatedRoute) {}
+  constructor(private fb: FormBuilder,private MessengerService:MessagingService,private route:ActivatedRoute) {}
 
 
   ngOnInit(): void {

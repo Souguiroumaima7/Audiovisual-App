@@ -13,8 +13,8 @@ export class AddProductComponent implements OnInit {
   submitted = false;
   form!:FormGroup;
   myfile:string []=[];
-  CategoryList: any;
-  
+
+
   constructor(private formBuilder: FormBuilder,private categoryService:CategoryService, private ProductService:ProductService) {}
   ngOnInit(): void {
     this.getallcategories()
@@ -37,10 +37,7 @@ export class AddProductComponent implements OnInit {
   }
   onSubmit(): void {
     this.submitted = true;
-//stop here if form is invalid
-//if (this.form.invalid){
-//return ;
-//}
+
 let formdata = new FormData() ;
 formdata.append("name", this.form.value.name);
 formdata.append("description",this.form.value.description);
@@ -60,8 +57,8 @@ for(var i=0;i<this.myfile.length;i++){
  }
  getallcategories () {
   this.categoryService.getcategories().subscribe((res:any)=>{
-    this.CategoryList = res["data"]
-    console.log("Category List", this.CategoryList)
+    this.listcategories = res["data"]
+    console.log("Category List", this.listcategories)
   })
 }
 

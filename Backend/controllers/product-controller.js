@@ -15,7 +15,7 @@ module.exports = {
             }
         })
     },
-    getAll: function(req, res) { //read 
+    getall: function(req, res) { //read 
          product_model.find({}, function(err, items) { 
             if (err) {
                 res.status(406).json({ message: "cannot get products" })
@@ -28,7 +28,7 @@ module.exports = {
             }
         })
     },
-    getById: function(req, res) {
+    getbyid: function(req, res) {
 
         product_model.findById(req.params.id, function(err, item) {
             if (err) {
@@ -45,7 +45,7 @@ module.exports = {
 
 
     },
-    getByName: function(req, res) {
+    getbyname: function(req, res) {
         product_model.find({ name: req.query.name }, function(err, items) {
             if (err) {
                 res.status(406).json({ message: "cannot get product by this name" })

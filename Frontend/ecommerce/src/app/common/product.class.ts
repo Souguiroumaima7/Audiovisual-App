@@ -3,9 +3,6 @@ export class Product {
   name!: string;
   description!: string;
   Price!: number;
-  imageUrl!: string;
-  active!: boolean;
-  InStock!: number;
-  dateCreated!: Date;
-  lastUpdate!: Date;
+/*   imageUrl!: string; */
+  static image: any;
 }
