@@ -24,8 +24,6 @@ import { UpdateproductComponent } from './components/updateproduct/updateproduct
 import { HeaderComponent } from './components/header/header.component';
 
 
-
-
 const routes: Routes = [
   {path:'',component:HomeComponent},
   {path:"Contact",component:ContactComponent},
@@ -50,20 +48,6 @@ const routes: Routes = [
  {path:"login/register",component:RegistreComponent},
  {path:"search/productdetail/:id",component:ProductDetailComponent} ,
  {path:"search",component:ResultsComponent},
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ]
 
 @NgModule({
