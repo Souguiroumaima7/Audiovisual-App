@@ -1,23 +1,28 @@
 import { Injectable } from '@angular/core';
-import { OAuthService, AuthConfig } from 'angular-oauth2-oidc';
-
-
-const authConfig: AuthConfig = {
-issuer: 'https://auth-server.com',
-redirectUri: window.location.origin,
-clientId: 'angular-client',
-scope: 'openid profile email',
-responseType: 'code'
-};
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { AuthService } from './auth.service';
 
 
 @Injectable({ providedIn: 'root' })
-export class AuthService {
-constructor(private oauthService: OAuthService) {
-this.oauthService.configure(authConfig);
-this.oauthService.loadDiscoveryDocumentAndTryLogin();
+export class TaskService {
+private baseUrl = '/api/tasks';
+
+
+constructor(private http: HttpClient, private auth: AuthService) {}
+
+
+private headers() {
+return new HttpHeaders({ Authorization: `Bearer ${this.auth.token}` });
 }
-login() { this.oauthService.initLoginFlow(); }
-logout() { this.oauthService.logOut(); }
-get token() { return this.oauthService.getAccessToken(); }
+
+
+encrypt(text: string) {
+return this.http.get(`${this.baseUrl}/encrypt/${text}`, { headers: this.headers() });
+}
+decryptAES(cipher: string) {
+return this.http.post(`${this.baseUrl}/decrypt/aes`, cipher, { headers: this.headers() });
+}
+decryptRSA(cipher: string) {
+return this.http.post(`${this.baseUrl}/decrypt/rsa`, cipher, { headers: this.headers() });
+}
 }
